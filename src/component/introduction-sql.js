@@ -62,7 +62,7 @@ const IntroductionSql = (props) => (
                     </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-						<h2>What is SQL?</h2>
+						<h4>What is SQL?</h4>
 							<ul>
 								<li>SQL stands for Structured Query Language.</li>
 								<li>SQL lets you access and manipulate databases.</li>
@@ -71,7 +71,7 @@ const IntroductionSql = (props) => (
 									International Organization for Standardization (ISO) in 1987.</li>
 							</ul>
 					
-							<h2>What Can SQL do?</h2>
+							<h4 class="mt-3">What Can SQL do?</h4>
 
 							<ul>
 								<li>SQL can execute queries against a database</li>
@@ -86,36 +86,22 @@ const IntroductionSql = (props) => (
 								<li>SQL can set permissions on tables, procedures, and views</li>
 							</ul>
 					
-
-							<h2>RDBMS</h2>
+							<h4 class="mt-3">RDBMS</h4>
 							<p>RDBMS stands for Relational Database Management System.</p>
 							<p>RDBMS is the basis for SQL, and for all modern database systems such as MS SQL Server,
 								IBM DB2, Oracle,
 								MySQL, and Microsoft Access.</p>
 							<p>The data in RDBMS is stored in database objects called tables. A table is a collection of
-								related data
-								entries and it consists of columns and rows.</p>
+								related data	entries and it consists of columns and rows.</p>
 							<p>Look at the "Customers" table:</p>
 
-
-							<h3>Example</h3>
+							<h5>Example</h5>
 							<code><span>SELECT</span> * <span>FROM</span> Customers;</code>
 						
-							<p>Every table is broken up into smaller entities called fields. For example, the fields in
-								the Customers
-								table consist of CustomerID, CustomerName, ContactName, Address,
-								City, PostalCode and Country. A field is a column in a table that is designed to
-								maintain
-								specific information about every record in the table.</p>
-							<p>A record, also called a row, is each individual entry that exists in a table. A record is
-								a horizontal
-								entity in a table.</p>
-							<p>A column is a vertical entity in a table that contains all information associated with a
-								specific field
-								in a table.</p>
-
-						
-
+							<p>Every table is broken up into smaller entities called fields. For example, the fields in the Customers table consist of CustomerID, CustomerName, ContactName, Address, City, PostalCode and Country. A field is a column in a table that is designed to	maintain specific information about every record in the table.</p>
+							<p>A record, also called a row, is each individual entry that exists in a table. A record is a horizontal entity in a table.</p>
+							<p>A column is a vertical entity in a table that contains all information associated with a specific field in a table.</p>
+					
             </AccordionItemPanel>
           </AccordionItem>
           <AccordionItem>
@@ -126,31 +112,27 @@ const IntroductionSql = (props) => (
             </AccordionItemHeading>
             <AccordionItemPanel>
        
-            <h2>Database Tables</h2>
-							<p>A database most often contains one or more tables. Each table is identified by a name
-								(e.g. "Customers" or "Orders"). Tables contain records (rows) with data.</p>
-							<p>In this tutorial we will use the well-known Northwind sample database (included in MS
-								Access and MS SQL Server).</p>
+            <h4>Database Tables</h4>
+							<p>A database most often contains one or more tables. Each table is identified by a name (e.g. "Customers" or "Orders"). Tables contain records (rows) with data.</p>
+							<p>In this tutorial we will use the well-known Northwind sample database (included in MS Access and MS SQL Server).</p>
 							<p>Below is a selection from the "Customers" table:</p>
 							<img src={SqlSyntax}></img>
 
-							<p>The table above contains five records (one for each customer) and seven columns
-								(CustomerID, CustomerName, ContactName, Address, City, PostalCode, and Country).</p>
+							<p>The table above contains five records (one for each customer) and seven columns (CustomerID, CustomerName, ContactName, Address, City, PostalCode, and Country).</p>
 				
-							<h2>Keep in Mind That...</h2>
+							<h4>Keep in Mind That...</h4>
 							<ul>
 								<li>SQL keywords are NOT case sensitive: select is the same as SELECT</li>
 							</ul>
 
 							<p>In this tutorial we will write all SQL keywords in upper-case.</p>
 		
-							<h2>Semicolon after SQL Statements?</h2>
+							<h4>Semicolon after SQL Statements?</h4>
 							<p>Some database systems require a semicolon at the end of each SQL statement.</p>
-							<p>Semicolon is the standard way to separate each SQL statement in database systems that
-								allow more than one SQL statement to be executed in the same call to the server.</p>
+							<p>Semicolon is the standard way to separate each SQL statement in database systems that allow more than one SQL statement to be executed in the same call to the server.</p>
 							<p>In this tutorial, we will use semicolon at the end of each SQL statement.</p>
 		
-							<h2>Some of The Most Important SQL Commands</h2>
+							<h4>Some of The Most Important SQL Commands</h4>
 							<ul>
 								<li><b>SELECT</b> - extracts data from a database</li>
 								<li><b>UPDATE</b> - updates data in a database</li>
@@ -175,31 +157,30 @@ const IntroductionSql = (props) => (
             </AccordionItemHeading>
             <AccordionItemPanel>
       
-            <h2>The SQL SELECT Statement</h2>
+            <h4>The SQL SELECT Statement</h4>
 							<p>The SELECT statement is used to select data from a database.</p>
 							<p>The data returned is stored in a result table, called the result-set.</p>
-							<h3>SELECT Syntax</h3>
+						<h4>SELECT Syntax</h4>
 							<code>
-						<span>SELECT</span> <em>column1</em>,<em> column2, ...</em>
-					
-						<span>FROM</span> <em>table_name</em>
+						SELECT column1, column2, ...<br/>
+						FROM table_name
 					</code>
 		
-							<p>Here, column1, column2, ... are the field names of the table you want to select data
-								from. If you want to select all the fields available in the table, use the following syntax:</p>
-							<code><span >SELECT</span> * <span>FROM</span> <em>table_name</em>; </code>
+							<p>Here, column1, column2, ... are the field names of the table you want to select data from. If you want to select all the fields available in the table, use the following syntax:</p>
+							<code>SELECT * FROM table_name;</code>
 		
-							<h2>SELECT Column Example</h2>
+							<h4>SELECT Column Example</h4>
 							<p>The following SQL statement selects the "CustomerName" and "City" columns
 								from the "Customers" table:</p>
-							<h3>Example</h3>
-							<code><span>SELECT</span> CustomerName, City <span>FROM</span> Customers;</code>
+							<h5>Example</h5>
+							<code>SELECT CustomerName, City<br/>
+							FROM Customers;</code>
 	
-							<img src={SqlSelect}></img>
-							<h2>SELECT * Example</h2>
+							<img src={SqlSelect} class="my-3"></img>
+							<h4>SELECT * Example</h4>
 							<p>The following SQL statement selects all the columns from the "Customers" table:</p>
-							<h3>Example</h3>
-							<code><span>SELECT</span> * <span>FROM</span> Customers;</code>
+							<h5>Example</h5>
+							<code>SELECT * FROM Customers;</code>
                         
                   </AccordionItemPanel>
           </AccordionItem>
@@ -212,34 +193,33 @@ const IntroductionSql = (props) => (
             <AccordionItemPanel>
      
    
-            <h2>The SQL WHERE Clause</h2>
-							<p>The WHERE clause is used to filter records.</p>
-							<p>The WHERE clause is used to extract only those records that fulfill a specified condition.</p>
-							<h3>WHERE Syntax</h3>
-							<code><span>SELECT</span> <em>column1</em>,<em> column2, ...</em>
-					<span>FROM</span> <em>table_name</em>
-					<span>WHERE</span> <em>condition</em>; </code>
+            <h4>The SQL WHERE Clause</h4>
+							<p>The <span>WHERE</span> clause is used to filter records.</p>
+							<p>The <span>WHERE</span> clause is used to extract only those records that fulfill a specified condition.</p>
+							<h4>WHERE Syntax</h4>
+							<code>SELECT column1, column2, ...<br/>
+					FROM table_name<br/>
+					WHERE condition; </code>
 					
 							<p><i><strong>Note:</strong> The WHERE clause is not only used in SELECT statement, it is also used in UPDATE, DELETE statement, etc.!</i></p>
 						
-							<h2>WHERE Clause Example</h2>
+							<h4>WHERE Clause Example</h4>
 							<p>The following SQL statement selects all the customers from the country "Mexico", in the "Customers" table:</p>
-							<h3>Example</h3>
-							<code><span>SELECT</span> * <span>FROM</span> Customers	<span >WHERE</span> Country=<span>'Mexico'</span>;</code>
+							<h5>Example</h5>
+							<code>SELECT * FROM Customers	WHERE Country='Mexico';</code>
 									
-							<img src={SqlWhere1}></img>
+							<img src={SqlWhere1} class="my-3"></img>
 					
-							<h2>Text Fields vs. Numeric Fields</h2>
+							<h4>Text Fields vs. Numeric Fields</h4>
 							<p>SQL requires single quotes around text values (most database systems will also allow double quotes).</p>
 							<p>However, numeric fields should not be enclosed in quotes:</p>
-							<h3>Example</h3>
-							<code> <span>SELECT</span> * <span >FROM</span> Customers
-              
-              					<span>WHERE</span> CustomerID=1; </code>
+							<h5>Example</h5>
+							<code>SELECT * FROM Customers<br/>
+                        	WHERE CustomerID=1;
+												</code>
+				                <img src={SqlWhere2} class="my-3"></img>
 				
-                        <img src={SqlWhere2}></img>
-				
-							<h2>Operators in The WHERE Clause</h2>
+							<h4>Operators in The WHERE Clause</h4>
 							<p>The following operators can be used in the WHERE clause:</p>
 					
 							<img src={SqlWhere3}></img>
@@ -254,7 +234,7 @@ const IntroductionSql = (props) => (
             <AccordionItemPanel>
       
 	
-							<h2>The SQL AND, OR and NOT Operators</h2>
+							<h4>The SQL AND, OR and NOT Operators</h4>
 							<p>The WHERE clause can be combined with AND, OR, and NOT operators.</p>
 							<p>The AND and OR operators are used to filter records based on more than one condition:</p>
 							<ul>
@@ -263,93 +243,89 @@ const IntroductionSql = (props) => (
 							</ul>
 							<p>The NOT operator displays a record if the condition(s) is NOT TRUE.</p>
 
-							<h3>AND Syntax</h3>
+							<h5>AND Syntax</h5>
 				  <code>
-            <span>SELECT</span> <em>column1</em>,<em> column2, ...</em>
-            <span>FROM</span> <em>table_name</em>
-            <span>WHERE</span> <em>condition1</em> <span>AND</span> <em>condition2</em>
-            <span>AND</span> <em>condition3 ...</em>
+            SELECT column1, column2, ...<br/>
+            FROM table_name<br/>
+            WHERE condition1 AND condition2<br/>
+            AND condition3 ...
           </code>
 
-							<h3>OR Syntax</h3>
+							<h5>OR Syntax</h5>
 					<code>
-            <span>SELECT</span> <em>column1</em>,<em> column2, ...</em>
-            <span>FROM</span> <em>table_name</em>
-            <span>WHERE</span> <em>condition1</em> <span>OR</span> <em>condition2</em>
-            <span>OR</span> <em>condition3 ...</em>
-          </code>
-
-
+						SELECT column1, column2, ...<br/>
+						FROM table_name<br/>
+						WHERE condition1 OR condition2<br/>
+						OR condition3 ...
+					</code>
           
-							<code><span>SELECT</span> <em>column1</em>,<em> column2, ...</em>
-					<span >FROM</span> <em>table_name</em>
-					<span >WHERE</span> <em>condition1</em> <span>AND</span> <em>condition2</em>
-          <span>AND</span> <em>condition3 ...</em>;</code>
+					<code>
+							SELECT column1, column2, ...<br/>
+							FROM table_name<br/>
+							WHERE condition1 AND condition2<br/>
+							AND condition3 ...;
+					</code>
 
-							<h3>OR Syntax</h3>
+							<h5>OR Syntax</h5>
 							<code><span >SELECT</span> <em>column1</em>,<em> column2, ...</em>
 					<span >FROM</span> <em>table_name</em>
 					<span >WHERE</span> <em>condition1</em> <span>OR</span> <em>condition2</em>
           <span>OR</span> <em>condition3 ...</em>;</code>
 
-							<h3>NOT Syntax</h3>
+							<h5>NOT Syntax</h5>
 							<code><span>SELECT</span> <em>column1</em>,<em> column2, ...</em>
 					<span>FROM</span> <em>table_name</em>
 					<span>WHERE</span> <span >NOT</span> <em>condition</em>;</code>
 							<hr></hr>
 
-							<h2>AND Example</h2>
+							<h4>AND Example</h4>
 							<p>The following SQL statement selects all fields from "Customers" where country is "Germany" AND city is "Berlin":</p>
-							<h3>Example</h3>
+							<h5>Example</h5>
 							<code>
-                <span>SELECT</span> * <span>FROM</span> Customers<span>WHERE</span> Country=<span>'Germany'</span>
-              <span>AND</span> City=<span>'Berlin'</span>;</code>
-							<h2>OR Example</h2>
+                SELECT* FROM Customers WHERE Country='Germany'<br/>
+              AND City='Berlin';</code>
+							<h4>OR Example</h4>
 
 							<p>The following SQL statement selects all fields from "Customers" where city is "Berlin" OR "München":</p>
 
-							<h3>Example</h3>
+							<h5>Example</h5>
 
 							<code>
-                <span>SELECT</span> * <span>FROM</span> Customers<span>WHERE</span> City=<span>'Berlin'</span>
-              <span>OR</span> City=<span>'München'</span>;</code>
+                SELECT * FROM Customers WHERE City='Berlin'<br/>
+              OR City=>'München';</code>
 		
 							<p>The following SQL statement selects all fields from "Customers" where country is "Germany" OR "Spain":</p>
-              <h3>Example</h3>
+              <h5>Example</h5>
 
-<code> <span>SELECT</span> * <span>FROM</span> Customers<span>WHERE</span> Country=<span>'Germany'</span><span>OR</span> Country=<span>'Spain'</span>;
-</code>
+<code>SELECT * FROM Customers WHERE Country='Germany' OR Country='Spain';</code>
 
-<h2>NOT Example</h2>
+<h4>NOT Example</h4>
 <p>The following SQL statement selects all fields from "Customers" where country is NOT "Germany":</p>
 				
-  <h3>Example</h3>
+  <h5>Example</h5>
 
-<code><span>SELECT</span> * <span>FROM</span> Customer<span>WHERE</span> <span>NOT</span> Country=<span>'Germany'</span>;
-</code>
-<h2>Combining AND, OR and NOT</h2>
+<code>SELECT * FROM Customer WHERE NOT Country='Germany';</code>
+<h4>Combining AND, OR and NOT</h4>
 <p>You can also combine the AND, OR and NOT operators.</p>
 
 <p>The following SQL statement selects all fields from "Customers" where country is "Germany" AND city  must be "Berlin"  OR "München" (use parenthesis to form complex expressions):</p>
 
-<h3>Example</h3>
+<h5>Example</h5>
 <code>
-  <span>SELECT</span> * <span>FROM</span> Customers<span>WHERE</span> Country=<span>'Germany'</span>
-<span>AND</span> (City=<span>'Berlin'</span> <span>OR</span> City=<span>'München'</span>);
+SELECT * FROM Customers WHERE Country= 'Germany'<br/>
+AND (City='Berlin' OR City='München');<br/>
 </code>
 
-<p>The following SQL statement selects all fields from "Customers" where country is
-  NOT "Germany" and NOT "USA":</p>
+<p>The following SQL statement selects all fields from "Customers" where country is NOT "Germany" and NOT "USA":</p>
 
-<h3>Example</h3>
+<h5>Example</h5>
 
 <code>
-  <span>SELECT</span> * <span>FROM</span> Customers<span>WHERE</span>
-<span>NOT</span> Country=<span>'Germany'</span><span>AND</span> <span>NOT</span> Country=<span>'USA'</span>;
+  SELECT * FROM Customers WHERE<br/>
+NOT Country='Germany' AND NOT Country='USA';
 </code>
 
-
-					
+				
             </AccordionItemPanel>
           </AccordionItem>
           <AccordionItem>
@@ -359,30 +335,29 @@ const IntroductionSql = (props) => (
                     </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-        
                
        
-							<h2>The SQL ORDER BY Keyword</h2>
+							<h4>The SQL ORDER BY Keyword</h4>
 							<p>The ORDER BY keyword is used to sort the result-set in ascending or descending order.</p>
 							<p>The ORDER BY keyword sorts the records in ascending order by default. To sort the records in descending order, use the DESC keyword.</p>
 
-							<h3>ORDER BY Syntax</h3>
+							<h5>ORDER BY Syntax</h5>
 							<code>
-                <span>SELECT</span> <em>column1</em>,<em> column2, ...</em>
-					<span>FROM</span> <em>table_name</em>
-					<span>ORDER</span> <span>BY</span> <em>column1, column2, ... </em><span>ASC</span>|<span>DESC</span>;</code>
+                SELECT column1, column2, ...<br/>
+					FROM table_name<br/>
+					ORDER BY column1, column2, ... ASC | DESC;</code>
 							
 							<h2>ORDER BY Example</h2>
 							<p>The following SQL statement selects all customers from the "Customers" table,	sorted by the "Country" column:</p>
-							<h3>Example</h3>
+							<h5>Example</h5>
 							<code><span>SELECT</span> * <span>FROM</span> Customers
 					<span>ORDER</span> <span>BY</span> Country;</code>
 							<h2>ORDER BY DESC Example</h2>
 							<p>The following SQL statement selects all customers from the "Customers" table,	sorted DESCENDING by the "Country" column:</p>
-							<h3>Example</h3>
+							<h5>Example</h5>
 							<code><span>SELECT</span> * <span>FROM</span> Customers<span>ORDER</span> <span>BY</span> Country <span>DESC</span>; </code>
 
-							<h2>ORDER BY Several Columns Example</h2>
+							<h4>ORDER BY Several Columns Example</h4>
 							<p>The following SQL statement selects all customers from the "Customers" table,sorted by the "Country" and the "CustomerName" column. This means that it orders
 								by Country, but if some rows have the same Country, it orders them by	CustomerName:</p>
 							<h3>Example</h3>
@@ -391,9 +366,9 @@ const IntroductionSql = (props) => (
                 </code>
 							
 
-							<h2>ORDER BY Several Columns Example 2</h2>
+							<h4>ORDER BY Several Columns Example 2</h4>
 							<p>The following SQL statement selects all customers from the "Customers" table, sorted ascending by the "Country" and descending by the "CustomerName" column:</p>
-							<h3>Example</h3>
+							<h5>Example</h5>
 							<code><span>SELECT</span> * <span>FROM</span> Customers<br/><span>ORDER</span>
               <span>BY</span> Country <span>ASC</span>, CustomerName <span>DESC</span>; </code>
 						
@@ -408,7 +383,7 @@ const IntroductionSql = (props) => (
             <AccordionItemPanel>
          
 
-							<h2>What is a NULL Value?</h2>
+							<h4>What is a NULL Value?</h4>
 							<p>A field with a NULL value is a field with no value.</p>
 							<p>If a field in a table is optional, it is possible to insert a new record or update a record without adding a value to this field. Then, the field will be saved with a NULL value.</p>
 
@@ -427,14 +402,14 @@ const IntroductionSql = (props) => (
               <span>WHERE</span> <em>column_name</em> <span>IS</span> <span>NULL</span>;
               </code>
 
-							<h3>IS NOT NULL Syntax</h3>
+							<h4>IS NOT NULL Syntax</h4>
 
 							<code><span>SELECT</span> <em>column_names<br /></em><span>FROM</span> <em>table_name</em><br />
               <span>WHERE</span> <em>column_name</em> <span>IS</span> <span>NOT</span> <span>NULL</span>; </code>
 
 							<hr />
 
-							<h2>The IS NULL Operator</h2>
+							<h4>The IS NULL Operator</h4>
 							<p>The IS NULL operator is used to test for empty values (NULL values).</p>
 							<p>The following SQL lists all customers with a NULL value in the "Address" field:</p>
 							<h3>Example</h3>
@@ -445,12 +420,13 @@ const IntroductionSql = (props) => (
 
 							<hr />
 
-							<h2>The IS NOT NULL Operator</h2>
+							<h4>The IS NOT NULL Operator</h4>
 							<p>The IS NOT NULL operator is used to test for non-empty values (NOT NULL values).</p>
 
 							<p>The following SQL lists all customers with a value in the "Address" field:</p>
-							<h3>Example</h3>
-							<code>  <span>SELECT</span> CustomerName, ContactName, Address<br /><span>FROM</span> Customers<br /><span>WHERE</span> Address <span>IS</span> <span>NOT</span> <span>NULL</span>;</code>
+							<h5>Example</h5>
+							<code>
+								SELECT CustomerName, ContactName, Address<br /><span>FROM</span> Customers<br /><span>WHERE</span> Address <span>IS</span> <span>NOT</span> <span>NULL</span>;</code>
 					
             </AccordionItemPanel>
           </AccordionItem>
@@ -463,11 +439,13 @@ const IntroductionSql = (props) => (
             <AccordionItemPanel>
      
 
-            <h2>The SQL DELETE Statement</h2>
+            <h4>The SQL DELETE Statement</h4>
 							<p>The DELETE statement is used to delete existing records in a table.</p>
 
-							<h3>DELETE Syntax</h3>
-							<code> <span>DELETE</span> <span>FROM</span> <em>table_name </em><span>WHERE</span> <em>condition</em>;</code>
+							<h5>DELETE Syntax</h5>
+							<code>
+								DELETE FROM table_name WHERE condition;
+								</code>
 							<br />
 							<br />
 							<p><i><strong>Note:</strong> Be careful when deleting records in a table! Notice the WHERE clause in the
@@ -475,30 +453,30 @@ const IntroductionSql = (props) => (
 									you omit the WHERE clause, all records in the table will be deleted!</i></p>
 							<hr />
 
-							<h2>SQL DELETE Example</h2>
+							<h4>SQL DELETE Example</h4>
 
-							<p>The following SQL statement deletes the customer "Alfreds Futterkiste" from
-								the "Customers" table:</p>
+							<p>The following SQL statement deletes the customer "Alfreds Futterkiste" from	the "Customers" table:</p>
 
-							<h3>Example</h3>
-							<code> <span>DELETE</span> <span>FROM</span> Customers
-					<span>WHERE</span> CustomerName=<span>'Alfreds Futterkiste'</span>;</code>
+							<h5>Example</h5>
+							<code>
+								DELETE FROM Customers<br/>
+					WHERE CustomerName='Alfreds Futterkiste';
+					</code>
 							<br />
 							<br />
 							<p>The "Customers" table will now look like this:</p>
 							<img src={SqlDelete}></img>
 							<hr />
 
-							<h2>Delete All Records</h2>
+							<h4>Delete All Records</h4>
 							<p>It is possible to delete all rows in a table without deleting the table. This means that the table structure, attributes, and indexes will be intact:</p>
 
-							<code><span>DELETE</span> <span>FROM</span> <em>table_name</em>;</code>
+							<code>DELETE FROM table_name;</code>
 							<br />
 							<br />
 							<p>The following SQL statement deletes all rows in the "Customers" table, without deleting the table:</p>
 							<h3>Example</h3>
-							<code> <span>DELETE</span> <span>FROM</span> Customers;
-					</code>
+							<code>DELETE FROM Customers;</code>
             </AccordionItemPanel>
           </AccordionItem>
           <AccordionItem>
@@ -510,23 +488,23 @@ const IntroductionSql = (props) => (
             <AccordionItemPanel>
        
 				
-							<h2>The SQL COUNT(), AVG() and SUM() Functions</h2>
+							<h4>The SQL COUNT(), AVG() and SUM() Functions</h4>
 							<p>The COUNT() function returns the number of rows that matches a specified criteria.</p>
 							<p>The AVG() function returns the average value of a numeric column.</p>
 							<p>The SUM() function returns the total sum of a numeric column.</p>
 
-							<h3>COUNT() Syntax</h3>
+							<h5>COUNT() Syntax</h5>
 
 							<code><span>SELECT</span> <span>COUNT</span>(<em>column_name</em>)<br />
 					<span>FROM</span> <em>table_name</em><br />
 					<span>WHERE</span> <em>condition</em>; </code>
 
-							<h3>AVG() Syntax</h3>
+							<h5>AVG() Syntax</h5>
 							<code><span>SELECT</span> <span>AVG</span>(<em>column_name</em>)<br />
 					<span>FROM</span> <em>table_name</em><br />
 					<span>WHERE</span> <em>condition</em>; </code>
 
-							<h3>SUM() Syntax</h3>
+							<h5>SUM() Syntax</h5>
 							<code><span>SELECT</span> <span>SUM</span>(<em>column_name</em>)<br />
 					<span>FROM</span> <em>table_name</em><br />
 					<span>WHERE</span> <em>condition</em>; </code>
@@ -536,9 +514,9 @@ const IntroductionSql = (props) => (
 
 							<hr />
 
-							<h2>COUNT() Example</h2>
+							<h4>COUNT() Example</h4>
 							<p>The following SQL statement finds the number of products:</p>
-							<h3>Example</h3>
+							<h5>Example</h5>
 
 							<code> <span>SELECT</span> <span>COUNT</span>(ProductID)<br /><span>FROM</span> Products;</code>
 							<br />
@@ -547,12 +525,15 @@ const IntroductionSql = (props) => (
 							<img src={SqlAvg}></img>
 							<hr />
 
-							<h2>AVG() Example</h2>
+							<h4>AVG() Example</h4>
 							<p>The following SQL statement finds the average price of all products:</p>
 
-							<h3>Example</h3>
+							<h5>Example</h5>
 
-							<code> <span>SELECT</span> <span>AVG</span>(Price)<br /><span>FROM</span> Products;</code>
+							<code>
+								SELECT AVG (Price)<br />
+								FROM Products;
+								</code>
 							<br />
 							<br />
 							<p>Table (example):</p>
@@ -560,14 +541,15 @@ const IntroductionSql = (props) => (
 
 							<hr />
 
-							<h2>SUM() Example</h2>
+							<h4>SUM() Example</h4>
 							<p>The following SQL statement finds the sum of the "Quantity" fields
 								in the "OrderDetails" table:</p>
 
-							<h3>Example</h3>
+							<h5>Example</h5>
 
 							<code>
-                <span>SELECT</span> <span>SUM</span>(Quantity)<br /><span>FROM</span> OrderDetails; </code>
+                SELECT SUM (Quantity) FROM OrderDetails;
+								</code>
 							<br />
 							<br />
 							<p>Table (example):</p>
@@ -586,7 +568,7 @@ const IntroductionSql = (props) => (
             </AccordionItemHeading>
             <AccordionItemPanel>
       
-            <h2>The SQL LIKE Operator</h2>
+            <h4>The SQL LIKE Operator</h4>
 							<p>The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.</p>
 							<p>There are two wildcards used in conjunction with the LIKE operator:</p>
 							<ul>
@@ -598,7 +580,7 @@ const IntroductionSql = (props) => (
 
 							<p>The percent sign and the underscore can also be used in combinations!</p>
 
-							<h3>LIKE Syntax</h3>
+							<h5>LIKE Syntax</h5>
 
 							<code><span>SELECT</span> <em>column1, column2, ...</em><br />
 					<span>FROM</span> <em>table_name</em><br />
@@ -612,13 +594,13 @@ const IntroductionSql = (props) => (
 							<img src={SqlLike1}></img>
 							<hr />
 
-							<h2>SQL LIKE Examples</h2>
+							<h4>SQL LIKE Examples</h4>
 							<img src={SqlLike2}></img>
 							<br />
 							<br />
 							<p>The following SQL statement selects all customers with a CustomerName starting with "a":</p>
 
-							<h3>Example</h3>
+							<h5>Example</h5>
 
 							<code><span>SELECT</span> * <span>FROM</span> Customers<br /><span>WHERE</span> CustomerName
               <span>LIKE</span> <span>'a%'</span>;

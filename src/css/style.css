@@ -20,12 +20,24 @@ dl, ol, ul {
 	font-weight: 900;
 	text-transform: uppercase;
 }
+h4 {
+ color: #de411b;
+
+}
+
 
 p span {
   color:  #de411b;
   font-weight: bold;
 }
 
+code {
+background-color: #eee;
+display: block;
+padding: 5px;
+border: none;
+margin-bottom: 5px;
+}
 .typewriter h2{
 	font-family: 'endava-font', sans-serif;
 	font-weight: 900;
