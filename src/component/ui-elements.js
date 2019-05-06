@@ -1,4 +1,5 @@
 import React from 'react';
+import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem, Spinner, ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
 import {
     Accordion,
@@ -19,6 +20,7 @@ import {
                         <h1>{props.title}</h1>
                     </div>
                     <h5>Elements of User Interface</h5>
+
                     <hr/>
                     <ul>
                       <li><b>Input Controls:</b> checkboxes, radio buttons, dropdown lists, list boxes, buttons, toggles, text fields, date field.</li>
@@ -116,14 +118,10 @@ import {
     <div class="col-6">The dropdown button consists of a button that when clicked displays a drop-down list of mutually exclusive items.</div>
     <div class="col-4">
     <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown Button
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-    <button class="dropdown-item" type="button">Action</button>
-    <button class="dropdown-item" type="button">Another action</button>
-    <button class="dropdown-item" type="button">Something else here</button>
-  </div>
+
+
+
+
 </div>
     </div>
 </div>
@@ -185,7 +183,20 @@ import {
                 <div class="col-2">Breadcrumb</div>
                 <div class="col-6">Breadcrumbs allow users to identify their current location within the system by providing a clickable trail of proceeding pages to navigate by.</div>
                 <div class="col-4">
-
+                <div>
+      <Breadcrumb>
+        <BreadcrumbItem active>Home</BreadcrumbItem>
+      </Breadcrumb>
+      <Breadcrumb>
+        <BreadcrumbItem><a href="#">Home</a></BreadcrumbItem>
+        <BreadcrumbItem active>Library</BreadcrumbItem>
+      </Breadcrumb>
+      <Breadcrumb>
+        <BreadcrumbItem><a href="#">Home</a></BreadcrumbItem>
+        <BreadcrumbItem><a href="#">Library</a></BreadcrumbItem>
+        <BreadcrumbItem active>Data</BreadcrumbItem>
+      </Breadcrumb>
+    </div>
                 </div>
             </div>
 
@@ -194,7 +205,35 @@ import {
                 <div class="col-2">Pagination</div>
                 <div class="col-6">Pagination divides content up between pages, and allows users to skip between pages or go in order through the content.</div>
                 <div class="col-4">
-
+                <Pagination size="sm" aria-label="Page navigation example">
+      <PaginationItem>
+          <PaginationLink first href="#" />
+        </PaginationItem>
+        <PaginationItem>
+          <PaginationLink previous href="#" />
+        </PaginationItem>
+        <PaginationItem>
+          <PaginationLink href="#">
+            1
+          </PaginationLink>
+        </PaginationItem>
+        <PaginationItem>
+          <PaginationLink href="#">
+            2
+          </PaginationLink>
+        </PaginationItem>
+        <PaginationItem>
+          <PaginationLink href="#">
+            3
+          </PaginationLink>
+        </PaginationItem>
+        <PaginationItem>
+          <PaginationLink next href="#" />
+        </PaginationItem>
+        <PaginationItem>
+          <PaginationLink last href="#" />
+        </PaginationItem>
+      </Pagination>
                 </div>
             </div>
 

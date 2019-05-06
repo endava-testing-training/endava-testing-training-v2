@@ -341,18 +341,21 @@ NOT Country='Germany' AND NOT Country='USA';
 							<p>The ORDER BY keyword is used to sort the result-set in ascending or descending order.</p>
 							<p>The ORDER BY keyword sorts the records in ascending order by default. To sort the records in descending order, use the DESC keyword.</p>
 
-							<h5>ORDER BY Syntax</h5>
+							<h4>ORDER BY Syntax</h4>
 							<code>
                 SELECT column1, column2, ...<br/>
 					FROM table_name<br/>
 					ORDER BY column1, column2, ... ASC | DESC;</code>
 							
-							<h2>ORDER BY Example</h2>
+							<h4>ORDER BY Example</h4>
 							<p>The following SQL statement selects all customers from the "Customers" table,	sorted by the "Country" column:</p>
 							<h5>Example</h5>
-							<code><span>SELECT</span> * <span>FROM</span> Customers
-					<span>ORDER</span> <span>BY</span> Country;</code>
-							<h2>ORDER BY DESC Example</h2>
+						
+							<code>
+								SELECT * FROM Customers<br/>
+				ORDER BY Country;
+				</code>
+							<h4>ORDER BY DESC Example</h4>
 							<p>The following SQL statement selects all customers from the "Customers" table,	sorted DESCENDING by the "Country" column:</p>
 							<h5>Example</h5>
 							<code><span>SELECT</span> * <span>FROM</span> Customers<span>ORDER</span> <span>BY</span> Country <span>DESC</span>; </code>
@@ -360,7 +363,7 @@ NOT Country='Germany' AND NOT Country='USA';
 							<h4>ORDER BY Several Columns Example</h4>
 							<p>The following SQL statement selects all customers from the "Customers" table,sorted by the "Country" and the "CustomerName" column. This means that it orders
 								by Country, but if some rows have the same Country, it orders them by	CustomerName:</p>
-							<h3>Example</h3>
+							<h5>Example</h5>
 							<code>
                 <span>SELECT</span> * <span>FROM</span> Customers <span>ORDER</span> <span>BY</span> Country, CustomerName;
                 </code>
@@ -391,11 +394,11 @@ NOT Country='Germany' AND NOT Country='USA';
 									during record creation!</i></p>
 							<hr />
 
-							<h2>How to Test for NULL Values?</h2>
+							<h4>How to Test for NULL Values?</h4>
 							<p>It is not possible to test for NULL values with comparison operators, such as =, &lt;, or &lt;&gt;.</p>
 							<p>We will have to use the IS NULL and IS NOT NULL operators instead.</p>
 
-							<h3>IS NULL Syntax</h3>
+							<h4>IS NULL Syntax</h4>
 
 							<code>
               <span>SELECT</span> <em>column_names<br /></em><span>FROM</span> <em>table_name</em><br />
@@ -415,7 +418,7 @@ NOT Country='Germany' AND NOT Country='USA';
 							<h3>Example</h3>
 							<code><span>SELECT</span> CustomerName, ContactName, Address<br /><span>FROM</span> Customers<br /><span>WHERE</span> Address <span>IS</span> <span>NULL</span>;</code>
 							<br />
-							<br />
+						
 							<p><i><b>Tip:</b> Always use IS NULL to look for NULL values.</i></p>
 
 							<hr />
@@ -426,7 +429,10 @@ NOT Country='Germany' AND NOT Country='USA';
 							<p>The following SQL lists all customers with a value in the "Address" field:</p>
 							<h5>Example</h5>
 							<code>
-								SELECT CustomerName, ContactName, Address<br /><span>FROM</span> Customers<br /><span>WHERE</span> Address <span>IS</span> <span>NOT</span> <span>NULL</span>;</code>
+								SELECT CustomerName, ContactName, Address<br />
+								FROM Customers<br />
+								WHERE Address IS NOT NULL;
+							</code>
 					
             </AccordionItemPanel>
           </AccordionItem>
@@ -447,7 +453,7 @@ NOT Country='Germany' AND NOT Country='USA';
 								DELETE FROM table_name WHERE condition;
 								</code>
 							<br />
-							<br />
+					
 							<p><i><strong>Note:</strong> Be careful when deleting records in a table! Notice the WHERE clause in the
 									DELETE statement.	The WHERE clause specifies which record(s) should be deleted. If
 									you omit the WHERE clause, all records in the table will be deleted!</i></p>
@@ -463,7 +469,7 @@ NOT Country='Germany' AND NOT Country='USA';
 					WHERE CustomerName='Alfreds Futterkiste';
 					</code>
 							<br />
-							<br />
+					
 							<p>The "Customers" table will now look like this:</p>
 							<img src={SqlDelete}></img>
 							<hr />
@@ -473,7 +479,7 @@ NOT Country='Germany' AND NOT Country='USA';
 
 							<code>DELETE FROM table_name;</code>
 							<br />
-							<br />
+						
 							<p>The following SQL statement deletes all rows in the "Customers" table, without deleting the table:</p>
 							<h3>Example</h3>
 							<code>DELETE FROM Customers;</code>
@@ -486,8 +492,7 @@ NOT Country='Germany' AND NOT Country='USA';
                     </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-       
-				
+       				
 							<h4>The SQL COUNT(), AVG() and SUM() Functions</h4>
 							<p>The COUNT() function returns the number of rows that matches a specified criteria.</p>
 							<p>The AVG() function returns the average value of a numeric column.</p>
@@ -509,7 +514,7 @@ NOT Country='Germany' AND NOT Country='USA';
 					<span>FROM</span> <em>table_name</em><br />
 					<span>WHERE</span> <em>condition</em>; </code>
 							<br />
-							<br />
+						
 							<p><i><strong>Note:</strong> NULL values are ignored.</i></p>
 
 							<hr />
@@ -518,9 +523,12 @@ NOT Country='Germany' AND NOT Country='USA';
 							<p>The following SQL statement finds the number of products:</p>
 							<h5>Example</h5>
 
-							<code> <span>SELECT</span> <span>COUNT</span>(ProductID)<br /><span>FROM</span> Products;</code>
+							<code>
+								SELECT COUNT (ProductID)<br />
+								FROM Products;
+							</code>
 							<br />
-							<br />
+			
 							<p>Table (example):</p>
 							<img src={SqlAvg}></img>
 							<hr />
@@ -555,10 +563,8 @@ NOT Country='Germany' AND NOT Country='USA';
 							<p>Table (example):</p>
               <img src={SqlSum}></img>
 					
-
             </AccordionItemPanel>
           </AccordionItem>
-
 
           <AccordionItem>
             <AccordionItemHeading>
@@ -586,7 +592,7 @@ NOT Country='Germany' AND NOT Country='USA';
 					<span>FROM</span> <em>table_name</em><br />
 					<span>WHERE</span> <em>columnN</em> <span>LIKE</span> <em>pattern</em>; </code>
 							<br />
-							<br />
+		
 							<p><i><strong>Tip:</strong> You can also combine any number of conditions using AND or OR operators.</i>
 							</p>
 
@@ -606,44 +612,40 @@ NOT Country='Germany' AND NOT Country='USA';
               <span>LIKE</span> <span>'a%'</span>;
               </code>
 							<br />
-							<br />
+		
 							<p>The following SQL statement selects all customers with a CustomerName ending with "a":</p>
 
-							<h3>Example</h3>
+							<h5>Example</h5>
 							<code>
                 <span>SELECT</span> * <span>FROM</span> Customers<br /><span>WHERE</span> CustomerName
                 <span>LIKE</span> <span>'%a'</span>;
                 </code>
 							<br />
-							<br />
 							<p>The following SQL statement selects all customers with a CustomerName that	have "or" in any position:</p>
 
-							<h3>Example</h3>
+							<h5>Example</h5>
 
 							<code> <span>SELECT</span> * <span>FROM</span> Customers<br /><span>WHERE</span> CustomerName <span>LIKE</span> <span>'%or%'</span>;</code>
 							<br />
-							<br />
 							<p>The following SQL statement selects all customers with a CustomerName that	have "r" in the second position:</p>
 
-							<h3>Example</h3>
+							<h5>Example</h5>
 							<code> <span>SELECT</span> * <span>FROM</span> Customers<br /><span>WHERE</span> CustomerName <span>LIKE</span> <span>'_r%'</span>;</code>
 							<br />
-							<br />
 							<p>The following SQL statement selects all customers with a CustomerName that	starts with "a" and are at least 3 characters in length:</p>
-							<h3>Example</h3>
+							<h5>Example</h5>
 							<code> <span>SELECT</span> * <span>FROM</span> Customers<br /><span>WHERE</span> CustomerName <span>LIKE</span> <span>'a_%_%'</span>; </code>
 							<br />
-							<br />
 							<p>The following SQL statement selects all customers with a ContactName that starts with "a" and ends with "o":</p>
-							<h3>Example</h3>
+							<h5>Example</h5>
 
 							<code> <span>SELECT</span> * <span>FROM</span> Customers<br /><span>WHERE</span> ContactName <span>LIKE</span> <span>'a%o'</span>; </code>
 
 							<br />
-							<br />
+					
 							<p>The following SQL statement selects all customers with a CustomerName that	does NOT start with "a":</p>
 
-							<h3>Example</h3>
+							<h5>Example</h5>
 
 							<code>
                 <span>SELECT</span> * <span>FROM</span> Customers<br /><span>WHERE</span> CustomerName <span>NOT</span> <span>LIKE</span> <span>'a%'</span>;
@@ -659,18 +661,16 @@ NOT Country='Germany' AND NOT Country='USA';
                     </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-
 					
-            <h2>The SQL IN Operator</h2>
+            <h4>The SQL IN Operator</h4>
 							<p>The IN operator allows you to specify multiple values in a WHERE clause.</p>
 							<p>The IN operator is a shorthand for multiple OR conditions.</p>
 
-							<h3>IN Syntax</h3>
+							<h5>IN Syntax</h5>
 
 							<code><span>SELECT</span> <em>column_name(s)</em><br />
 					<span>FROM</span> <em>table_name</em><br />
 					<span>WHERE</span> <em>column_name</em> <span>IN</span> (<em>value1</em>,<em> value2</em>, ...); </code>
-							<br />
 							<br />
 							<p>OR:</p>
 							<code><span>SELECT</span> <em>column_name(s)</em><br />
@@ -678,31 +678,29 @@ NOT Country='Germany' AND NOT Country='USA';
 					<span>WHERE</span> <em>column_name</em> <span>IN</span> (<em><span>SELECT</span> STATEMENT</em>); </code>
 							<hr />
 
-							<h2>IN Operator Examples</h2>
+							<h4>IN Operator Examples</h4>
 							<p>The following SQL statement selects all customers that are located in "Germany", "France"
 								and "UK":</p>
 
-							<h3>Example</h3>
+							<h5>Example</h5>
 
 							<code> <span>SELECT</span> * <span>FROM</span> Customers<br /><span>WHERE</span> Country <span>IN</span> (<span>'Germany'</span>, <span>'France'</span>, <span>'UK'</span>);
 					</code>
 							<br />
-							<br />
-							<p>The following SQL statement selects all customers that are NOT located in "Germany",
-								"France" or "UK":
+							<p>The following SQL statement selects all customers that are NOT located in "Germany",	"France" or "UK":
 							</p>
 
-							<h3>Example</h3>
+							<h5>Example</h5>
 
 							<code><span>SELECT</span> * <span>FROM</span> Customers<br />
 					<span>WHERE</span> Country <span>NOT</span> <span>IN</span> (<span>'Germany'</span>, <span>'France'</span>, <span>'UK'</span>);
 					</code>
 							<br />
-							<br />
+				
 							<p>The following SQL statement selects all customers that are from the same
 								countries as the suppliers:</p>
 
-							<h3>Example</h3>
+							<h5>Example</h5>
 
 							<code>
                 <span>SELECT</span> * <span>FROM</span> Customers<br /><span>WHERE</span> Country <span>IN</span>
@@ -718,28 +716,27 @@ NOT Country='Germany' AND NOT Country='USA';
             </AccordionItemHeading>
             <AccordionItemPanel>
         
-							<h2>The SQL BETWEEN Operator</h2>
-							<p>The BETWEEN operator selects values within a given range. The values can be numbers,	text, or dates.
-							</p>
-							<p>The BETWEEN operator is inclusive: begin and end values are included.&nbsp;</p>
-							<h3>BETWEEN Syntax</h3>
+							<h4>The SQL BETWEEN Operator</h4>
+							<p>The BETWEEN operator selects values within a given range. The values can be numbers,	text, or dates.</p>
+							<p>The BETWEEN operator is inclusive: begin and end values are included.</p>
+							<h5>BETWEEN Syntax</h5>
 
 							<code><span>SELECT</span> <em>column_name(s)</em><br />
 					<span>FROM</span> <em>table_name</em><br />
 					<span>WHERE</span> <em>column_name </em><span>BETWEEN</span> <em>value1</em> <span>AND</span> <em>value2;</em></code>
 
 							<hr />
-							<h3>Sample Table</h3>
+							<h5>Sample Table</h5>
 							<img src={SqlBetween}></img>
-							<h2>BETWEEN Example</h2>
+							<h4>BETWEEN Example</h4>
 							<p>The following SQL statement selects all products with a price BETWEEN 10 and 20:</p>
-							<h3>Example</h3>
+							<h5>Example</h5>
 
 							<code> <span>SELECT</span> * <span>FROM</span> Products<br /><span>WHERE</span> Price <span>BETWEEN</span> 10 <span>AND</span> 20;
 					 </code>
 							<hr />
 
-							<h2>NOT BETWEEN Example</h2>
+							<h4>NOT BETWEEN Example</h4>
 							<p>To display the products outside the range of the previous example, use NOT BETWEEN:</p>
 							<h3>Example</h3>
 
@@ -748,29 +745,32 @@ NOT Country='Germany' AND NOT Country='USA';
 
 							<hr />
 
-							<h2>BETWEEN with IN Example</h2>
+							<h4>BETWEEN with IN Example</h4>
 							<p>The following SQL statement selects all products with a price BETWEEN 10 and	20. In addition; do not show products with a CategoryID of 1,2, or 3:</p>
 
-							<h3>Example</h3>
+							<h5>Example</h5>
 
 							<code><span>SELECT</span> * <span>FROM</span> Products<br /><span>WHERE</span> (Price <span>BETWEEN</span> 10 <span>AND</span> 20)<br /><span>AND</span> <span>NOT</span> CategoryID <span>IN</span> (1,2,3);</code>
 
 							<hr />
 
-							<h2>BETWEEN Text Values Example</h2>
+							<h4>BETWEEN Text Values Example</h4>
 							<p>The following SQL statement selects all products with a ProductName BETWEEN 'Carnarvon	Tigers' and 'Mozzarella di Giovanni':</p>
 
-							<h3>Example</h3>
+							<h5>Example</h5>
 
-							<code><span>SELECT</span> * <span>FROM</span> Products<br /><span>WHERE</span> ProductName <span>BETWEEN</span> <span>'Carnarvon Tigers'</span> <span>AND</span> <span>'Mozzarella 
-					  di Giovanni'</span><br /><span>ORDER</span> <span>BY</span> ProductName;</code>
+							<code>
+								SELECT * FROM Products<br />
+								WHERE ProductName BETWEEN 'Carnarvon Tigers' AND 'Mozzarella di Giovanni'<br />
+						ORDER BY ProductName;
+						</code>
 
 							<hr />
 
-							<h2>NOT BETWEEN Text Values Example</h2>
+							<h4>NOT BETWEEN Text Values Example</h4>
 							<p>The following SQL statement selects all products with a ProductName NOT BETWEEN 'Carnarvon Tigers' and 'Mozzarella di Giovanni':</p>
 
-							<h3>Example</h3>
+							<h5>Example</h5>
 
 							<code>
                 <span>SELECT</span> * <span>FROM</span> Products<br /><span>WHERE</span> ProductName <span>NOT</span>
@@ -780,23 +780,22 @@ NOT Country='Germany' AND NOT Country='USA';
 
 							<hr />
 
-							<h3>Other Sample Table</h3>
+							<h5>Other Sample Table</h5>
 							<img src={SqlBetweenTables}></img>
 
 							<h2>BETWEEN Dates Example</h2>
 							<p>The following SQL statement selects all orders with an OrderDate BETWEEN '01-July-1996' and '31-July-1996':</p>
 
-							<h3>Example</h3>
+							<h5>Example</h5>
 
 							<code>
-                <span>SELECT</span> * <span>FROM</span> Orders<br />
-                <span>WHERE</span> OrderDate <span>BETWEEN</span> #01/07/1996# <span>AND</span> #31/>07/1996#;
+                SELECT * FROM Orders<br />
+                WHERE OrderDate BETWEEN #01/07/1996# <span>AND</span> #31/>07/1996#;
 					</code>
-							<br />
 							<br />
 							<p>OR:</p>
 
-							<h3>Example</h3>
+							<h5>Example</h5>
 
 							<code>
                 <span>SELECT</span> * <span>FROM</span> Orders<br />
@@ -816,7 +815,7 @@ NOT Country='Germany' AND NOT Country='USA';
             <AccordionItemPanel>
 
 
-							<h2>SQL JOIN</h2>
+							<h4>SQL JOIN</h4>
 							<p>A JOIN clause is used to combine rows from two or more tables, based on a related column between them.</p>
 							<p>Let's look at a selection from the "Orders" table:</p>
 
@@ -828,19 +827,22 @@ NOT Country='Germany' AND NOT Country='USA';
               <img src={SqlJoin2}></img>
 							<br />
 							<br />
-							<p>Notice that the "CustomerID" column in the "Orders" table refers to the "CustomerID" in the "Customers" table. The relationship between the two tables above
-								is the "CustomerID" column.</p>
+							<p>Notice that the "CustomerID" column in the "Orders" table refers to the "CustomerID" in the "Customers" table. The relationship between the two tables above	is the "CustomerID" column.</p>
 							<p>Then, we can create the following SQL statement (that contains an INNER JOIN),	that selects records that have matching values in both tables:</p>
-							<h3>Example</h3>
+							<h5>Example</h5>
 
-							<code><span>SELECT</span> Orders.OrderID, Customers.CustomerName, Orders.OrderDate<br /><span>FROM</span> Orders<br /><span>INNER</span> <span>JOIN</span> Customers <span>ON</span> Orders.CustomerID=Customers.CustomerID;</code>
+							<code>
+								SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate<br />
+								FROM Orders<br />
+								INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+								</code>
 							<br />
-							<br />
+	
 							<p>and it will produce something like this:</p>
               <img src={SqlJoin3}></img>
 							<hr />
 
-							<h2>Different Types of SQL JOINs</h2>
+							<h4>Different Types of SQL JOINs</h4>
 							<p>Here are the different types of the JOINs in SQL:</p>
 							<ul>
 								<li><b>(INNER) JOIN</b>: Returns records that have matching values in both tables</li>
@@ -848,7 +850,7 @@ NOT Country='Germany' AND NOT Country='USA';
 								<li><b>RIGHT (OUTER) JOIN</b>: Return all records from the right table, and the matched records from the left table</li>
 								<li><b>FULL (OUTER) JOIN</b>: Return all records when there is a match in either left or right table</li>
 							</ul>
-							<img src={SqlJoin4}></img>
+							<img src={SqlJoin4} class="my-3"></img>
 				
             </AccordionItemPanel>
           </AccordionItem>
@@ -860,23 +862,23 @@ NOT Country='Germany' AND NOT Country='USA';
                     </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-            <h2>SQL INNER JOIN Keyword</h2>
+            <h4>SQL INNER JOIN Keyword</h4>
 							<p>The INNER JOIN keyword selects records that have matching values in both tables.</p>
 
-							<h3>INNER JOIN Syntax</h3>
+							<h5>INNER JOIN Syntax</h5>
 
 							<code>
-                <span>SELECT</span> <em>column_name(s)</em><br />
-				<span>FROM</span> <em>table1</em><br />
-				<span>INNER</span>
-        <span>JOIN</span> <em>table2<br /> </em><span>ON</span> <em>table1.column_name </em>=<em> table2.column_name</em>;
-				</code>
+							SELECT column_name(s)<br />
+							INNER JOIN table2<br />
+							ON table1.column_name = table2.column_name;<br />
+							</code>
+							
 							<br />
 							<br />
 							<img src={SqlInnerJoin1}></img>
 							<hr />
 
-							<h2>SQL INNER JOIN Example</h2>
+							<h4>SQL INNER JOIN Example</h4>
 
 							<p>Below is a selection from the "Orders" table:</p>
               <img src={SqlInnerJoin2}></img>
@@ -888,19 +890,27 @@ NOT Country='Germany' AND NOT Country='USA';
 							<br />
 							<p>The following SQL statement selects all orders with customer information:</p>
 
-							<code> <span>SELECT</span> Orders.OrderID, Customers.CustomerName<br /><span>FROM</span> Orders<br /><span>INNER</span> <span>JOIN</span> Customers <span>ON</span> Orders.CustomerID = Customers.CustomerID; </code>
+							<code>
+								SELECT Orders.OrderID, Customers.CustomerName<br />
+								FROM Orders<br />
+								INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+								</code>
 							<br />
-							<br />
-							<p><i><strong>Note:</strong> The INNER JOIN keyword selects all rows from both tables as long as there is a match between the columns. If there are records in the
-									"Orders" table that do not have matches in "Customers", these orders will not be shown!</i></p>
+			
+							<p><i><strong>Note:</strong> The INNER JOIN keyword selects all rows from both tables as long as there is a match between the columns. If there are records in the "Orders" table that do not have matches in "Customers", these orders will not be shown!</i></p>
 							<hr />
 
-							<h2>&nbsp;JOIN Three Tables</h2>
+							<h4>JOIN Three Tables</h4>
 							<p>The following SQL statement selects all orders with customer and shipper information:</p>
 
-							<h3>Example</h3>
+							<h5>Example</h5>
 
-							<code><span>SELECT</span> Orders.OrderID, Customers.CustomerName, Shippers.ShipperName<br /><span>FROM</span>((Orders<br /><span>INNER</span> <span>JOIN</span> Customers <span>ON</span> Orders.CustomerID = Customers.CustomerID)<br /><span>INNER</span> <span>JOIN</span> Shippers <span>ON</span> Orders.ShipperID = Shippers.ShipperID); </code>
+							<code>
+								SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperName<br />
+								FROM ((Orders<br />
+								INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID)<br />
+								INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID);
+								</code>
 					
 				
             </AccordionItemPanel>
@@ -913,24 +923,24 @@ NOT Country='Germany' AND NOT Country='USA';
             </AccordionItemHeading>
             <AccordionItemPanel>
        						
-				
-            <h2>SQL LEFT JOIN Keyword</h2>
-							<p>The LEFT JOIN keyword returns all records from the left table (table1), and the
-								matched records from the right table (table2). The result is NULL from the right side,
-								if there is no match.</p>
+				      <h4>SQL LEFT JOIN Keyword</h4>
+							<p>The LEFT JOIN keyword returns all records from the left table (table1), and the matched records from the right table (table2). The result is NULL from the right side,	if there is no match.</p>
 
-							<h3>LEFT JOIN Syntax</h3>
+							<h5>LEFT JOIN Syntax</h5>
 
-							<code><span>SELECT</span> <em>column_name(s)</em><br />
-				<span>FROM</span> <em>table1</em><br />
-				<span>LEFT</span> <span>JOIN</span> <em>table2<br /> </em><span>ON</span> <em>table1.column_name </em>=<em> table2.column_name</em>;</code>
+							<code>
+								SELECT column_name(s)<br />
+				FROM table1<br />
+				LEFT JOIN table2<br />
+				ON table1.column_name = table2.column_name;
+				</code>
 							<br />
-							<br />
+							
 							<p><i><b>Note:</b> In some databases LEFT JOIN is called LEFT OUTER JOIN.</i></p>
 							<img src={SqlLeftJoin1}></img>
 							<hr />
 
-							<h2>SQL LEFT JOIN Example</h2>
+							<h4>SQL LEFT JOIN Example</h4>
 
 							<p>Below is a selection from the "Customers" table:</p>
 							<img src={SqlLeftJoin2}></img>
@@ -942,12 +952,13 @@ NOT Country='Germany' AND NOT Country='USA';
 							<br />
 							<p>The following SQL statement will select all customers, and any orders they might have:</p>
 
-							<code> <span>SELECT</span> Customers.CustomerName, Orders.OrderID<br />
-              <span>FROM</span> Customers<br /><span>LEFT</span>
-              <span>JOIN</span> Orders
-				 <span>ON</span> Customers.CustomerID = Orders.CustomerID<br /><span>ORDER</span>
-         <span>BY</span> Customers.CustomerName;</code>
-							<br />
+							<code>
+								SELECT Customers.CustomerName, Orders.OrderID<br />
+              FROM Customers<br />
+							LEFT JOIN Orders<br />
+				 ON Customers.CustomerID = Orders.CustomerID<br />
+				 ORDER BY Customers.CustomerName;
+				 </code>
 							<br />
 							<p><i><strong>Note:</strong> The LEFT JOIN keyword returns all records from the 	left table (Customers), even if there are no matches in the right table	(Orders).</i></p>
 		
@@ -962,40 +973,40 @@ NOT Country='Germany' AND NOT Country='USA';
                     </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-            <h2>SQL RIGHT JOIN Keyword</h2>
+            <h4>SQL RIGHT JOIN Keyword</h4>
 							<p>The RIGHT JOIN keyword returns all records from the right table (table2), and the matched
-								records from
-								the left table (table1). The result is NULL from the left side, when there is no match.
+								records from the left table (table1). The result is NULL from the left side, when there is no match.
 							</p>
 
-							<h3>Right JOIN Syntax</h3>
+							<h5>Right JOIN Syntax</h5>
 
-							<code><span>SELECT</span> <em>column_name(s)</em><br />
-				<span>FROM</span> <em>table1</em><br />
-				<span>RIGHT</span> <span>JOIN</span> <em>table2<br /> </em><span>ON</span> <em>table1.column_name </em>=<em> table2.column_name</em>; </code>
-							<br />
-							<br />
+							<code>
+								SELECT column_name(s)<br />
+				FROM table1<br />
+				RIGHT JOIN table2<br />
+				ON table1.column_name = table2.column_name;
+				</code>
+						
 							<p><i><b>Note:</b> In some databases RIGHT JOIN is called RIGHT OUTER JOIN.</i></p>
-							<img src={SqlRightJoin1}></img>
+							<img src={SqlRightJoin1} class="my-3"></img>
 							<hr />
 
-							<h2>SQL RIGHT JOIN Example</h2>
+							<h4>SQL RIGHT JOIN Example</h4>
 
 							<p>Below is a selection from the "Orders" table:</p>
-							<img src={SqlRightJoin2}></img>
-							<br />
-							<br />
+							<img src={SqlRightJoin2} class="my-3"></img>
 							<p>And a selection from the "Employees" table:</p>
-							<img src={SqlRightJoin3}></img>
-							<br />
-							<br />
-							<p>The following SQL statement will return all employees, and any orders they might have
-								placed:</p>
+							<img src={SqlRightJoin3} class="my-3"></img>
+													
+							<p>The following SQL statement will return all employees, and any orders they might have	placed:</p>
 
-							<code><span>SELECT</span> Orders.OrderID, Employees.LastName, Employees.FirstName<br /><span>FROM</span> Orders<br /><span>RIGHT</span> <span>JOIN</span> Employees
-				 <span>ON</span> Orders.EmployeeID = Employees.EmployeeID<br /><span>ORDER</span> <span>BY</span> Orders.OrderID;</code>
-							<br />
-							<br />
+							<code>
+							SELECT Orders.OrderID, Employees.LastName, Employees.FirstName<br />
+							FROM Orders<br />
+							RIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID<br />
+							ORDER BY Orders.OrderID;
+							</code>
+						
 							<p><i><strong>Note:</strong> The RIGHT JOIN keyword returns all records from the right table (Employees),	even if there are no matches in the left table (Orders).</i></p>
 													
 				            </AccordionItemPanel>
@@ -1007,40 +1018,37 @@ NOT Country='Germany' AND NOT Country='USA';
                     </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-            <h2>SQL FULL OUTER JOIN Keyword</h2>
+            <h4>SQL FULL OUTER JOIN Keyword</h4>
 							<p>The FULL OUTER JOIN keyword return all records when there is a match in either left (table1) or right (table2) table records.</p>
 							<p><i><strong>Note:</strong> FULL OUTER JOIN can potentially return very large result-sets!</i></p>
 
-							<h3>FULL OUTER JOIN Syntax</h3>
+							<h5>FULL OUTER JOIN Syntax</h5>
 							<code>
-                <span>SELECT</span> <em>column_name(s)</em><br /><span>FROM</span>
-                <em>table1</em><br /><span>FULL</span> <span>OUTER</span> <span>JOIN</span> <em>table2<br /> </em><span>ON</span>
-                <em>table1.column_name </em>=<em> table2.column_name</em>; </code>
-							<br />
-							<br />
-							<img src={SqlFullJoin1}></img>
-							<hr />
+                SELECTcolumn_name(s)<br />
+								FROM table1<br />
+								FULL OUTER JOIN table2<br />
+								 ON table1.column_name = table2.column_name;
+								 </code>
+						
+							<img src={SqlFullJoin1} class="my-3"></img>
+							
 
-							<h2>SQL FULL OUTER JOIN Example</h2>
+							<h4>SQL FULL OUTER JOIN Example</h4>
 
 							<p>Below is a selection from the "Customers" table:</p>
-							<img src={SqlFullJoin2}></img>
-							<br />
-							<br />
+							<img src={SqlFullJoin2} class="my-3"></img>
 							<p>And a selection from the "Orders" table:</p>
-							<img src={SqlFullJoin3}></img>
-							<br />
-							<br />
+							<img src={SqlFullJoin3} class="my-3"></img>
 							<p>The following SQL statement selects all customers, and all orders:</p>
 
-							<code><span>SELECT</span> Customers.CustomerName, Orders.OrderID<br />
-				<span>FROM</span> Customers<br />
-				<span>FULL</span> <span>OUTER</span> <span>JOIN</span> Orders
-				<span>ON</span> Customers.CustomerID=Orders.CustomerID<br />
-				ORDER <span>BY</span> Customers.CustomerName;
+							<code>SELECT Customers.CustomerName, Orders.OrderID<br />
+				FROM Customers<br />
+				FULL OUTER JOIN Orders
+				ON Customers.CustomerID=Orders.CustomerID<br />
+				ORDER BY Customers.CustomerName;
         </code>
 							<br />
-							<br />
+				
 							<p>A selection from the result set may look like this:</p>
 							<img src={SqlFullJoin4}></img>
 					
@@ -1053,74 +1061,75 @@ NOT Country='Germany' AND NOT Country='USA';
                     </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-            <h2>SQL Comments</h2>
+            <h4>SQL Comments</h4>
 							<p>Comments are used to explain sections of SQL statements, or to prevent execution of SQL statements.</p>
-							<br />
-
+						
 							<p><i><strong>Note: The examples in this chapter will not work in Firefox and Microsoft Edge!</strong></i></p>
 							<p><i>Comments are not supported in Microsoft Access databases. Firefox and Microsoft Edge are using Microsoft Access database in our examples.</i></p>
 
-
 							<hr />
-							<h2>Single Line Comments</h2>
+							<h4>Single Line Comments</h4>
 							<p>Single line comments start with --.</p>
 							<p>Any text between -- and the end of the line will be ignored (will not be executed).</p>
-							<h3>Examples:</h3>
+							<h5>Examples:</h5>
 							<p>The following example uses a single-line comment as an explanation:</p>
 
-							<code><span>--Select all:<br /></span>
-				<span>SELECT</span> * <span>FROM</span> Customers;</code>
+							<code>
+								--Select all:<br />
+				SELECT * FROM Customers;
+				</code>
 							<br />
-							<br />
+						
 							<p>The following example uses a single-line comment to ignore the end of a line:</p>
 
-							<code><span>SELECT</span> * <span>FROM</span> Customers <span>-- WHERE City='Berlin';
-				 </span></code>
+							<code>
+								SELECT * FROM Customers -- WHERE City='Berlin';
+				 </code>
 							<br />
-							<br />
+					
 							<p>The following example uses a single-line comment to ignore a statement:</p>
 
-							<code><span>--SELECT * FROM Customers;<br /></span>
-				<span>SELECT</span> * <span>FROM</span> Products;</code>
+							<code>--SELECT * FROM Customers;<br />
+				SELECT * FROM Products;</code>
 							<hr />
 
-							<h2>Multi-line Comments</h2>
+							<h4>Multi-line Comments</h4>
 							<p>Multi-line comments start with /* and end with */.</p>
 							<p>Any text between /* and */ will be ignored.</p>
 
-							<h3>Examples:</h3>
+							<h5>Examples:</h5>
 							<p>The following example uses a multi-line comment as an explanation:</p>
-							<span>/*Select all the columns<br />
+							/*Select all the columns<br />
 								of all the records<br />
-								in the Customers table:*/</span><br />
-							<code><span>SELECT</span> * <span>FROM</span> Customers;</code>
+								in the Customers table:*/<br />
+							<code>SELECT * FROM Customers;</code>
 							<br />
-							<br />
+						
 							<p>The following example uses a multi-line comment to ignore many statements:</p>
 
 							<code>
-                <span>/*SELECT * FROM Customers;<br />
+                /*SELECT * FROM Customers;<br />
 				SELECT * FROM Products;<br />
 				SELECT * FROM Orders;<br />
-				SELECT * FROM Categories;*/</span><br />
-				<span>SELECT</span> * <span>FROM</span> Suppliers;
+				SELECT * FROM Categories;*/<br />
+				SELECT * FROM Suppliers;
         </code>
 							<br />
-							<br />
+							
 							<p>To ignore just a part of a statement, also use the /* */ comment.</p>
 							<p>The following example uses a comment to ignore part of a line:</p>
 
-							<code><span>SELECT</span> CustomerName, <span>/*City,*/</span> Country <span>FROM</span> Customers;</code>
+							<code>SELECT CustomerName, /*City,*/ Country<br />
+							 FROM Customers;</code>
 							<br />
-							<br />
+		
 							<p>The following example uses a comment to ignore part of a statement:</p>
 							<code>
-                <span>SELECT</span> * <span>FROM</span> Customers <span>WHERE</span> (CustomerName <span>LIKE</span>
-                <span>'L%'</span><br />
-				<span>OR</span> CustomerName <span>LIKE</span> <span>'R%'</span> <span>/*OR CustomerName LIKE 'S%'<br />
-				OR CustomerName LIKE 'T%'*/</span> <span>OR</span> CustomerName <span>LIKE</span> <span>'W%'</span>)<br />
-				<span>AND</span> Country=<span>'USA'</span><br />
-				<span>ORDER</span> <span>BY</span> CustomerName;
+                SELECT * FROM Customers WHERE (CustomerName LIKE 'L%'<br />
+				OR CustomerName LIKE 'R%' /*OR CustomerName LIKE 'S%'<br />
+				OR CustomerName LIKE 'T%'*/OR CustomerName LIKE'W%'<br />
+				AND Country='USA'<br />
+				ORDER BY CustomerName;
         </code>
             </AccordionItemPanel>
           </AccordionItem>
