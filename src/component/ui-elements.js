@@ -16,10 +16,36 @@ import {
             <main class="page-content" aria-label="Content">
                 <div class="wrapper">
                     <div class="typewriter rounded">
-                        <h2>Endava</h2>
-                        <h1>{props.title}</h1>
+                        <h2>{props.title}</h2>
+                       
+                        <div class="animate title">
+        <span>e</span>
+        <span>l</span>
+        <span>e</span>
+        <span>m</span>
+        <span>e</span>
+        <span>n</span>
+        <span>t</span>
+        <span>s</span>&nbsp;
+        <span>o</span>
+        <span>f</span>&nbsp;
+        <span>u</span>
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>&nbsp;
+        <span>i</span>
+        <span>n</span>
+        <span>t</span>
+        <span>e</span>
+        <span>r</span>
+        <span>f</span>
+        <span>a</span>
+        <span>c</span>
+        <span>e</span>
+        </div>
+
                     </div>
-                    <h5>Elements of User Interface</h5>
+                   
 
                     <hr/>
                     <ul>

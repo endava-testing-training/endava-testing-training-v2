@@ -10,8 +10,28 @@ const AboutUs = (props) => (
 
 
                     <div class="typewriter rounded">
-                        <h2>Home</h2>
-                        <h1>{props.title}</h1>
+                        <h2>{props.title}</h2>
+                        <div class="animate title">
+				
+                <span>w</span>
+                <span>h</span>
+                <span>o</span>&nbsp;
+                <span>w</span>
+                <span>e</span>&nbsp;
+                <span>a</span>
+                <span>r</span>
+                <span>e</span>
+                <span>?</span>&nbsp;
+                <span>w</span>
+                <span>h</span>
+                <span>a</span>
+                <span>t</span>&nbsp;
+                <span>w</span>
+                <span>e</span>&nbsp;
+                <span>d</span>
+                <span>o</span>
+                <span>?</span>
+            </div>
                     </div>
                     <p>Welcome, and first of all let us thank you for taking the time and showing interest in getting to know us!</p>
                     <p>We are just a bunch of testers working in the Management Testing Community who enjoy learning in a fun and practical way. That's kind of what we aim to do here.</p>

@@ -15,8 +15,34 @@ const TestGuide = (props) => (
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <div class="typewriter rounded">
-          <h2>Endava</h2>
-          <h1>{props.title}</h1>
+          <h2>{props.title}</h2>
+       
+          <div class="animate title">
+				
+        <span>b</span>
+        <span>a</span>
+        <span>s</span>
+        <span>i</span>
+        <span>c</span>&nbsp;
+        <span>t</span>
+        <span>e</span>
+        <span>s</span>
+        <span>t</span>
+        <span>i</span>
+        <span>n</span>
+        <span>g</span>&nbsp;
+        <span>c</span>
+        <span>h</span>
+        <span>e</span>
+        <span>c</span>
+        <span>k</span>
+        <span>l</span>
+        <span>i</span>
+        <span>s</span>
+        <span>t</span>
+  
+    </div>
+
         </div>
         <Accordion allowZeroExpanded >
           <AccordionItem>

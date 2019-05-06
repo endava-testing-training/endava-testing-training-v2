@@ -27,16 +27,16 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <EndavaNavbar />
-          <Route exact path="/home"             render={() => <Home title="Basic Testing Training" />} />
+          <Route exact path="/home"             render={() => <Home title="Home" />} />
           <Route exact path="/about-scrum"      render={() => <AboutScrum title="About Scrum" />} />
           <Route exact path="/agile"            render={() => <Agile title="12 Agile Principles" />} />
-          <Route exact path="/success"          render={() => <Success title="Success stories go here" />} />
-          <Route exact path="/about"            render={() => <AboutUs title="Who we are? What we do?" />} />
-          <Route exact path="/test-guide"       render={() => <TestGuide title="Basic testing checklist" />} />
-          <Route exact path="/ui-elements"      render={() => <UiElements title="User interface elements" />} />
+          <Route exact path="/success"          render={() => <Success title="Endava" />} />
+          <Route exact path="/about"            render={() => <AboutUs title="About us" />} />
+          <Route exact path="/test-guide"       render={() => <TestGuide title="Endava" />} />
+          <Route exact path="/ui-elements"      render={() => <UiElements title="Endava" />} />
           <Route exact path="/topics"           render={() => <Topics title="Topics about this training" />} />
-          <Route exact path="/introduction-erd" render={() => <IntroductionErd title="Introduction to ERD" />} />
-          <Route exact path="/introduction-sql" render={() => <IntroductionSql title="Introduction to SQL" />} />
+          <Route exact path="/introduction-erd" render={() => <IntroductionErd title="Endava" />} />
+          <Route exact path="/introduction-sql" render={() => <IntroductionSql title="Endava" />} />
           <EndavaFooter />
         </div>
       </BrowserRouter>

@@ -26,8 +26,28 @@ const IntroductionErd = (props) => (
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <div class="typewriter rounded">
-          <h2>Endava</h2>
-          <h1>{props.title}</h1>
+          <h2>{props.title}</h2>
+          <div class="animate title">
+				
+        <span>i</span>
+        <span>n</span>
+        <span>t</span>
+        <span>r</span>
+        <span>o</span>
+        <span>d</span>
+        <span>u</span>
+        <span>c</span>
+        <span>t</span>
+        <span>i</span>
+        <span>o</span>
+        <span>n</span>&nbsp;
+        <span>t</span>
+        <span>o</span>&nbsp;
+        <span>e</span>
+        <span>r</span>
+        <span>d</span>
+        
+      </div>
         </div>
 
         <h4 class="mb-3 font-italic">An entity relationship diagram (ERD), also known as an entity relationship model, is a graphical representation of an information system that depicts the relationships among people, objects, places, concepts or events within that system. An ERD is a data modeling echnique that can help define business processes and be used as the foundation for a relational database.</h4>

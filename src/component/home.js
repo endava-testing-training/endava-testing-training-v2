@@ -2,19 +2,49 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+{/*import homeImage         from '../images/home.jpg';*/} 
+
 const Home = (props) => (
 
     <div class="container">
-
+ {/*<img src={homeImage} class="d-block my-4 img-home"></img>*/}
         <main class="page-content" aria-label="Content">
             <div class="wrapper">
-                <div class="home">
+             
                                  
                     <div class="typewriter rounded">
-                        <h2>Home</h2>
-                        <h1>{props.title}</h1>
+                        <h2>{props.title}</h2>
+                       
+
+                        <div class="animate title">
+				
+                <span>b</span>
+                <span>a</span>
+                <span>s</span>
+                <span>i</span>
+                <span>c</span>&nbsp;
+                <span>t</span>
+                <span>e</span>
+                <span>s</span>
+                <span>t</span>
+                <span>i</span>
+                <span>n</span>
+                <span>g</span>&nbsp;
+                <span>t</span>
+                <span>r</span>
+                <span>a</span>
+                <span>i</span>
+                <span>n</span>
+                <span>i</span>
+                <span>n</span>
+                <span>g</span>
+          
+            </div>
+
+
                     </div>
                     <h2>Main Goals </h2>
+                   
                     <ul>
                         <li>Our purpose of this training is share and impart knowledge.</li>
                         <li>To familiarize the audience with the terminology used in the testing work.</li>
@@ -160,7 +190,7 @@ const Home = (props) => (
                         </li>
                         </ul>
                         </ul>
-  </div>
+
                 </div>
 
             </main>

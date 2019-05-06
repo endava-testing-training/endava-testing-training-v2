@@ -46,9 +46,32 @@ const IntroductionSql = (props) => (
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="typewriter rounded">
-          <h2>Endava</h2>
-          <h1>{props.title}</h1>
+      
+			  <div class="typewriter rounded">
+          <h2>{props.title}</h2>
+         
+			
+					<div class="animate title">
+				
+			<span>i</span>
+			<span>n</span>
+			<span>t</span>
+			<span>r</span>
+			<span>o</span>
+			<span>d</span>
+			<span>u</span>
+			<span>c</span>
+			<span>t</span>
+			<span>i</span>
+			<span>o</span>
+			<span>n</span>&nbsp;
+			<span>t</span>
+			<span>o</span>&nbsp;
+			<span>s</span>
+			<span>q</span><span>l</span>
+      
+		</div>
+
         </div>
 
         <h4 class="mb-3 font-italic">SQL is a standard language for storing, manipulating and retrieving data in databases.</h4>
