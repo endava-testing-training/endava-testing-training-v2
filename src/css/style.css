@@ -21,6 +21,11 @@ dl, ol, ul {
 	text-transform: uppercase;
 }
 
+p span {
+  color:  #de411b;
+  font-weight: bold;
+}
+
 .typewriter h2{
 	font-family: 'endava-font', sans-serif;
 	font-weight: 900;
