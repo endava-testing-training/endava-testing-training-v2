@@ -28,8 +28,8 @@ class App extends Component {
         <div className="App">
           <EndavaNavbar />
           <Route exact path="/home"             render={() => <Home title="Home" />} />
-          <Route exact path="/about-scrum"      render={() => <AboutScrum title="About Scrum" />} />
-          <Route exact path="/agile"            render={() => <Agile title="12 Agile Principles" />} />
+          <Route exact path="/about-scrum"      render={() => <AboutScrum title="Usefull links" />} />
+          <Route exact path="/agile"            render={() => <Agile title="Usefull links" />} />
           <Route exact path="/success"          render={() => <Success title="Endava" />} />
           <Route exact path="/about"            render={() => <AboutUs title="About us" />} />
           <Route exact path="/test-guide"       render={() => <TestGuide title="Endava" />} />
