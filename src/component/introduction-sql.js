@@ -42,39 +42,38 @@ import SqlFullJoin4     from '../images/IntroSQL/full_join1_SQL.png';
 
 const IntroductionSql = (props) => (
 
-  <div class="container">
+  <div className="container">
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+    <main className="page-content" aria-label="Content">
+      <div className="wrapper">
       
-			  <div class="typewriter rounded">
+			  <div className="typewriter rounded">
           <h2>{props.title}</h2>
-         
-			
-					<div class="animate title">
-				
-			<span>i</span>
-			<span>n</span>
-			<span>t</span>
-			<span>r</span>
-			<span>o</span>
-			<span>d</span>
-			<span>u</span>
-			<span>c</span>
-			<span>t</span>
-			<span>i</span>
-			<span>o</span>
-			<span>n</span>&nbsp;
-			<span>t</span>
-			<span>o</span>&nbsp;
-			<span>s</span>
-			<span>q</span><span>l</span>
       
-		</div>
+					<div className="animate title">
+				
+						<span>i</span>
+						<span>n</span>
+						<span>t</span>
+						<span>r</span>
+						<span>o</span>
+						<span>d</span>
+						<span>u</span>
+						<span>c</span>
+						<span>t</span>
+						<span>i</span>
+						<span>o</span>
+						<span>n</span>&nbsp;
+						<span>t</span>
+						<span>o</span>&nbsp;
+						<span>s</span>
+						<span>q</span><span>l</span>
+						
+					</div>
 
         </div>
 
-        <h4 class="mb-3 font-italic">SQL is a standard language for storing, manipulating and retrieving data in databases.</h4>
+        <h4 className="mb-3 font-italic">SQL is a standard language for storing, manipulating and retrieving data in databases.</h4>
         <hr />
     
         <Accordion allowZeroExpanded >
@@ -94,7 +93,7 @@ const IntroductionSql = (props) => (
 									International Organization for Standardization (ISO) in 1987.</li>
 							</ul>
 					
-							<h4 class="mt-3">What Can SQL do?</h4>
+							<h4 className="mt-3">What Can SQL do?</h4>
 
 							<ul>
 								<li>SQL can execute queries against a database</li>
@@ -109,7 +108,7 @@ const IntroductionSql = (props) => (
 								<li>SQL can set permissions on tables, procedures, and views</li>
 							</ul>
 					
-							<h4 class="mt-3">RDBMS</h4>
+							<h4 className="mt-3">RDBMS</h4>
 							<p>RDBMS stands for Relational Database Management System.</p>
 							<p>RDBMS is the basis for SQL, and for all modern database systems such as MS SQL Server,
 								IBM DB2, Oracle,
@@ -199,7 +198,7 @@ const IntroductionSql = (props) => (
 							<code>SELECT CustomerName, City<br/>
 							FROM Customers;</code>
 	
-							<img src={SqlSelect} class="my-3"></img>
+							<img src={SqlSelect} className="my-3"></img>
 							<h4>SELECT * Example</h4>
 							<p>The following SQL statement selects all the columns from the "Customers" table:</p>
 							<h5>Example</h5>
@@ -231,7 +230,7 @@ const IntroductionSql = (props) => (
 							<h5>Example</h5>
 							<code>SELECT * FROM Customers	WHERE Country='Mexico';</code>
 									
-							<img src={SqlWhere1} class="my-3"></img>
+							<img src={SqlWhere1} className="my-3"></img>
 					
 							<h4>Text Fields vs. Numeric Fields</h4>
 							<p>SQL requires single quotes around text values (most database systems will also allow double quotes).</p>
@@ -240,7 +239,7 @@ const IntroductionSql = (props) => (
 							<code>SELECT * FROM Customers<br/>
                         	WHERE CustomerID=1;
 												</code>
-				                <img src={SqlWhere2} class="my-3"></img>
+				                <img src={SqlWhere2} className="my-3"></img>
 				
 							<h4>Operators in The WHERE Clause</h4>
 							<p>The following operators can be used in the WHERE clause:</p>
@@ -873,7 +872,7 @@ NOT Country='Germany' AND NOT Country='USA';
 								<li><b>RIGHT (OUTER) JOIN</b>: Return all records from the right table, and the matched records from the left table</li>
 								<li><b>FULL (OUTER) JOIN</b>: Return all records when there is a match in either left or right table</li>
 							</ul>
-							<img src={SqlJoin4} class="my-3"></img>
+							<img src={SqlJoin4} className="my-3"></img>
 				
             </AccordionItemPanel>
           </AccordionItem>
@@ -1011,15 +1010,15 @@ NOT Country='Germany' AND NOT Country='USA';
 				</code>
 						
 							<p><i><b>Note:</b> In some databases RIGHT JOIN is called RIGHT OUTER JOIN.</i></p>
-							<img src={SqlRightJoin1} class="my-3"></img>
+							<img src={SqlRightJoin1} className="my-3"></img>
 							<hr />
 
 							<h4>SQL RIGHT JOIN Example</h4>
 
 							<p>Below is a selection from the "Orders" table:</p>
-							<img src={SqlRightJoin2} class="my-3"></img>
+							<img src={SqlRightJoin2} className="my-3"></img>
 							<p>And a selection from the "Employees" table:</p>
-							<img src={SqlRightJoin3} class="my-3"></img>
+							<img src={SqlRightJoin3} className="my-3"></img>
 													
 							<p>The following SQL statement will return all employees, and any orders they might have	placed:</p>
 
@@ -1053,23 +1052,23 @@ NOT Country='Germany' AND NOT Country='USA';
 								 ON table1.column_name = table2.column_name;
 								 </code>
 						
-							<img src={SqlFullJoin1} class="my-3"></img>
+							<img src={SqlFullJoin1} className="my-3"></img>
 							
-
 							<h4>SQL FULL OUTER JOIN Example</h4>
 
 							<p>Below is a selection from the "Customers" table:</p>
-							<img src={SqlFullJoin2} class="my-3"></img>
+							<img src={SqlFullJoin2} className="my-3"></img>
 							<p>And a selection from the "Orders" table:</p>
-							<img src={SqlFullJoin3} class="my-3"></img>
+							<img src={SqlFullJoin3} className="my-3"></img>
 							<p>The following SQL statement selects all customers, and all orders:</p>
 
-							<code>SELECT Customers.CustomerName, Orders.OrderID<br />
-				FROM Customers<br />
-				FULL OUTER JOIN Orders
-				ON Customers.CustomerID=Orders.CustomerID<br />
-				ORDER BY Customers.CustomerName;
-        </code>
+							<code>
+							SELECT Customers.CustomerName, Orders.OrderID<br />
+							FROM Customers<br />
+							FULL OUTER JOIN Orders<br />
+							ON Customers.CustomerID=Orders.CustomerID<br />
+							ORDER BY Customers.CustomerName;
+							</code>
 							<br />
 				
 							<p>A selection from the result set may look like this:</p>

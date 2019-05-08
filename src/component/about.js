@@ -2,36 +2,35 @@ import React from 'react';
 
 const AboutUs = (props) => (
 
-    <div class="container">
+    <div className="container">
 
-        <main class="page-content" aria-label="Content">
-            <div class="wrapper">
-                <div class="home">
+        <main className="page-content" aria-label="Content">
+            <div className="wrapper">
+                <div className="home">
 
-
-                    <div class="typewriter rounded">
+                    <div className="typewriter rounded">
                         <h2>{props.title}</h2>
-                        <div class="animate title">
+                        <div className="animate title">
 				
-                <span>w</span>
-                <span>h</span>
-                <span>o</span>&nbsp;
-                <span>w</span>
-                <span>e</span>&nbsp;
-                <span>a</span>
-                <span>r</span>
-                <span>e</span>
-                <span>?</span>&nbsp;
-                <span>w</span>
-                <span>h</span>
-                <span>a</span>
-                <span>t</span>&nbsp;
-                <span>w</span>
-                <span>e</span>&nbsp;
-                <span>d</span>
-                <span>o</span>
-                <span>?</span>
-            </div>
+                            <span>w</span>
+                            <span>h</span>
+                            <span>o</span>&nbsp;
+                            <span>w</span>
+                            <span>e</span>&nbsp;
+                            <span>a</span>
+                            <span>r</span>
+                            <span>e</span>
+                            <span>?</span>&nbsp;
+                            <span>w</span>
+                            <span>h</span>
+                            <span>a</span>
+                            <span>t</span>&nbsp;
+                            <span>w</span>
+                            <span>e</span>&nbsp;
+                            <span>d</span>
+                            <span>o</span>
+                            <span>?</span>
+                        </div>
                     </div>
                     <p>Welcome, and first of all let us thank you for taking the time and showing interest in getting to know us!</p>
                     <p>We are just a bunch of testers working in the Management Testing Community who enjoy learning in a fun and practical way. That's kind of what we aim to do here.</p>
@@ -44,10 +43,8 @@ const AboutUs = (props) => (
                     <p>So this is just a sneak peak of what will be a much larger project we will all benefit from.</p>
                     <p>It was a pleasure to have you around and we hope that if you're interested in sharing, learning or taking part by any means, please do. We like to think we are a quite warm and friendly team, and hopefully so will you.</p>
                     <p>Have a nice day! :)</p>
-                    <p class="float-right">Management Testing Community</p>
+                    <p className="float-right">Management Testing Community</p>
                     <p>Gabriel Giri Fernando Uranga Lucía G Evelin Mena Carla Passaro Cintia Hetzer Andrea Sabella Martín Zapata</p>
-
-<hr />
 
                 </div>
             </div>

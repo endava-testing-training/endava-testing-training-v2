@@ -2,11 +2,11 @@ import React from 'react';
 
 const AboutScrum = (props) => (
 
-    <div class="container">
+    <div className="container">
 
-        <main class="page-content" aria-label="Content">
-            <div class="wrapper">
-                <div class="typewriter rounded">
+        <main className="page-content" aria-label="Content">
+            <div className="wrapper">
+                <div className="typewriter rounded">
                     <h2>{props.title}</h2>
                    
                     <div class="animate title">

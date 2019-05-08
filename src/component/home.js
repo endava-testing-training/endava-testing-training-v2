@@ -2,48 +2,43 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-{/*import homeImage         from '../images/home.jpg';*/} 
-
 const Home = (props) => (
 
-    <div class="container">
- {/*<img src={homeImage} class="d-block my-4 img-home"></img>*/}
-        <main class="page-content" aria-label="Content">
-            <div class="wrapper">
-             
+    <div className="container">
+
+        <main className="page-content" aria-label="Content">
+            <div className="wrapper">
                                  
-                    <div class="typewriter rounded">
+                    <div className="typewriter rounded">
                         <h2>{props.title}</h2>
-                       
-
-                        <div class="animate title">
+        
+                        <div className="animate title">
 				
-                <span>b</span>
-                <span>a</span>
-                <span>s</span>
-                <span>i</span>
-                <span>c</span>&nbsp;
-                <span>t</span>
-                <span>e</span>
-                <span>s</span>
-                <span>t</span>
-                <span>i</span>
-                <span>n</span>
-                <span>g</span>&nbsp;
-                <span>t</span>
-                <span>r</span>
-                <span>a</span>
-                <span>i</span>
-                <span>n</span>
-                <span>i</span>
-                <span>n</span>
-                <span>g</span>
-          
-            </div>
-
+                            <span>b</span>
+                            <span>a</span>
+                            <span>s</span>
+                            <span>i</span>
+                            <span>c</span>&nbsp;
+                            <span>t</span>
+                            <span>e</span>
+                            <span>s</span>
+                            <span>t</span>
+                            <span>i</span>
+                            <span>n</span>
+                            <span>g</span>&nbsp;
+                            <span>t</span>
+                            <span>r</span>
+                            <span>a</span>
+                            <span>i</span>
+                            <span>n</span>
+                            <span>i</span>
+                            <span>n</span>
+                            <span>g</span>
+                    
+                        </div>
 
                     </div>
-                    <h2>Main Goals </h2>
+                    <h2>Main Goals</h2>
                    
                     <ul>
                         <li>Our purpose of this training is share and impart knowledge.</li>
@@ -140,7 +135,6 @@ const Home = (props) => (
                         <li>
                             <strong>Argentina Provinces: </strong>Data searcher about Argentina Provinces.
 
-
                             <a href="https://endava-testing-training.github.io/ProvinceSearcher/specifications.html">Requeriments</a>.
 
                             <span>Versions: </span>
@@ -168,8 +162,7 @@ const Home = (props) => (
 
                     <hr />
 
-
-                    <h2>Tools to track test cases </h2>
+                    <h2>Tools to track test cases</h2>
 
                     <ul>
                         <li>
@@ -189,7 +182,7 @@ const Home = (props) => (
                             </strong>
                         </li>
                         </ul>
-                        </ul>
+                    </ul>
 
                 </div>
 

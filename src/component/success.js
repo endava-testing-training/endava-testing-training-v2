@@ -2,38 +2,37 @@ import React from 'react';
 
 const Success = (props) => (
 
-    <div class="container">
+    <div className="container">
 
-        <main class="page-content" aria-label="Content">
-            <div class="wrapper">
-                <div class="home">
+        <main className="page-content" aria-label="Content">
+            <div className="wrapper">
+                <div className="home">
 
-
-                    <div class="typewriter rounded">
+                    <div className="typewriter rounded">
                         <h2>{props.title}</h2>
-                        <div class="animate title">
+                        <div className="animate title">
 				
-                <span>s</span>
-                <span>u</span>
-                <span>c</span>
-                <span>c</span>
-                <span>e</span>
-                <span>s</span>
-                <span>s</span>&nbsp;
-                <span>s</span>
-                <span>t</span>
-                <span>o</span>
-                <span>r</span>
-                <span>i</span>
-                <span>e</span>
-                <span>s</span>&nbsp;
-                <span>g</span>
-                <span>o</span>&nbsp;
-                <span>h</span>
-                <span>e</span>
-                <span>r</span>
-                <span>e</span>
-            </div>
+                            <span>s</span>
+                            <span>u</span>
+                            <span>c</span>
+                            <span>c</span>
+                            <span>e</span>
+                            <span>s</span>
+                            <span>s</span>&nbsp;
+                            <span>s</span>
+                            <span>t</span>
+                            <span>o</span>
+                            <span>r</span>
+                            <span>i</span>
+                            <span>e</span>
+                            <span>s</span>&nbsp;
+                            <span>g</span>
+                            <span>o</span>&nbsp;
+                            <span>h</span>
+                            <span>e</span>
+                            <span>r</span>
+                            <span>e</span>
+                        </div>
                     </div>
                     <h2>Our success stories</h2>
 
@@ -55,7 +54,6 @@ const Success = (props) => (
         </main>
 
     </div>
-
 
 );
 

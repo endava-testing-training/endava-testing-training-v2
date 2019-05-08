@@ -10,38 +10,38 @@ import {
 
 const TestGuide = (props) => (
 
-  <div class="container">
+  <div className="container">
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <div class="typewriter rounded">
+    <main className="page-content" aria-label="Content">
+      <div className="wrapper">
+        <div className="typewriter rounded">
           <h2>{props.title}</h2>
-       
-          <div class="animate title">
-				
-        <span>b</span>
-        <span>a</span>
-        <span>s</span>
-        <span>i</span>
-        <span>c</span>&nbsp;
+
+          <div className="animate title">
+
+            <span>b</span>
+            <span>a</span>
+            <span>s</span>
+            <span>i</span>
+            <span>c</span>&nbsp;
         <span>t</span>
-        <span>e</span>
-        <span>s</span>
-        <span>t</span>
-        <span>i</span>
-        <span>n</span>
-        <span>g</span>&nbsp;
+            <span>e</span>
+            <span>s</span>
+            <span>t</span>
+            <span>i</span>
+            <span>n</span>
+            <span>g</span>&nbsp;
         <span>c</span>
-        <span>h</span>
-        <span>e</span>
-        <span>c</span>
-        <span>k</span>
-        <span>l</span>
-        <span>i</span>
-        <span>s</span>
-        <span>t</span>
-  
-    </div>
+            <span>h</span>
+            <span>e</span>
+            <span>c</span>
+            <span>k</span>
+            <span>l</span>
+            <span>i</span>
+            <span>s</span>
+            <span>t</span>
+
+          </div>
 
         </div>
         <Accordion allowZeroExpanded >
@@ -56,32 +56,32 @@ const TestGuide = (props) => (
 
 
 
-              <div class="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div class="col">Functionality</div>
-                <div class="col">Specifications</div>
+              <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
+                <div className="col">Functionality</div>
+                <div className="col">Specifications</div>
               </div>
 
-              <div class="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div class="col">General</div>
-
-              </div>
-
-
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col">For web applications, these scenarios should be tested on multiple browsers like IE, FF, Chrome, Safari, Brave,etc, with versions approved by the client.</div>
+              <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
+                <div className="col">General</div>
 
               </div>
 
 
-
-              <div class="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div class="col">User Login / Permissions</div>
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col">For web applications, these scenarios should be tested on multiple browsers like IE, FF, Chrome, Safari, Brave,etc, with versions approved by the client.</div>
 
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">User and password incorrect.</div>
-                <div class="col-9">
+
+
+              <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
+                <div className="col">User Login / Permissions</div>
+
+              </div>
+
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">User and password incorrect.</div>
+                <div className="col-9">
                   <ul>
                     <li>Login in the application with unexisting user and password.</li>
                     <li>Login in the application with not matching user and password.</li>
@@ -89,9 +89,9 @@ const TestGuide = (props) => (
                   </ul>
                 </div>
               </div>
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">User and password invalid.</div>
-                <div class="col-9">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">User and password invalid.</div>
+                <div className="col-9">
                   <ul>
                     <li>Login in the application without differentiating between uppercase and lowercase.</li>
                     <li>Login in the application with invalid,blank characters.</li>
@@ -99,18 +99,18 @@ const TestGuide = (props) => (
                   </ul>
                 </div>
               </div>
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">User and password correct without permissions.</div>
-                <div class="col-9">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">User and password correct without permissions.</div>
+                <div className="col-9">
                   <ul>
                     <li>Login in the application with existing user name and password but without permissions to access to the sections to test. (Log in with different user roles e.g. admin
     user, guest user etc.)</li>
                   </ul>
                 </div>
               </div>
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">User and password correct with permissions.</div>
-                <div class="col-9">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">User and password correct with permissions.</div>
+                <div className="col-9">
                   <ul>
                     <li>Login in the application with existing user name and password with permissions to access to the sections to test. (Log in with different user roles e.g. admin user,
     guest user etc.)</li>
@@ -122,36 +122,31 @@ const TestGuide = (props) => (
 
 
 
-
-
-
-
-
-              <div class="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div class="col">Screens</div>
+              <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
+                <div className="col">Screens</div>
 
               </div>
 
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">Content of the screen (Mockups)</div>
-                <div class="col-9">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">Content of the screen (Mockups)</div>
+                <div className="col-9">
                   <ul>
                     <li>Verify that all information shown on screen matches with the one shown on the mockup. All fields should located exactly as in the mockup.</li>
                   </ul>
                 </div>
               </div>
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">Ortography and sintax.</div>
-                <div class="col-9">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">Ortography and sintax.</div>
+                <div className="col-9">
                   <ul>
                     <li>Verify that all words written on the screen are correct. Also verify sintax.</li>
                   </ul>
                 </div>
               </div>
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">Elements on the screen.</div>
-                <div class="col-9">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">Elements on the screen.</div>
+                <div className="col-9">
                   <ul>
                     <li>All mandatory fields should be validated and indicated by an asterisk (*) symbol.</li>
                     <li>Text boxes: Data type, maximum or minimun amount of characters./ Check for negative numbers if allowed for numeric fields./ Check amount fields with decimal number
@@ -164,17 +159,13 @@ const TestGuide = (props) => (
                 </div>
               </div>
 
-
-
-
-
-              <div class="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div class="col">Create</div>
+              <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
+                <div className="col">Create</div>
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">Create with incorrect information or format.</div>
-                <div class="col-9">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">Create with incorrect information or format.</div>
+                <div className="col-9">
                   <ul>
                     <li>Insert incorrect format data.</li>
                     <li>Insert more or less characters allowed.</li>
@@ -182,18 +173,18 @@ const TestGuide = (props) => (
                   </ul>
                 </div>
               </div>
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">Create with missing required fields.</div>
-                <div class="col-9">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">Create with missing required fields.</div>
+                <div className="col-9">
                   <ul>
                     <li>Complete information without completing all required fields.</li>
                     <li>Verify Save format or message (Grayed out or error message)</li>
                   </ul>
                 </div>
               </div>
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">Create with all required fields.</div>
-                <div class="col-9">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">Create with all required fields.</div>
+                <div className="col-9">
                   <ul>
                     <li>Complete information with correct format and amount.</li>
                     <li>Complete Required fields.</li>
@@ -201,9 +192,9 @@ const TestGuide = (props) => (
                   </ul>
                 </div>
               </div>
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">Create with all fields.</div>
-                <div class="col-9">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">Create with all fields.</div>
+                <div className="col-9">
                   <ul>
                     <li>Complete information with correct format and amount.</li>
                     <li>Complete Required and No Required fields.</li>
@@ -211,48 +202,48 @@ const TestGuide = (props) => (
                   </ul>
                 </div>
               </div>
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">Create and Cancel.</div>
-                <div class="col-9">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">Create and Cancel.</div>
+                <div className="col-9">
                   <ul>
                     <li>Record should not be displayed on the screen or saved on database.</li>
                   </ul>
                 </div>
               </div>
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">Create and Save.</div>
-                <div class="col-9">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">Create and Save.</div>
+                <div className="col-9">
                   <ul>
                     <li>Record should be displayed on the screen with the information entered.</li>
                     <li>The user should not be able to submit page twice by pressing submit button in quick succession.</li>
                   </ul>
                 </div>
               </div>
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">Create and Save. Verify database (If permissions exists).</div>
-                <div class="col-9">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">Create and Save. Verify database (If permissions exists).</div>
+                <div className="col-9">
                   <ul>
                     <li>Record should be stored on database with the information entered.</li>
                   </ul>
                 </div>
               </div>
 
-              <div class="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div class="col">Modify</div>
+              <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
+                <div className="col">Modify</div>
 
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">Editable fields</div>
-                <div class="col-9">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">Editable fields</div>
+                <div className="col-9">
                   <ul>
                     <li>Control which fields are avaialable to change and which ones should not.</li>
                   </ul>
                 </div>
               </div>
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">Edit with incorrect information or format.</div>
-                <div class="col-9">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">Edit with incorrect information or format.</div>
+                <div className="col-9">
                   <ul>
                     <li>Insert incorrect format data.</li>
                     <li>Insert more or less characters allowed.</li>
@@ -260,18 +251,18 @@ const TestGuide = (props) => (
                   </ul>
                 </div>
               </div>
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">Edit with missing required fields.</div>
-                <div class="col-9">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">Edit with missing required fields.</div>
+                <div className="col-9">
                   <ul>
                     <li>Delete information from a required field.</li>
                     <li>Verify Save format or message (Grayed out or error message)</li>
                   </ul>
                 </div>
               </div>
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">Edit with all required fields.</div>
-                <div class="col-9">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">Edit with all required fields.</div>
+                <div className="col-9">
                   <ul>
                     <li>Edit information with correct format and amount.</li>
                     <li>Edit any Required field.</li>
@@ -279,26 +270,26 @@ const TestGuide = (props) => (
                   </ul>
                 </div>
               </div>
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">Edit and Cancel.</div>
-                <div class="col-9">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">Edit and Cancel.</div>
+                <div className="col-9">
                   <ul>
                     <li>Record should not be modified on the screen or saved on database.</li>
                   </ul>
                 </div>
               </div>
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">Edit and Save.</div>
-                <div class="col-9">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">Edit and Save.</div>
+                <div className="col-9">
                   <ul>
                     <li>Record should be displayed on the screen with the information modified.</li>
                     <li>The user should not be able to submit page twice by pressing submit button in  quick  succession.</li>
                   </ul>
                 </div>
               </div>
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">Create and Save. Verify database (If permissions exists)</div>
-                <div class="col-9">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">Create and Save. Verify database (If permissions exists)</div>
+                <div className="col-9">
                   <ul>
                     <li> Record should be modified on database with the information entered.</li>
                   </ul>
@@ -306,28 +297,28 @@ const TestGuide = (props) => (
               </div>
 
 
-              <div class="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div class="col">Delete</div>
+              <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
+                <div className="col">Delete</div>
 
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col">Delete functionality’ for any record on a page should ask for a confirmation.</div>
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col">Delete functionality’ for any record on a page should ask for a confirmation.</div>
 
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-4">Delete with confirmation message.</div>
-                <div class="col-8">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-4">Delete with confirmation message.</div>
+                <div className="col-8">
                   <ul>
                     <li>Message to confirm deletion is displayed on the screen.</li>
                   </ul>
                 </div>
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-4">Delete with confimation message and Cancel.</div>
-                <div class="col-8">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-4">Delete with confimation message and Cancel.</div>
+                <div className="col-8">
                   <ul>
                     <li>Record should still be shown on screen.</li>
                     <li>Record should still be stored on database.</li>
@@ -335,9 +326,9 @@ const TestGuide = (props) => (
                 </div>
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-4">Delete with confimation message and Confirm</div>
-                <div class="col-8">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-4">Delete with confimation message and Confirm</div>
+                <div className="col-8">
                   <ul>
                     <li>Record is not displayed on the screen.</li>
                     <li>If Delete is logic, the record should be marked on database as True.</li>
@@ -348,22 +339,22 @@ const TestGuide = (props) => (
 
 
 
-              <div class="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div class="col">ComboBoxes</div>
+              <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
+                <div className="col">ComboBoxes</div>
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-4">Default ComboBox option.</div>
-                <div class="col-8">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-4">Default ComboBox option.</div>
+                <div className="col-8">
                   <ul>
                     <li>Verify dedefault option (Particular option, All, Select One, Select Multiple, Etc.)</li>
                   </ul>
                 </div>
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-4">ComboBoxe content.</div>
-                <div class="col-8">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-4">ComboBoxe content.</div>
+                <div className="col-8">
                   <ul>
                     <li>All options shown on combobox must be the same as the requirement.</li>
                     <li>Verify ortography of the options.</li>
@@ -371,13 +362,13 @@ const TestGuide = (props) => (
                 </div>
               </div>
 
-              <div class="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div class="col">Scroll</div>
+              <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
+                <div className="col">Scroll</div>
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-4">Scroll</div>
-                <div class="col-8">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-4">Scroll</div>
+                <div className="col-8">
                   <ul>
                     <li>Shown when needed.</li>
                     <li>Correct scrolling.</li>
@@ -386,13 +377,13 @@ const TestGuide = (props) => (
               </div>
 
 
-              <div class="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div class="col">Calendar and Date Validations</div>
+              <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
+                <div className="col">Calendar and Date Validations</div>
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-4">Actual Date selection and other dates.</div>
-                <div class="col-8">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-4">Actual Date selection and other dates.</div>
+                <div className="col-8">
                   <ul>
                     <li>Select actual date. Verify if it is correctly shown on calendar.</li>
                     <li>Select past date. Verify if it is correctly shown on calendar.</li>
@@ -401,18 +392,18 @@ const TestGuide = (props) => (
                 </div>
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-4">Date Format validation</div>
-                <div class="col-8">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-4">Date Format validation</div>
+                <div className="col-8">
                   <ul>
                     <li>Control the format of the date if date picker allows it.</li>
                   </ul>
                 </div>
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-4">Start Date and End Date validations</div>
-                <div class="col-8">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-4">Start Date and End Date validations</div>
+                <div className="col-8">
                   <ul>
                     <li>Validate when enter a start date bigger than the end date.</li>
                     <li>Validate when any of the dates is empty.</li>
@@ -421,13 +412,13 @@ const TestGuide = (props) => (
                 </div>
               </div>
 
-              <div class="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div class="col">Search</div>
+              <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
+                <div className="col">Search</div>
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-4">Search with empty criteria</div>
-                <div class="col-8">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-4">Search with empty criteria</div>
+                <div className="col-8">
                   <ul>
                     <li>If blank is All, verify all records are displayed (requirement).</li>
                     <li>If blank is Nothing, verify no records are displayed (requirement).</li>
@@ -435,9 +426,9 @@ const TestGuide = (props) => (
                 </div>
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-4">Search without matching results.</div>
-                <div class="col-8">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-4">Search without matching results.</div>
+                <div className="col-8">
                   <ul>
                     <li>Insert search criteria that do not have any result.</li>
                     <li>Verify message or behavior of the search list.</li>
@@ -447,9 +438,9 @@ const TestGuide = (props) => (
                 </div>
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-4">Search with matching result.</div>
-                <div class="col-8">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-4">Search with matching result.</div>
+                <div className="col-8">
                   <ul>
                     <li>Insert search criteria that has results.</li>
                     <li>Verify information received from search that match with selected criteria.</li>
@@ -465,18 +456,18 @@ const TestGuide = (props) => (
                 </div>
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-4">Control sort of the received results.</div>
-                <div class="col-8">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-4">Control sort of the received results.</div>
+                <div className="col-8">
                   <ul>
                     <li>Control the sort of results matches with the sort of the original list.</li>
                   </ul>
                 </div>
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-4">Control list when criteria entered is deleted.</div>
-                <div class="col-8">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-4">Control list when criteria entered is deleted.</div>
+                <div className="col-8">
                   <ul>
                     <li>Mantain filtered list (if required)</li>
                     <li>Shown all records (if required)</li>
@@ -484,13 +475,13 @@ const TestGuide = (props) => (
                 </div>
               </div>
 
-              <div class="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div class="col">Pagination</div>
+              <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
+                <div className="col">Pagination</div>
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-4">Pagination options</div>
-                <div class="col-8">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-4">Pagination options</div>
+                <div className="col-8">
                   <ul>
                     <li>Pagination options from default.</li>
                     <li>Control when the grid has less rows that the minimum of the pagination.</li>
@@ -500,13 +491,13 @@ const TestGuide = (props) => (
                 </div>
               </div>
 
-              <div class="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div class="col">Sort columns</div>
+              <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
+                <div className="col">Sort columns</div>
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-4">Sort columns</div>
-                <div class="col-8">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-4">Sort columns</div>
+                <div className="col-8">
                   <ul>
                     <li>Check page sorting functionality after add/edit/delete operations on any record.</li>
                     <li>Test with each column that allows sorting.</li>
@@ -515,13 +506,13 @@ const TestGuide = (props) => (
                 </div>
               </div>
 
-              <div class="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div class="col">Print</div>
+              <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
+                <div className="col">Print</div>
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-4">Print option</div>
-                <div class="col-8">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-4">Print option</div>
+                <div className="col-8">
                   <ul>
                     <li>Control preview of print.</li>
                     <li>Control button funcitonality.</li>
@@ -529,13 +520,13 @@ const TestGuide = (props) => (
                 </div>
               </div>
 
-              <div class="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div class="col">Image upload</div>
+              <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
+                <div className="col">Image upload</div>
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">Also applicable for other file upload functionality</div>
-                <div class="col-9">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">Also applicable for other file upload functionality</div>
+                <div className="col-9">
                   <ul>
                     <li>Check for uploaded image path.</li>
                     <li>Check image upload and change functionality.</li>
@@ -555,13 +546,13 @@ const TestGuide = (props) => (
                 </div>
               </div>
 
-              <div class="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div class="col">Specific test cases</div>
+              <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
+                <div className="col">Specific test cases</div>
               </div>
 
-              <div class="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div class="col-3">Requirement</div>
-                <div class="col-9">
+              <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
+                <div className="col-3">Requirement</div>
+                <div className="col-9">
                   <ul>
                     <li>Write one test case per validation from requierement.</li>
                     <li>Write one test case per calculation from requirement.</li>
