@@ -47,27 +47,26 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem,
                     </ul>
         <hr/>
 
-        <div class="accordion-option">
+        <div className="accordion-option">
   
-  <a href="javascript:void(0)" class="toggle-accordion active" accordion-id="#accordion"></a>
+  <a href="javascript:void(0)" className="toggle-accordion active" accordion-id="#accordion"></a>
 </div>
-<div class="clearfix"></div>
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
+<div className="clearfix"></div>
+<div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div className="panel panel-default">
+    <div className="panel-heading" role="tab" id="headingOne">
+      <h4 className="panel-title">
       <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="false" aria-controls="collapseOne">
-        Input Controls
-      </a>
+        Input Controls</a>
     </h4>
     </div>
-    <div id="collapse-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
-      <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                        <div className="col-2">Element</div>
-                        <div className="col-6">Description</div>
-                        <div className="col-4">Examples</div>
-                    </div>
+    <div id="collapse-1" className="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div className="panel-body">
+        <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
+            <div className="col-2">Element</div>
+            <div className="col-6">Description</div>
+            <div className="col-4">Examples</div>
+        </div>
 
 <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-2 pb-3 mb-1">
   <div className="col-2">Checkboxes</div>
@@ -81,7 +80,8 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem,
 <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-2 pb-3 mb-1">
   <div className="col-2">Radio buttons</div>
   <div className="col-6">Radio buttons are used to allow users to select one item at a time.</div>
-  <div className="col-4">        <form>
+  <div className="col-4">
+      <form>
         <div className="radio">
           <label><input type="radio" value="radio" checked={true} />Radio Button</label>
         </div>
@@ -91,7 +91,8 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem,
         <div className="radio">
           <label><input type="radio" value="other" />Other</label>
         </div>
-      </form></div>
+      </form>
+      </div>
 </div>
 
 <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-2 pb-3 mb-1">
@@ -144,9 +145,6 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem,
     <div className="col-4">
     <div className="dropdown">
 
-
-
-
 </div>
     </div>
 </div>
@@ -177,16 +175,15 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem,
       </div>
     </div>
   </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
-      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="false" aria-controls="collapseTwo">
-        Navigational Components
-      </a>
+  <div className="panel panel-default">
+    <div className="panel-heading" role="tab" id="headingTwo">
+      <h4 className="panel-title">
+      <a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="false" aria-controls="collapseTwo">
+        Navigational Components</a>
     </h4>
     </div>
-    <div id="collapse-2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
+    <div id="collapse-2" className="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+      <div className="panel-body">
       <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
                         <div className="col-2">Element</div>
                         <div className="col-6">Description</div>
@@ -200,7 +197,6 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem,
 
                 </div>
             </div>
-
             
             <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-2 pb-3 mb-1">
                 <div className="col-2">Breadcrumb</div>
@@ -259,7 +255,6 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem,
       </Pagination>
                 </div>
             </div>
-
             
             <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-2 pb-3 mb-1">
                 <div className="col-2">Sliders</div>
@@ -268,7 +263,6 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem,
 
                 </div>
             </div>
-
             
             <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-2 pb-3 mb-1">
                 <div className="col-2">Icons</div>
@@ -277,7 +271,6 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem,
 
                 </div>
             </div>
-
             
             <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-2 pb-3 mb-1">
                 <div className="col-2">Image Carousel</div>
@@ -290,16 +283,16 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem,
     </div>
   </div>
 
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="false" aria-controls="collapseThree">
+  <div className="panel panel-default">
+    <div className="panel-heading" role="tab" id="headingThree">
+      <h4 className="panel-title">
+      <a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="false" aria-controls="collapseThree">
         Informational Components
       </a>
     </h4>
     </div>
-    <div id="collapse-3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
+    <div id="collapse-3" className="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+      <div className="panel-body">
       <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
                         <div className="col-2">Element</div>
                         <div className="col-6">Description</div>
@@ -348,16 +341,16 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem,
       </div>
     </div>
   </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-4" aria-expanded="false" aria-controls="collapseThree">
+  <div className="panel panel-default">
+    <div className="panel-heading" role="tab" id="headingThree">
+      <h4 className="panel-title">
+      <a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-4" aria-expanded="false" aria-controls="collapseThree">
         Containers
       </a>
     </h4>
     </div>
-    <div id="collapse-4" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
+    <div id="collapse-4" className="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+      <div className="panel-body">
       <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
                         <div className="col-2">Element</div>
                         <div className="col-6">Description</div>
@@ -377,7 +370,6 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem,
 </div>
 
         
-
                 </div>
 
             </main>

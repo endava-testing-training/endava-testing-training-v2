@@ -1191,17 +1191,16 @@ NOT Country='Germany' AND NOT Country='USA';
 		
 							<p>The following example uses a comment to ignore part of a statement:</p>
 							<code>
-                SELECT * FROM Customers WHERE (CustomerName LIKE 'L%'<br />
-				OR CustomerName LIKE 'R%' /*OR CustomerName LIKE 'S%'<br />
-				OR CustomerName LIKE 'T%'*/OR CustomerName LIKE'W%'<br />
-				AND Country='USA'<br />
-				ORDER BY CustomerName;
-        </code>
+								SELECT * FROM Customers WHERE (CustomerName LIKE 'L%'<br />
+								OR CustomerName LIKE 'R%' /*OR CustomerName LIKE 'S%'<br />
+								OR CustomerName LIKE 'T%'*/OR CustomerName LIKE'W%'<br />
+								AND Country='USA'<br />
+								ORDER BY CustomerName;
+							</code>
         </div>
       </div>
     </div>
   </div>
-    
        
 
       </div>
