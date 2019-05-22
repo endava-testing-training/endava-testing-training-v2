@@ -1,14 +1,6 @@
 import React from 'react';
 import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem, Spinner, ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
-import {
-    Accordion,
-    AccordionItem,
-    AccordionItemHeading,
-    AccordionItemPanel,
-    AccordionItemButton,
-  } from 'react-accessible-accordion';
-
     const UiElements = (props) => (
 
         <div className="container">
@@ -54,16 +46,24 @@ import {
                       <li><b>Containers:</b> accordion.</li>
                     </ul>
         <hr/>
-        <Accordion allowZeroExpanded >
-            <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        Input Controls
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-             
-                    <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
+
+        <div class="accordion-option">
+  
+  <a href="javascript:void(0)" class="toggle-accordion active" accordion-id="#accordion"></a>
+</div>
+<div class="clearfix"></div>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="false" aria-controls="collapseOne">
+        Input Controls
+      </a>
+    </h4>
+    </div>
+    <div id="collapse-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+      <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
                         <div className="col-2">Element</div>
                         <div className="col-6">Description</div>
                         <div className="col-4">Examples</div>
@@ -174,22 +174,20 @@ import {
 
     </div>
 </div>
-
-
-                           
-                </AccordionItemPanel>
-            </AccordionItem>
-        </Accordion>
-
-        <Accordion allowZeroExpanded >
-            <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        Navigational Components
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="false" aria-controls="collapseTwo">
+        Navigational Components
+      </a>
+    </h4>
+    </div>
+    <div id="collapse-2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+      <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
                         <div className="col-2">Element</div>
                         <div className="col-6">Description</div>
                         <div className="col-4">Examples</div>
@@ -288,20 +286,21 @@ import {
 
                 </div>
             </div>
+       </div>
+    </div>
+  </div>
 
-                </AccordionItemPanel>
-            </AccordionItem>
-        </Accordion>
-
-        <Accordion allowZeroExpanded >
-            <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        Informational Components
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="false" aria-controls="collapseThree">
+        Informational Components
+      </a>
+    </h4>
+    </div>
+    <div id="collapse-3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+      <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
                         <div className="col-2">Element</div>
                         <div className="col-6">Description</div>
                         <div className="col-4">Examples</div>
@@ -346,19 +345,20 @@ import {
 
                 </div>
             </div>
-                </AccordionItemPanel>
-            </AccordionItem>
-        </Accordion>
-
-        <Accordion allowZeroExpanded >
-            <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        Containers
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-4" aria-expanded="false" aria-controls="collapseThree">
+        Containers
+      </a>
+    </h4>
+    </div>
+    <div id="collapse-4" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+      <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
                         <div className="col-2">Element</div>
                         <div className="col-6">Description</div>
                         <div className="col-4">Examples</div>
@@ -371,9 +371,12 @@ import {
 
                 </div>
             </div>
-                </AccordionItemPanel>
-            </AccordionItem>
-        </Accordion>
+      </div>
+    </div>
+  </div>
+</div>
+
+        
 
                 </div>
 

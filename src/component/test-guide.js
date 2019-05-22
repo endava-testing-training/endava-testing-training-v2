@@ -1,13 +1,5 @@
 import React from 'react';
 
-import {
-  Accordion,
-  AccordionItem,
-  AccordionItemHeading,
-  AccordionItemPanel,
-  AccordionItemButton,
-} from 'react-accessible-accordion';
-
 const TestGuide = (props) => (
 
   <div className="container">
@@ -24,14 +16,14 @@ const TestGuide = (props) => (
             <span>s</span>
             <span>i</span>
             <span>c</span>&nbsp;
-        <span>t</span>
+            <span>t</span>
             <span>e</span>
             <span>s</span>
             <span>t</span>
             <span>i</span>
             <span>n</span>
             <span>g</span>&nbsp;
-        <span>c</span>
+            <span>c</span>
             <span>h</span>
             <span>e</span>
             <span>c</span>
@@ -44,19 +36,24 @@ const TestGuide = (props) => (
           </div>
 
         </div>
-        <Accordion allowZeroExpanded >
-          <AccordionItem>
-            <AccordionItemHeading>
-              <AccordionItemButton>
-                Functional
-                    </AccordionItemButton>
-            </AccordionItemHeading>
-            <AccordionItemPanel>
 
-
-
-
-              <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
+        <div class="accordion-option">
+  
+  <a href="javascript:void(0)" class="toggle-accordion active" accordion-id="#accordion"></a>
+</div>
+<div class="clearfix"></div>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="false" aria-controls="collapseOne">
+      Functional
+      </a>
+    </h4>
+    </div>
+    <div id="collapse-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+      <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
                 <div className="col">Functionality</div>
                 <div className="col">Specifications</div>
               </div>
@@ -560,128 +557,131 @@ const TestGuide = (props) => (
                   </ul>
                 </div>
               </div>
-
-            </AccordionItemPanel>
-          </AccordionItem>
-        </Accordion>
-
-        <Accordion allowZeroExpanded >
-          <AccordionItem>
-            <AccordionItemHeading>
-              <AccordionItemButton>
-                GUI and Usability
-                    </AccordionItemButton>
-            </AccordionItemHeading>
-            <AccordionItemPanel>
-              <ul>
-                <li>All fields on a page (e.g. text box, radio options, drop-down lists) should be aligned properly.</li>
-                <li>Numeric values should be justified correctly unless specified otherwise.</li>
-                <li>Enough space should be provided between field labels, columns, rows, error messages etc.</li>
-                <li>The scrollbar should be enabled only when necessary.</li>
-                <li>Font size, style, and color for headline, description text, labels, infield data, and grid info
-                    should be standard as specified in SRS.</li>
-                <li>Description text box should be multi-lined.</li>
-                <li>Disabled fields should be greyed out and users should not be able to set focus on these fields.</li>
-                <li>Upon click of an input text field, mouse arrow pointer should get changed to the cursor.</li>
-                <li>The user should not be able to type in drop down select lists.</li>
-                <li>Information filled by users should remain intact when there is an error message on page submit. The user should be able to submit the form again by correcting the errors.</li>
-                <li>Check if proper field labels are used in error messages.</li>
-                <li>Drop-down field values should be displayed in a defined sort order.</li>
-                <li>Tab and Shift+Tab order should work properly.</li>
-                <li>Default radio options should be pre-selected on the page load.</li>
-                <li>Field-specific and page level help messages should be available.</li>
-                <li>Check if the correct fields are highlighted in case of errors.</li>
-                <li>Check if the drop-down list options are readable and not truncated due to field size limit.</li>
-                <li>All buttons on a page should be accessible by keyboard shortcuts and the user should be able to perform all operations using a keyboard.</li>
-                <li>Check all pages for broken images.</li>
-                <li>Check all pages for broken links.</li>
-                <li>All pages should have a title.</li>
-                <li>Confirmation messages should be displayed before performing any update or delete operation.</li>
-                <li>Hourglass should be displayed when the application is busy.</li>
-                <li>Page text should be left justified.</li>
-                <li>The user should be able to select only one radio option and any combination for checkboxes.</li>
-              </ul>
-            </AccordionItemPanel>
-          </AccordionItem>
-        </Accordion>
-
-        <Accordion allowZeroExpanded >
-          <AccordionItem>
-            <AccordionItemHeading>
-              <AccordionItemButton>
-                Database Testing
-                    </AccordionItemButton>
-            </AccordionItemHeading>
-            <AccordionItemPanel>
-              <ul>
-                <li>Check if correct data is getting saved in the database upon successful page submit.</li>
-                <li>Check values for columns which are not accepting null values.</li>
-                <li>Check for data integrity. Data should be stored in single or multiple tables based on the design.</li>
-                <li>Index names should be given as per the standards e.g.</li>
-                <li>Tables should have a primary key column.</li>
-                <li>Table columns should have description information available (except for audit columns like created date, created by etc.)</li>
-                <li>For every database add/update operation log should be added.</li>
-                <li>Required table indexes should be created.</li>
-                <li>Check if data is committed to the database only when the operation is successfully completed.</li>
-                <li>Data should be rolled back in case of failed transactions.</li>
-                <li>Database name should be given as per the application type i.e. test, UAT, sandbox, live (though this is not a standard it is helpful for database maintenance)</li>
-                <li>Database logical names should be given according to the database name (again this is not standard but helpful for DB maintenance).</li>
-                <li>Stored procedures should not be named with a prefix “sp_”</li>
-                <li>Check if values for table audit columns (like created date, created by, updated, updated by, is deleted, deleted data, deleted by etc.) are populated properly.</li>
-                <li>Check if input data is not truncated while saving. Field length shown to the user on the page and in database schema should be the same.</li>
-                <li>Check numeric fields with minimum, maximum, and float values.</li>
-                <li>Check numeric fields with negative values (for both acceptance and non-acceptance).</li>
-                <li>Check if radio button and drop-down list options are saved correctly in the database.</li>
-                <li>Check if the database fields are designed with the correct data type and data length.</li>
-                <li>Check if all the table constraints like a Primary key, Foreign key etc. are implemented correctly.</li>
-                <li>Test stored procedures and triggers with sample input data.</li>
-                <li>Input field leading and trailing spaces should be truncated before committing data to the database.</li>
-                <li>Null values should not be allowed for the Primary key column.</li>
-              </ul>
-            </AccordionItemPanel>
-          </AccordionItem>
-        </Accordion>
-
-        <Accordion allowZeroExpanded >
-          <AccordionItem>
-            <AccordionItemHeading>
-              <AccordionItemButton>
-                Sending Emails
-                    </AccordionItemButton>
-            </AccordionItemHeading>
-            <AccordionItemPanel>
-              <ul>
-                <li>Email template should use standard CSS for all emails.</li>
-                <li>Email addresses should be validated before sending emails.</li>
-                <li>Special characters in the email body template should be handled properly.</li>
-                <li>Language specific characters (e.g. Russian, Chinese or German language characters) should be handled properly in the email body template.</li>
-                <li>Email subject should not be blank.</li>
-                <li>Placeholder fields used in the email template should be replaced with actual values e.g. {'{'}Firstname{'} {'}Lastname{'}'} should be replaced with individuals first and last name properly for all the recipients.</li>
-                <li>If reports with dynamic values are included in the email body and report data should be calculated correctly.</li>
-                <li>Email sender name should not be blank.</li>
-                <li>Emails should be checked in different email clients like Outlook, Gmail, Hotmail, Yahoo! mail etc.</li>
-                <li>Check to send email functionality using TO, CC and BCC fields.</li>
-                <li>Check plain text emails.</li>
-                <li>Check HTML format emails.</li>
-                <li>Check email header and footer for company logo, privacy policy and other links.</li>
-                <li>Check emails with attachments.</li>
-                <li>Check to send email functionality to single, multiple or distribution list recipients.</li>
-                <li>Check if a reply to email address is correct.</li>
-                <li>Check to send the high volume of emails.</li>
-              </ul>
-            </AccordionItemPanel>
-          </AccordionItem>
-        </Accordion>
-
-        <Accordion allowZeroExpanded >
-          <AccordionItem>
-            <AccordionItemHeading>
-              <AccordionItemButton>
-                Performance
-                    </AccordionItemButton>
-            </AccordionItemHeading>
-            <AccordionItemPanel>
-              <ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="false" aria-controls="collapseTwo">
+      GUI and Usability
+      </a>
+    </h4>
+    </div>
+    <div id="collapse-2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        <ul>
+          <li>All fields on a page (e.g. text box, radio options, drop-down lists) should be aligned properly.</li>
+          <li>Numeric values should be justified correctly unless specified otherwise.</li>
+          <li>Enough space should be provided between field labels, columns, rows, error messages etc.</li>
+          <li>The scrollbar should be enabled only when necessary.</li>
+          <li>Font size, style, and color for headline, description text, labels, infield data, and grid info
+          should be standard as specified in SRS.</li>
+          <li>Description text box should be multi-lined.</li>
+          <li>Disabled fields should be greyed out and users should not be able to set focus on these fields.</li>
+          <li>Upon click of an input text field, mouse arrow pointer should get changed to the cursor.</li>
+          <li>The user should not be able to type in drop down select lists.</li>
+          <li>Information filled by users should remain intact when there is an error message on page submit. The user should be able to submit the form again by correcting the errors.</li>
+          <li>Check if proper field labels are used in error messages.</li>
+          <li>Drop-down field values should be displayed in a defined sort order.</li>
+          <li>Tab and Shift+Tab order should work properly.</li>
+          <li>Default radio options should be pre-selected on the page load.</li>
+          <li>Field-specific and page level help messages should be available.</li>
+          <li>Check if the correct fields are highlighted in case of errors.</li>
+          <li>Check if the drop-down list options are readable and not truncated due to field size limit.</li>
+          <li>All buttons on a page should be accessible by keyboard shortcuts and the user should be able to perform all operations using a keyboard.</li>
+          <li>Check all pages for broken images.</li>
+          <li>Check all pages for broken links.</li>
+          <li>All pages should have a title.</li>
+          <li>Confirmation messages should be displayed before performing any update or delete operation.</li>
+          <li>Hourglass should be displayed when the application is busy.</li>
+          <li>Page text should be left justified.</li>
+          <li>The user should be able to select only one radio option and any combination for checkboxes.</li>
+        </ul>
+       </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="false" aria-controls="collapseThree">
+        Database Testing
+      </a>
+    </h4>
+    </div>
+    <div id="collapse-3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        <ul>
+          <li>Check if correct data is getting saved in the database upon successful page submit.</li>
+          <li>Check values for columns which are not accepting null values.</li>
+          <li>Check for data integrity. Data should be stored in single or multiple tables based on the design.</li>
+          <li>Index names should be given as per the standards e.g.</li>
+          <li>Tables should have a primary key column.</li>
+          <li>Table columns should have description information available (except for audit columns like created date, created by etc.)</li>
+          <li>For every database add/update operation log should be added.</li>
+          <li>Required table indexes should be created.</li>
+          <li>Check if data is committed to the database only when the operation is successfully completed.</li>
+          <li>Data should be rolled back in case of failed transactions.</li>
+          <li>Database name should be given as per the application type i.e. test, UAT, sandbox, live (though this is not a standard it is helpful for database maintenance)</li>
+          <li>Database logical names should be given according to the database name (again this is not standard but helpful for DB maintenance).</li>
+          <li>Stored procedures should not be named with a prefix “sp_”</li>
+          <li>Check if values for table audit columns (like created date, created by, updated, updated by, is deleted, deleted data, deleted by etc.) are populated properly.</li>
+          <li>Check if input data is not truncated while saving. Field length shown to the user on the page and in database schema should be the same.</li>
+          <li>Check numeric fields with minimum, maximum, and float values.</li>
+          <li>Check numeric fields with negative values (for both acceptance and non-acceptance).</li>
+          <li>Check if radio button and drop-down list options are saved correctly in the database.</li>
+          <li>Check if the database fields are designed with the correct data type and data length.</li>
+          <li>Check if all the table constraints like a Primary key, Foreign key etc. are implemented correctly.</li>
+          <li>Test stored procedures and triggers with sample input data.</li>
+          <li>Input field leading and trailing spaces should be truncated before committing data to the database.</li>
+          <li>Null values should not be allowed for the Primary key column.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-4" aria-expanded="false" aria-controls="collapseThree">
+        Sending Emails
+      </a>
+    </h4>
+    </div>
+    <div id="collapse-4" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        <ul>
+          <li>Email template should use standard CSS for all emails.</li>
+          <li>Email addresses should be validated before sending emails.</li>
+          <li>Special characters in the email body template should be handled properly.</li>
+          <li>Language specific characters (e.g. Russian, Chinese or German language characters) should be handled properly in the email body template.</li>
+          <li>Email subject should not be blank.</li>
+          <li>Placeholder fields used in the email template should be replaced with actual values e.g. {'{'}Firstname{'} {'}Lastname{'}'} should be replaced with individuals first and last name properly for all the recipients.</li>
+          <li>If reports with dynamic values are included in the email body and report data should be calculated correctly.</li>
+          <li>Email sender name should not be blank.</li>
+          <li>Emails should be checked in different email clients like Outlook, Gmail, Hotmail, Yahoo! mail etc.</li>
+          <li>Check to send email functionality using TO, CC and BCC fields.</li>
+          <li>Check plain text emails.</li>
+          <li>Check HTML format emails.</li>
+          <li>Check email header and footer for company logo, privacy policy and other links.</li>
+          <li>Check emails with attachments.</li>
+          <li>Check to send email functionality to single, multiple or distribution list recipients.</li>
+          <li>Check if a reply to email address is correct.</li>
+          <li>Check to send the high volume of emails.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-5" aria-expanded="false" aria-controls="collapseThree">
+        Performance
+      </a>
+    </h4>
+    </div>
+    <div id="collapse-5" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+      <ul>
                 <li>Check if the page load time is within the acceptable range.</li>
                 <li>Check the page load on slow connections.</li>
                 <li>Check the response time for any action under a light, normal, moderate, and heavy load conditions.</li>
@@ -691,19 +691,20 @@ const TestGuide = (props) => (
                 <li>Check for stress testing of the application.</li>
                 <li>Check CPU and memory usage under peak load condition.</li>
               </ul>
-            </AccordionItemPanel>
-          </AccordionItem>
-        </Accordion>
-
-        <Accordion allowZeroExpanded >
-          <AccordionItem>
-            <AccordionItemHeading>
-              <AccordionItemButton>
-                Security
-                    </AccordionItemButton>
-            </AccordionItemHeading>
-            <AccordionItemPanel>
-              <ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-6" aria-expanded="false" aria-controls="collapseThree">
+        Security
+      </a>
+    </h4>
+    </div>
+    <div id="collapse-6" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+      <ul>
                 <li>Check for SQL injection attacks.</li>
                 <li>Secure pages should use the HTTPS protocol.</li>
                 <li>Page crash should not reveal application or server info. Error page should be displayed for this.</li>
@@ -730,9 +731,20 @@ const TestGuide = (props) => (
                 <li>Check if important events are logged in log files.</li>
                 <li>Check if access privileges are implemented correctly.</li>
               </ul>
-            </AccordionItemPanel>
-          </AccordionItem>
-        </Accordion>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
 
       </div>
 

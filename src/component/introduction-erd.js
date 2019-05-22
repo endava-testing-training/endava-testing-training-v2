@@ -1,18 +1,11 @@
 import React from 'react';
 
-import {
-  Accordion,
-  AccordionItem,
-  AccordionItemHeading,
-  AccordionItemPanel,
-  AccordionItemButton,
-} from 'react-accessible-accordion';
-
 import ErdDiagram1 from '../images/IntroERD/ERD_Diagrams1.png';
 import ErdDiagram2 from '../images/IntroERD/ERD_Diagrams2.png';
 import ErdEntity1 from '../images/IntroERD/Entity1.png';
 import ErdEntity2 from '../images/IntroERD/Entity2.png';
 import ErdRelationships from '../images/IntroERD/Relationships1.png';
+import ErdAttributes from '../images/IntroERD/Attributes.png';
 import ErdAttributes1 from '../images/IntroERD/Attributes1.png';
 import ErdAttributes2 from '../images/IntroERD/Attributes2.png';
 import ErdCardinality from '../images/IntroERD/Cardinality.png';
@@ -41,9 +34,9 @@ const IntroductionErd = (props) => (
             <span>i</span>
             <span>o</span>
             <span>n</span>&nbsp;
-        <span>t</span>
+            <span>t</span>
             <span>o</span>&nbsp;
-        <span>e</span>
+            <span>e</span>
             <span>r</span>
             <span>d</span>
 
@@ -53,27 +46,41 @@ const IntroductionErd = (props) => (
         <h4 className="mb-3 font-italic">An entity relationship diagram (ERD), also known as an entity relationship model, is a graphical representation of an information system that depicts the relationships among people, objects, places, concepts or events within that system. An ERD is a data modeling echnique that can help define business processes and be used as the foundation for a relational database.</h4>
         <hr />
 
-        <Accordion allowZeroExpanded >
-          <AccordionItem>
-            <AccordionItemHeading>
-              <AccordionItemButton>
-                Data modeling
-                    </AccordionItemButton>
-            </AccordionItemHeading>
-            <AccordionItemPanel>
+        
 
-              <p>Data modeling is a technique to document a software system using diagrams and symbols. It is used to represent communication of data. </p>
+        <div class="accordion-option">
+  
+    <a href="javascript:void(0)" class="toggle-accordion active" accordion-id="#accordion"></a>
+  </div>
+  <div class="clearfix"></div>
+  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingOne">
+        <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="false" aria-controls="collapseOne">
+        Data modeling
+        </a>
+      </h4>
+      </div>
+      <div id="collapse-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+        <p>Data modeling is a technique to document a software system using diagrams and symbols. It is used to represent communication of data. </p>
               <p>The highest level of abstraction for the data model is called the <span>Entity Relationship Diagram (ERD)</span>. It is a graphical representation of data requirements for a database.</p>
-            </AccordionItemPanel>
-          </AccordionItem>
-          <AccordionItem>
-            <AccordionItemHeading>
-              <AccordionItemButton>
-                Entity relationship diagram
-                </AccordionItemButton>
-            </AccordionItemHeading>
-            <AccordionItemPanel>
-              <h2>What is an ER diagram?</h2>
+            
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingTwo">
+        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="false" aria-controls="collapseTwo">
+          Entity relationship diagram
+        </a>
+      </h4>
+      </div>
+      <div id="collapse-2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+        <div class="panel-body">
+        <h2>What is an ER diagram?</h2>
               An Entity Relationship (ER) Diagram is a type of flowchart that illustrates how “entities” such as people, objects or concepts relate to each other within a system. ER Diagrams are most often used to design or debug relational databases in the fields of software engineering, business information systems, education and research. Also known as ERDs or ER Models, they use a defined set of symbols such as rectangles, diamonds, ovals and connecting lines to depict the interconnectedness of entities, relationships and their attributes. They mirror grammatical structure, with entities as nouns and relationships as verbs.
             <img src={ErdDiagram1} className="d-block my-4"></img>
               ER diagrams are related to data structure diagrams (DSDs), which focus on the relationships of elements within entities instead of relationships between entities themselves. ER diagrams also are often used in conjunction with data flow diagrams (DFDs), which map out the flow of information for processes or systems.
@@ -86,17 +93,20 @@ const IntroductionErd = (props) => (
                 <li>Relationships: How tables are linked together.</li>
 
               </ul>
-
-            </AccordionItemPanel>
-          </AccordionItem>
-          <AccordionItem>
-            <AccordionItemHeading>
-              <AccordionItemButton>
-                Entity
-                    </AccordionItemButton>
-            </AccordionItemHeading>
-            <AccordionItemPanel>
-              A definable thing—such as a person, object, concept or event—that can have data stored about it. Think of entities as nouns. Examples: a customer, student, car or product. Typically shown as a rectangle.
+         </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingThree">
+        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="false" aria-controls="collapseThree">
+          Entity
+        </a>
+      </h4>
+      </div>
+      <div id="collapse-3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+        <div class="panel-body">
+        A definable thing—such as a person, object, concept or event—that can have data stored about it. Think of entities as nouns. Examples: a customer, student, car or product. Typically shown as a rectangle.
             <img src={ErdEntity1} className="d-block my-4"></img>
               <p><b>Entity type: </b>A group of definable things, such as students or athletes, whereas the entity would be the specific student or athlete. Other examples: customers, cars or products.
             </p>
@@ -112,38 +122,42 @@ const IntroductionErd = (props) => (
               <p>A foreign key+ (sometimes called a referencing key) is a key used to link two tables together. Typically you take the primary key field from one table and insert it into the other table where it becomes a foreign key (it remains a primary key in the original table). We can have more than one foreign key in a table.</p>
 
 
-
-            </AccordionItemPanel>
-          </AccordionItem>
-
-
-          <AccordionItem>
-            <AccordionItemHeading>
-              <AccordionItemButton>
-                Relationships
-                    </AccordionItemButton>
-            </AccordionItemHeading>
-            <AccordionItemPanel>
-
-              <p>How entities act upon each other or are associated with each other. Think of relationships as verbs. For example, the named student might register for a course. The two entities would be the student and the course, and the relationship depicted is the act of enrolling, connecting the two entities in that way. Relationships are typically shown as diamonds or labels directly on the connecting lines.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingThree">
+        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-4" aria-expanded="false" aria-controls="collapseThree">
+        Relationships
+        </a>
+      </h4>
+      </div>
+      <div id="collapse-4" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+        <div class="panel-body">
+        <p>How entities act upon each other or are associated with each other. Think of relationships as verbs. For example, the named student might register for a course. The two entities would be the student and the course, and the relationship depicted is the act of enrolling, connecting the two entities in that way. Relationships are typically shown as diamonds or labels directly on the connecting lines.</p>
               <p><span>Relationships</span> are the associations between the entities. Verbs often describe relationships between entities.</p>
               <img src={ErdRelationships} className="d-block my-4"></img>
               <p><b>Recursive relationship:</b> The same entity participates more than once in the relationship.</p>
 
-            </AccordionItemPanel>
-          </AccordionItem>
-          <AccordionItem>
-            <AccordionItemHeading>
-              <AccordionItemButton>
-                Attributes
-                    </AccordionItemButton>
-            </AccordionItemHeading>
-            <AccordionItemPanel>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingThree">
+        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-5" aria-expanded="false" aria-controls="collapseThree">
+        Attributes
+        </a>
+      </h4>
+      </div>
+      <div id="collapse-5" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+        <div class="panel-body">
+        <p>A property or characteristic of an entity. Often shown as an oval or circle.</p>
 
-              <p>A property or characteristic of an entity. Often shown as an oval or circle.</p>
-              <p>
-                Attributes are facts or description of entities. They are also often nouns and become the columns of the table. For example, for entity student, the attributes can be first name, last name, email, address and phone numbers.
-          </p>
+        
+        <img src={ErdAttributes} className="d-block my-4"></img>
+        <p>Attributes are facts or description of entities. They are also often nouns and become the columns of the table. For example, for entity student, the attributes can be first name, last name, email, address and phone numbers.</p>
               <p><b>Descriptive attribute: </b>A property or characteristic of a relationship (versus of an entity.)</p>
               <p><b>Attribute categories: </b>Attributes are categorized as simple, composite, derived, as well as single-value or multi-value. <span>Simple</span>: Means the attribute value is atomic and can’t be further divided, such as a phone number. <span>Composite</span>: Sub-attributes spring from an attribute. <span>Derived</span>: Attributed is calculated or otherwise derived from another attribute, such as age from a birthdate.</p>
               <img src={ErdAttributes1} className="d-block my-4"></img>
@@ -155,18 +169,20 @@ const IntroductionErd = (props) => (
               <p>
                 <b>Single-value: </b>Just one attribute value. The types can be combined, such as: simple single-value attributes or composite multi-value attributes.
             </p>
-
-
-            </AccordionItemPanel>
-          </AccordionItem>
-          <AccordionItem>
-            <AccordionItemHeading>
-              <AccordionItemButton>
-                Cardinality
-                    </AccordionItemButton>
-            </AccordionItemHeading>
-            <AccordionItemPanel>
-              <p>Defines the numerical attributes of the relationship between two entities or entity sets. The three main cardinal relationships are one-to-one, one-to-many, and many-many. A <span>one-to-one example</span> would be one student associated with one mailing address. A <span>one-to-many example (or many-to-one, depending on the relationship direction):</span> One student registers for multiple courses, but all those courses have a single line back to that one student. <span>Many-to-many example: </span>Students as a group are associated with multiple faculty members, and faculty members in turn are associated with multiple students.
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingThree">
+        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-6" aria-expanded="false" aria-controls="collapseThree">
+        Cardinality
+        </a>
+      </h4>
+      </div>
+      <div id="collapse-6" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+        <div class="panel-body">
+        <p>Defines the numerical attributes of the relationship between two entities or entity sets. The three main cardinal relationships are one-to-one, one-to-many, and many-many. A <span>one-to-one example</span> would be one student associated with one mailing address. A <span>one-to-many example (or many-to-one, depending on the relationship direction):</span> One student registers for multiple courses, but all those courses have a single line back to that one student. <span>Many-to-many example: </span>Students as a group are associated with multiple faculty members, and faculty members in turn are associated with multiple students.
             </p>
               <img src={ErdCardinality} className="d-block my-4"></img>
 
@@ -202,16 +218,20 @@ const IntroductionErd = (props) => (
 </p>
               <p><b>Cardinality constraints: </b>The minimum or maximum numbers that apply to a relationship.</p>
 
-            </AccordionItemPanel>
-          </AccordionItem>
-          <AccordionItem>
-            <AccordionItemHeading>
-              <AccordionItemButton>
-                Uses of entity relationship diagrams
-                </AccordionItemButton>
-            </AccordionItemHeading>
-            <AccordionItemPanel>
-              <ul>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingThree">
+        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-7" aria-expanded="false" aria-controls="collapseThree">
+        Uses of entity relationship diagrams
+        </a>
+      </h4>
+      </div>
+      <div id="collapse-7" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+        <div class="panel-body">
+        <ul>
                 <li><b>Database design: </b>ER diagrams are used to model and design relational databases, in terms of logic and business rules (in a logical data model) and in terms of the specific technology to be implemented (in a physical data model.) In software engineering, an ER diagram is often an initial step in determining requirements for an information systems project. It’s also later used to model a particular database or databases. A relational database has an equivalent relational table and can potentially be expressed that way as needed.</li>
                 <li><b>Database troubleshooting: </b>ER diagrams are used to analyze existing databases to find and resolve problems in logic or deployment. Drawing the diagram should reveal where it’s going wrong.</li>
                 <li><b>Business information systems: </b>The diagrams are used to design or analyze relational databases used in business processes. Any business process that uses fielded data involving entities, actions and interplay can potentially benefit from a relational database. It can streamline processes, uncover information more easily and improve results.</li>
@@ -219,23 +239,27 @@ const IntroductionErd = (props) => (
                 <li><b>Education: </b>Databases are today’s method of storing relational information for educational purposes and later retrieval, so ER Diagrams can be valuable in planning those data structures.</li>
                 <li><b>Research: </b>Since so much research focuses on structured data, ER diagrams can play a key role in setting up useful databases to analyze the data.</li>
               </ul>
-            </AccordionItemPanel>
-          </AccordionItem>
-          <AccordionItem>
-            <AccordionItemHeading>
-              <AccordionItemButton>
-                An example
-                    </AccordionItemButton>
-            </AccordionItemHeading>
-            <AccordionItemPanel>
-              <p>The following document is a quick guide for the Crow's foot ERD symbol guide.</p>
-              <img src={ErdModelExample} className="d-block my-4"></img>
-            </AccordionItemPanel>
-          </AccordionItem>
-
-        </Accordion>
-
+        </div>
       </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingThree">
+        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-8" aria-expanded="false" aria-controls="collapseThree">
+        An example
+        </a>
+      </h4>
+      </div>
+      <div id="collapse-8" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+        <div class="panel-body">
+        <p>The following document is a quick guide for the Crow's foot ERD symbol guide.</p>
+              <img src={ErdModelExample} className="d-block my-4"></img>
+        </div>
+      </div>
+    </div>
+  </div>
+
+       </div>
 
     </main>
 

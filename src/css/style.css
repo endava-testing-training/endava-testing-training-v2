@@ -22,8 +22,10 @@ dl, ol, ul {
 }
 
 h4 {
- color: #de411b;
- margin: 0;
+  color: #de411b;
+  margin: 0 0 6px 0;
+  font-weight: 400;
+  font-size: 1.6em;
 }
 
 p span {
@@ -219,58 +221,6 @@ code {
 	}
 }
 
-.accordion {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  margin-bottom: 4px;
-}
-
-.accordion__item + .accordion__item {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.accordion__button {
-  background-color: #f4f4f4;
-  color: #444;
-  cursor: pointer;
-  padding: 12px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-}
-
-.accordion__button:hover {
-  background-color: #de411b;
-  color: white;
-}
-
-.accordion__button:before {
-  display: inline-block;
-  content: '';
-  height: 10px;
-  width: 10px;
-  margin-right: 12px;
-  border-bottom: 2px solid currentColor;
-  border-right: 2px solid currentColor;
-  transform: rotate(-45deg);
-  -webkit-transition: transform .3s ease-out;
-     -moz-transition: transform .3s ease-out;
-       -o-transition: transform .3s ease-out;
-          transition: transform .3s ease-out;
-  
-}
-
-.accordion__button[aria-expanded='true']::before,
-.accordion__button[aria-selected='true']::before {
-    transform: rotate(45deg) translateY(-3px);
-}
-
-.accordion__panel {
-  padding: 20px;
-  animation: fadein .5s ease-in-out;
-}
-
 @keyframes fadein {
   0% {
       opacity: 0;
@@ -410,39 +360,6 @@ a.repeat:hover {
 }
 
 /* Accordion */
-.card-header:before{
-    display: inline-block;
-    content: '';
-    height: 10px;
-    width: 10px;
-    margin-right: 12px;
-    border-bottom: 2px solid currentColor;
-    border-right: 2px solid currentColor;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-transition: transform .3s ease-out;
-    -webkit-transition: -webkit-transform .3s ease-out;
-    transition: -webkit-transform .3s ease-out;
-    transition: transform .3s ease-out;
-		transition: transform .3s ease-out, -webkit-transform .3s ease-out;
-	}
-
-	.card-header .collapsed:before{
-		-webkit-transform: rotate(45deg) translateY(-3px);
-			transform: rotate(45deg) translateY(-3px);
-	}
-
-	.card-header h5{
-		background-color: #f4f4f4;
-    color: #444;
-    cursor: pointer;
-    padding: 10px;
-    width: 100%;
-    text-align: left;
-    border: none;
-		outline: none;
-		display: inherit;
-	}
 	
 .panel-default>.panel-heading {
   color: #333;
@@ -458,12 +375,20 @@ a.repeat:hover {
   user-select: none;
 }
 
+.panel-default>.panel-heading:hover {
+  background-color: #eee;
+}
+
 .panel-default>.panel-heading a {
   display: block;
   padding: 12px 20px;
   color: #333;
   font-size: 16px;
   font-weight: normal;
+}
+
+.panel-default>.panel-heading h4 {
+  margin: 0;
 }
 
 .panel-default>.panel-heading a:after {
@@ -502,7 +427,7 @@ a.repeat:hover {
   color: #333;
   background-color: #fff;
   border-color: #e4e5e7;
-  padding: 10px;
+  padding: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   margin-bottom: 4px;
