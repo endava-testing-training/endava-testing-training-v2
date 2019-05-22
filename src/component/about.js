@@ -1,4 +1,5 @@
 import React from 'react';
+import man   from '../images/aboutUs/man.jpg'; 
 
 const AboutUs = (props) => (
 
@@ -45,7 +46,24 @@ const AboutUs = (props) => (
                     <p>Have a nice day! :)</p>
                     <p className="float-right">Management Testing Community</p>
                     <p>Gabriel Giri Fernando Uranga Lucía G Evelin Mena Carla Passaro Cintia Hetzer Andrea Sabella Martín Zapata</p>
-
+                    
+                    <div class="faces">
+                        <img src={man} className="my-3 faces-rounded"></img>
+                        <h5 class="text-center text-uppercase">Nombre y Apellido</h5>
+                    </div>
+                    <div class="faces">
+                        <img src={man} className="my-3 faces-rounded"></img>
+                        <h5 class="text-center text-uppercase">Nombre y Apellido</h5>
+                    </div>
+                    <div class="faces">
+                        <img src={man} className="my-3 faces-rounded"></img>
+                        <h5 class="text-center text-uppercase">Nombre y Apellido</h5>
+                    </div>
+                    <div class="faces">
+                        <img src={man} className="my-3 faces-rounded"></img>
+                        <h5 class="text-center text-uppercase">Nombre y Apellido</h5>
+                    </div>
+                    
                 </div>
             </div>
 

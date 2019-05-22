@@ -7,8 +7,7 @@ const Home = (props) => (
     <div className="container">
 
         <main className="page-content" aria-label="Content">
-            <div className="wrapper">
-                                 
+                                          
                     <div className="typewriter rounded">
                         <h2>{props.title}</h2>
         
@@ -54,7 +53,6 @@ const Home = (props) => (
                         <li>Apply techniques of software testing in projects.</li>
                         <li>Select the appropriate testing techniques and objectives.</li>
                         <li>Continuously improve the testing process.</li>
-
                     </ul>
                     <hr />
                     <h2>Topics to cover</h2>
@@ -123,19 +121,18 @@ const Home = (props) => (
                             <strong>Temperature Converter: </strong>
 
                             <a href="https://endava-testing-training.github.io/Celfar/specifications.html">Requirements</a>
-
                             <span>. Versions: </span>
-                            <a href="https://endava-testing-training.github.io/Celfar/?v=1">Version 1</a>,
-                            <a href="https://endava-testing-training.github.io/Celfar/?v=2">Version 2</a>,
-                            <a href="https://endava-testing-training.github.io/Celfar/?v=3">Version 3</a>,
+                            <a href="https://endava-testing-training.github.io/Celfar/?v=1">Version 1</a>,&nbsp;
+                            <a href="https://endava-testing-training.github.io/Celfar/?v=2">Version 2</a>,&nbsp;
+                            <a href="https://endava-testing-training.github.io/Celfar/?v=3">Version 3</a>,&nbsp;
                             <a href="https://endava-testing-training.github.io/Celfar/?v=4">Version 4</a><span> and </span>
                             <a href="https://endava-testing-training.github.io/Celfar">Version Final</a>
                         </li>
 
                         <li>
-                            <strong>Argentina Provinces: </strong>Data searcher about Argentina Provinces.
+                            <strong>Argentina Provinces: </strong>Data searcher about Argentina Provinces.&nbsp;
 
-                            <a href="https://endava-testing-training.github.io/ProvinceSearcher/specifications.html">Requeriments</a>.
+                            <a href="https://endava-testing-training.github.io/ProvinceSearcher/specifications.html">Requeriments</a>.&nbsp;
 
                             <span>Versions: </span>
                             <a href="https://endava-testing-training.github.io/ProvinceSearcher/province_searcher_1.html">Version 1</a>,
@@ -148,12 +145,12 @@ const Home = (props) => (
                             <strong>Contacts: </strong>
                           
                             <a href="https://jira.endava.com/secure/RapidBoard.jspa?rapidView=2930&projectKey=RSDTS001&view=planning.nodetail">Contacts Board</a><span>. </span> 
-                            <a href="https://endava-testing-training.github.io/Contacts/specifications.html">Requirements</a>.
+                            <a href="https://endava-testing-training.github.io/Contacts/specifications.html">Requirements</a>.&nbsp;
 
                             <span>Versions: </span>
-                            <a href="https://endava-testing-training.github.io/Contacts/contacts.html?v=1">Version 1</a>,
-                            <a href="https://endava-testing-training.github.io/Contacts/contacts.html?v=2">Version 2</a>,
-                            <a href="https://endava-testing-training.github.io/Contacts/contacts.html?v=3">Version 3</a>,
+                            <a href="https://endava-testing-training.github.io/Contacts/contacts.html?v=1">Version 1</a>,&nbsp;
+                            <a href="https://endava-testing-training.github.io/Contacts/contacts.html?v=2">Version 2</a>,&nbsp;
+                            <a href="https://endava-testing-training.github.io/Contacts/contacts.html?v=3">Version 3</a>,&nbsp;
                             <a href="https://endava-testing-training.github.io/Contacts/contacts.html">Version final</a><span> and </span> 
                             <a href="https://endava-testing-training.github.io/Contacts/contacts_improvements.html">Version improvements</a> 
                         </li>
@@ -183,8 +180,6 @@ const Home = (props) => (
                         </li>
                         </ul>
                     </ul>
-
-                </div>
 
             </main>
 
