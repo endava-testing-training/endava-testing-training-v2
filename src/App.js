@@ -9,6 +9,7 @@ import Agile           from './component/agile';
 import Success         from './component/success';
 import AboutUs         from './component/about';
 import Topics          from './component/topics';
+import Istqb           from './component/istqb';
 import TestGuide       from './component/test-guide';
 import UiElements      from './component/ui-elements';
 import IntroductionErd from './component/introduction-erd';
@@ -34,6 +35,7 @@ class App extends Component {
             <Route exact path="/success"          render={() => <Success title="Endava" />} />
             <Route exact path="/about"            render={() => <AboutUs title="About us" />} />
             <Route exact path="/test-guide"       render={() => <TestGuide title="Endava" />} />
+            <Route exact path="/istqb"            render={() => <Istqb title="Recommended sites" />} />
             <Route exact path="/ui-elements"      render={() => <UiElements title="Endava" />} />
             <Route exact path="/topics"           render={() => <Topics title="Topics about this training" />} />
             <Route exact path="/introduction-erd" render={() => <IntroductionErd title="Endava" />} />
