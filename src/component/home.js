@@ -69,23 +69,32 @@ const Home = (props) => (
                     <ul>
                         <li>
                             <strong>
-                                <a href="RSD- Endava initial testing Training.pptx" download>Main reading <FontAwesomeIcon icon={['fa', 'download']}  /></a>
+                                <div onClick={ () => window.open(require('../assets/RSD- Endava initial testing Training.pptx'), '_none')}>
+                                   <p class="downloadable">Main reading about initial testing <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                </div>   
                             </strong>
                         </li>
 
                         <li>
                             <strong>
-                                <a href="RSD-Endava test cases structure.pptx" download>Test cases structure <FontAwesomeIcon icon={['fa', 'download']} /></a>
+                                <div onClick={ () => window.open(require('../assets/RSD-Endava test cases structure.pptx'), '_none')}>
+                                    <p class="downloadable">Test cases structure <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                </div>   
+                            </strong>
+
+                        </li>
+                        <li>
+                            <strong>
+                                <div onClick={ () => window.open(require('../assets/RSD- Endava - Web Accessibility Testing.pptx'), '_none')}>
+                                    <p class="downloadable">Web Accessibility Testing <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                </div>   
                             </strong>
                         </li>
                         <li>
                             <strong>
-                                <a href="RSD- Endava - Web Accessibility Testing.pptx" download>Web Accessibility Testing <FontAwesomeIcon icon={['fa', 'download']} /></a>
-                            </strong>
-                        </li>
-                        <li>
-                            <strong>
-                                <a href="RSD-Scrum basics.pptx" download>Scrum basics <FontAwesomeIcon icon={['fa', 'download']} /></a>
+                                <div onClick={ () => window.open(require('../assets/RSD-Scrum basics.pptx'), '_none')}>
+                                    <p class="downloadable">Scrum basics <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                </div>   
                             </strong>
                         </li>
                     </ul>
@@ -168,13 +177,17 @@ const Home = (props) => (
 
                     <ul>
                         <li>
-                            <strong>
-                                <a href="RSD- Generic template to report  Bugs.docx" download>Generic template to report Bugs <FontAwesomeIcon icon={['fa', 'download']} /></a>
+                        <strong>
+                                <div onClick={ () => window.open(require('../assets/RSD- Generic template to report  Bugs.docx'), '_none')}>
+                                    <p class="downloadable">Generic template to report Bugs <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                </div>   
                             </strong>
                         </li>
                         <li>
-                            <strong>
-                                <a href="RSD-Template-TestCases.xlsx" download>Test cases - generic template <FontAwesomeIcon icon={['fa', 'download']} /> </a>
+                        <strong>
+                                <div onClick={ () => window.open(require('../assets/RSD-Template-TestCases.xlsx'), '_none')}>
+                                    <p class="downloadable">Test cases - generic template <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                </div>   
                             </strong>
                         </li>
 
