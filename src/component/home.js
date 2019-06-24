@@ -80,6 +80,11 @@ const Home = (props) => (
                         </li>
                         <li>
                             <strong>
+                                <a href="RSD- Endava - Web Accessibility Testing.pptx" download>Web Accessibility Testing <FontAwesomeIcon icon={['fa', 'download']} /></a>
+                            </strong>
+                        </li>
+                        <li>
+                            <strong>
                                 <a href="RSD-Scrum basics.pptx" download>Scrum basics <FontAwesomeIcon icon={['fa', 'download']} /></a>
                             </strong>
                         </li>
