@@ -1,5 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import istqb  from '../images/istqb/istqb.jpg'; 
 
 const Success = (props) => (
 
@@ -36,13 +37,23 @@ const Success = (props) => (
                         </div>
                     </div>
                     <hr />
+                    <h2>ISTQB - Site</h2>
+                    <ul>
+                      
+                        <li> <strong>                 
+                                <a href="https://www.istqb.org/" target="_blank">ISTQB Oficial site</a>
+                            </strong>
+                        </li>
+                        </ul>
+
+                    <hr />
+              
                     <h2>Our first steps - Material to download</h2>
 
                     <hr />
                      
                         <ul>
-                      
-                                                <li> <strong>                 
+                            <li> <strong>                 
                                 <a href="CTFL-2018-Syllabus_ES.pdf" download>ISTQB in Spanish <FontAwesomeIcon icon={['fa', 'download']}  /></a>
                                 </strong></li>
                             <li><strong>
@@ -55,8 +66,11 @@ const Success = (props) => (
                                 <a href="CTFL-2018-Release-Notes 2 Traceability from 2011 to 2018 on LO level.pdf" download >Release notes from 2011 to 2018 <FontAwesomeIcon icon={['fa', 'download']}  /></a>
                                 </strong></li>
                         </ul>
- 
-
+                        <hr />
+              
+              <h2>ISTQB - Mind map</h2>
+              <img src={istqb}></img>
+       
                 </div>
             </div>
 
