@@ -3,6 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 import './css/style.css';
 import EndavaNavbar    from './component/navbar';
+import Intro           from './component/intro';
 import Home            from './component/home';
 import AboutScrum      from './component/about-scrum';
 import Agile           from './component/agile';
@@ -28,7 +29,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <EndavaNavbar />
-            <Route exact path="/"                 render={() => <Home title="Home" />} />
+            <Route exact path="/"                 render={() => <Intro title="Home" />} />
             <Route exact path="/home"             render={() => <Home title="Home" />} />
             <Route exact path="/about-scrum"      render={() => <AboutScrum title="Usefull links" />} />
             <Route exact path="/agile"            render={() => <Agile title="Usefull links" />} />

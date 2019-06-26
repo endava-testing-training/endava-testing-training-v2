@@ -14,7 +14,7 @@ import ErdModelExample from '../images/IntroERD/modelExample.png';
 
 const IntroductionErd = (props) => (
 
-  <div className="container">
+  <div className="container mt-5">
 
     <main className="page-content" aria-label="Content">
       <div className="wrapper">

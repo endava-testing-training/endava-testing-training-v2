@@ -2,7 +2,7 @@ import React from 'react';
 
     const Topics = (props) => (
 
-        <div className="container">
+        <div className="container mt-5">
 
 
 <div className="typewriter rounded">

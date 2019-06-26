@@ -34,7 +34,7 @@ import SqlFullJoin4     from '../images/IntroSQL/full_join1_SQL.png';
 
 const IntroductionSql = (props) => (
 
-  <div className="container">
+  <div className="container mt-5">
 
     <main className="page-content" aria-label="Content">
       <div className="wrapper">

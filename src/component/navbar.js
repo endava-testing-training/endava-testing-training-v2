@@ -4,12 +4,12 @@ import { NavLink } from 'react-router-dom';
 import EndavaLogo from '../images/logo-endava-white.png';
 
 const EndavaNavbar = () => (
-    <Navbar bg="dark" variant="dark" expand="lg" className="mb-5 pl-5 pr-5">
+    <Navbar bg="dark" variant="dark" expand="lg" className="pl-5 pr-5">
        
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-                <NavLink className="nav-menu-link" exact to="/">Home</NavLink>
+                <NavLink className="nav-menu-link" exact to="/home">Home</NavLink>
                 <NavDropdown title="Recommended sites" id="recommended-sites-nav-dropdown">
                     <NavDropdown.Item href="https://www.ministryoftesting.com" target="_blank" >Ministry of Testing</NavDropdown.Item>
                     <NavDropdown.Item href="istqb">ISTQB Certifications</NavDropdown.Item>
