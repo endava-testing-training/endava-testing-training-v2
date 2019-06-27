@@ -1,11 +1,22 @@
 import React from 'react';
-import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem, Spinner, ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import DropdownMenuBT from './components/DropdownMenuBT';
+import ToogleBT from './components/ToogleBT';
+import InputTextBT from './components/InputTextBT';
+import DatePickerBT from './components/DatePickerBT';
+import CheckBoxesBT from './components/CheckBoxesBT';
+import RadioButtonsBT from './components/RadioButtonsBT';
+import ToogleReactBT from './components/ToogleReactBT';
+import SearchBarBT from './components/SearchBarBT';
+import CarouselBT from './components/CarouselBT';
+
+
+import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem} from 'reactstrap';
 
     const UiElements = (props) => (
 
         <div className="container mt-5">
 
-            <main className="page-content" aria-label="Content">
+      <main className="page-content" aria-label="Content">
                 <div className="wrapper">
                     <div className="typewriter rounded">
                         <h2>{props.title}</h2>
@@ -71,27 +82,17 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem,
 <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-2 pb-3 mb-1">
   <div className="col-2">Checkboxes</div>
   <div className="col-6">Checkboxes allow the user to select one or more options from a set. It is usually best to present checkboxes in a vertical list. More than one column is acceptable as well if the list is long enough that it might require scrolling or if comparison of terms might be necessary.</div>
-  <div className="col-4"><form>
-            <label>Radio Button: <input type="checkbox" name="name" /></label><br/>
-            <label>Dropdown list: <input type="checkbox" name="name" checked /></label>
-          </form></div>
+  <div className="col-4">
+  <CheckBoxesBT></CheckBoxesBT>
+          
+          </div>
 </div>
              						
 <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-2 pb-3 mb-1">
   <div className="col-2">Radio buttons</div>
   <div className="col-6">Radio buttons are used to allow users to select one item at a time.</div>
   <div className="col-4">
-      <form>
-        <div className="radio">
-          <label><input type="radio" value="radio" checked={true} />Radio Button</label>
-        </div>
-        <div className="radio">
-          <label><input type="radio" value="dropdown" />Dropdown</label>
-        </div>
-        <div className="radio">
-          <label><input type="radio" value="other" />Other</label>
-        </div>
-      </form>
+      <RadioButtonsBT></RadioButtonsBT>
       </div>
 </div>
 
@@ -143,9 +144,7 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem,
     <div className="col-2">Dropdown Button</div>
     <div className="col-6">The dropdown button consists of a button that when clicked displays a drop-down list of mutually exclusive items.</div>
     <div className="col-4">
-    <div className="dropdown">
-
-</div>
+      <DropdownMenuBT></DropdownMenuBT>
     </div>
 </div>
 
@@ -153,6 +152,7 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem,
     <div className="col-2">Toggles</div>
     <div className="col-6">A toggle button allows the user to change a setting between two states. They are most effective when the on/off states are visually distinct.</div>
     <div className="col-4">
+      <ToogleReactBT></ToogleReactBT>
 
     </div>
 </div>
@@ -161,7 +161,7 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem,
     <div className="col-2">Text fields</div>
     <div className="col-6">Text fields allow users to enter text. It can allow either a single line or multiple lines of text.</div>
     <div className="col-4">
-
+      <InputTextBT></InputTextBT>
     </div>
 </div>
 
@@ -169,7 +169,7 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem,
     <div className="col-2">Date and time pickers</div>
     <div className="col-6">A date picker allows users to select a date and/or time. By using the picker, the information is consistently formatted and input into the system.</div>
     <div className="col-4">
-
+      <DatePickerBT></DatePickerBT>
     </div>
 </div>
       </div>
@@ -194,7 +194,7 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem,
                 <div className="col-2">Search Field</div>
                 <div className="col-6">A search box allows users to enter a keyword or phrase (query) and submit it to search the index with the intention of getting back the most relevant results. Typically search fields are single-line text boxes and are often accompanied by a search button.</div>
                 <div className="col-4">
-
+                  <SearchBarBT></SearchBarBT>
                 </div>
             </div>
             
@@ -276,7 +276,7 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem,
                 <div className="col-2">Image Carousel</div>
                 <div className="col-6">Image carousels allow users to browse through a set of items and make a selection of one if they so choose. Typically, the images are hyperlinked.</div>
                 <div className="col-4">
-
+                  <CarouselBT></CarouselBT>
                 </div>
             </div>
        </div>
