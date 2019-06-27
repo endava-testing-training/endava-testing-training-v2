@@ -19,6 +19,7 @@
     "react-navigation": "^3.9.2",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
+    "react-search-field": "^1.0.0",
     "reactstrap": "^8.0.0"
   },
   "scripts": {
