@@ -4,7 +4,7 @@ import istqb  from '../images/istqb/istqb.jpg';
 
 const Success = (props) => (
 
-    <div className="container">
+    <div className="container mt-5">
 
         <main className="page-content" aria-label="Content">
             <div className="wrapper">

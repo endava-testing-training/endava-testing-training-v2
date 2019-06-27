@@ -3,7 +3,7 @@ import man   from '../images/aboutUs/man.jpg';
 
 const AboutUs = (props) => (
 
-    <div className="container">
+    <div className="container mt-5">
 
         <main className="page-content" aria-label="Content">
             <div className="wrapper">

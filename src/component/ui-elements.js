@@ -14,8 +14,9 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem}
 
     const UiElements = (props) => (
 
-        <div className="container">
-            <main className="page-content" aria-label="Content">
+        <div className="container mt-5">
+
+      <main className="page-content" aria-label="Content">
                 <div className="wrapper">
                     <div className="typewriter rounded">
                         <h2>{props.title}</h2>

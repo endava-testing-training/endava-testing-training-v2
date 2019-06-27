@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Home = (props) => (
 
-    <div className="container">
+    <div className="container mt-5">
 
         <main className="page-content" aria-label="Content">
                                           
