@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Intro = (props) => (
 
@@ -6,10 +7,10 @@ const Intro = (props) => (
 
       <main className="page-content intro" aria-label="Content">
                                           
-        <div><a href="#"><p>1.AGILE</p></a></div>
-        <div><a href="#"><p>2.FUNCTIONAL TESTING</p></a></div>
-        <div><a href="#"><p>3.PRACTICE</p></a></div>
-        <div><a href="#"><p>4.TECHNIAL SKILLS</p></a></div>
+        <div><Link to={"agile"}><p>1.AGILE</p></Link></div>
+        <div><Link to={"functional-testing"}><p>2.FUNCTIONAL TESTING</p></Link></div>
+        <div><Link to={"practice"}><p>3.PRACTICE</p></Link></div>
+        <div><Link to={"technical-skills"}><p>4.TECHNCIAL SKILLS</p></Link></div>
         
                    
        </main>

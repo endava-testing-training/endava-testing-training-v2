@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Agile = (props) => (
+const FunctionalTesting = (props) => (
 
     <div className="container mt-5">
 
@@ -13,25 +13,43 @@ const Agile = (props) => (
         
                         <div className="animate title">
 				
-                            <span>a</span>
-                            <span>g</span>
-                            <span>i</span>
-                            <span>l</span>
+                            <span>t</span>
                             <span>e</span>
+                            <span>s</span>
+                            <span>t</span>
+                            <span>i</span>
+                            <span>n</span>
+                            <span>g</span>
                     
                         </div>
 
                     </div>
-                    <h2>Main Content for Agile</h2>
+                    <h2>Main Reading</h2>
                    
-                       
+                    <ul>
+                        <li>Our purpose of this training is share and impart knowledge.</li>
+                        <li>To familiarize the audience with the terminology used in the testing work.</li>
+                        <li>To arrive at a common understanding of the scope of testing activity.</li>
+                        <li>Execute a program with the intent of finding errors to:</li>
+                        <ul>
+                            <li>Determine whether system meets specifications</li>
+                            <li>Determine whether system meets user’s needs</li>
+                        </ul>
+                        <ul>
+                        <li>Understand about techniques for planning tests.</li>
+                        <li>Apply techniques of software testing in projects.</li>
+                        <li>Select the appropriate testing techniques and objectives.</li>
+                        <li>Continuously improve the testing process.</li>
+                    </ul>
                     <hr />
                     <h2>Topics to cover</h2>
                     <ul>
-                        <li>Scrum basics (PPT)</li>
-                        <li>Useful links > about scrum</li>
-                        <li>Useful links > 12 agile principles</li>  
+                        <li>
+                            <strong>
+                                <Link to={"topics"}>View all topics</Link>
+                            </strong>
 
+                        </li>
                     </ul>
                     <hr />
                     <h2>Material to download</h2>
@@ -97,9 +115,7 @@ const Agile = (props) => (
 
                     </ul>
                     <hr />
-                  
                  
-
                     <h2>Tools to track test cases</h2>
 
                     <ul>
@@ -124,7 +140,7 @@ const Agile = (props) => (
                             </strong>
                         </li>
                         </ul>
-                   
+                    </ul>
 
             </main>
 
@@ -133,4 +149,4 @@ const Agile = (props) => (
 
 );
 
-export default Agile;
+export default FunctionalTesting;

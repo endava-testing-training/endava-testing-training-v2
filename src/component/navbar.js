@@ -16,7 +16,7 @@ const EndavaNavbar = () => (
                 </NavDropdown>
                 <NavDropdown title="Useful links" id="useful-links-nav-dropdown">
                     <NavDropdown.Item href="about-scrum">About Scrum</NavDropdown.Item>
-                    <NavDropdown.Item href="agile">12 Agile Principles</NavDropdown.Item>
+                    <NavDropdown.Item href="video-agile">12 Agile Principles</NavDropdown.Item>
                 </NavDropdown>
                 <NavLink className="nav-menu-link" exact to="/success">Our success stories</NavLink>
                 <NavLink className="nav-menu-link" exact to="/about">About Us</NavLink>
