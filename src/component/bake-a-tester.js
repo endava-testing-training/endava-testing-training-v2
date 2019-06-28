@@ -28,27 +28,51 @@ const BakeTester = (props) => (
                         </div>
 
                     </div>
-                    <h2>Main Content for Bake a Tester</h2>
-                    The idea
 
-Develop a place where anyone can learn how to be a tester.
+            The idea is develop a place where anyone can learn how to become a tester.
 
-In that place you could find all definitions and tips to do the best testing.
+            In that place you could find all definitions and tips to do the best testing.
 
-Technical and exercises in a same place to familiarize the audience with the terminology used in the testing work.
+            Technical and exercises in a same place to familiarize the audience with the terminology used in the testing work.
 
-Extensible a ser utililzado por distintas comunidades
+            Our purpose is to extend it to be used by different communities
 
-Develop an interdisciplinary application for helping young professionals becoming testers through some kind of introductory lab
-                       
-                 
-                
+            Develop an interdisciplinary application for helping young professionals becoming testers through some kind of introductory lab
+
+            <hr />
+            <h2>Topics to cover</h2>
+                        <ul>
+                           <li>
+                              <strong>
+                                  <Link to={"topics"}>View all topics</Link>
+                              </strong>
+                           </li>
+                        </ul>
+            <hr />
+            <h2>Our goals</h2>
+                   <ul>
+                      <li>Our purpose of this training is share and impart knowledge.</li>
+                      <li>To familiarize the audience with the terminology used in the testing work.</li>
+                      <li>To arrive at a common understanding of the scope of testing activity.</li>
+                      <li>Execute a program with the intent of finding errors to:</li>
+                                <ul>
+                                    <li>Determine whether system meets specifications</li>
+                                    <li>Determine whether system meets user’s needs</li>
+                                </ul>
+                       <li>Understand about techniques for planning tests.</li>
+                       <li>Apply techniques of software testing in projects.</li>
+                       <li>Select the appropriate testing techniques and objectives.</li>
+                       <li>Continuously improve the testing process.</li>
+                    </ul>
+
+
+
+       </main>
+
+
               
-                   
+       </div>
 
-            </main>
-
-        </div>
 
 
 );
