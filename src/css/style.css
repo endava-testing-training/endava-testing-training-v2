@@ -296,6 +296,13 @@ code {
 .navbar-nav .dropdown-menu {
 	background-color: #2B3036;
 }	
+.img-books {
+
+       max-width: 50px;
+       float: left;
+       display: block;
+
+            }
 
 @media (min-width: 992px){
 	.navbar-expand-lg .navbar-nav .dropdown-menu {

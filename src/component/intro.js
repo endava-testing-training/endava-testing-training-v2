@@ -10,7 +10,7 @@ const Intro = (props) => (
         <div><Link to={"agile"}><p>1.AGILE</p></Link></div>
         <div><Link to={"functional-testing"}><p>2.FUNCTIONAL TESTING</p></Link></div>
         <div><Link to={"practice"}><p>3.PRACTICE</p></Link></div>
-        <div><Link to={"technical-skills"}><p>4.TECHNCIAL SKILLS</p></Link></div>
+        <div><Link to={"technical-skills"}><p>4.TECHNICAL SKILLS</p></Link></div>
         
                    
        </main>

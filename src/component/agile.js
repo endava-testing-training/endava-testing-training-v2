@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import bookBob   from '../images/Books/Agile Testing book Bob.jpg';
+import books   from '../images/Books/Agile Testing book.jpg';
+
 
 const Agile = (props) => (
 
@@ -17,48 +20,28 @@ const Agile = (props) => (
                             <span>g</span>
                             <span>i</span>
                             <span>l</span>
+                            <span>e</span>&nbsp;
+                            <span>f</span>
+                            <span>u</span>
+                            <span>n</span>
+                            <span>d</span>
+                            <span>a</span>
+                            <span>m</span>
                             <span>e</span>
+                            <span>n</span>
+                            <span>t</span>
+                            <span>a</span>
+                            <span>l</span>
+                            <span>s</span>
+
+
                     
                         </div>
 
                     </div>
-                    <h2>Main Content for Agile</h2>
-                   
-                       
-                    <hr />
-                    <h2>Topics to cover</h2>
-                    <ul>
-                        <li>Scrum basics (PPT)</li>
-                        <li>Useful links > about scrum</li>
-                        <li>Useful links > 12 agile principles</li>  
 
-                    </ul>
-                    <hr />
                     <h2>Material to download</h2>
                     <ul>
-                        <li>
-                            <strong>
-                                <div onClick={ () => window.open(require('../assets/RSD- Endava initial testing Training.pptx'), '_none')}>
-                                   <p class="downloadable">Main reading about initial testing <FontAwesomeIcon icon={['fa', 'download']} /></p>
-                                </div>   
-                            </strong>
-                        </li>
-
-                        <li>
-                            <strong>
-                                <div onClick={ () => window.open(require('../assets/RSD-Endava test cases structure.pptx'), '_none')}>
-                                    <p class="downloadable">Test cases structure <FontAwesomeIcon icon={['fa', 'download']} /></p>
-                                </div>   
-                            </strong>
-
-                        </li>
-                        <li>
-                            <strong>
-                                <div onClick={ () => window.open(require('../assets/RSD- Endava - Web Accessibility Testing.pptx'), '_none')}>
-                                    <p class="downloadable">Web Accessibility Testing <FontAwesomeIcon icon={['fa', 'download']} /></p>
-                                </div>   
-                            </strong>
-                        </li>
                         <li>
                             <strong>
                                 <div onClick={ () => window.open(require('../assets/RSD-Scrum basics.pptx'), '_none')}>
@@ -66,67 +49,63 @@ const Agile = (props) => (
                                 </div>   
                             </strong>
                         </li>
+                        <li>
+                            <strong>
+                                 <div onClick={ () => window.open(require('../assets/RSD- Agile Estimations.pptx'), '_none')}>
+                                        <p class="downloadable">Agile Estimations <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                  </div>
+                            </strong>
+                        </li>
                     </ul>
                     <hr />
-                        <h2>Material to Read</h2>
+                        <h2>Useful links </h2>
                         <ul>
-                            <li>
+                          <li>
                             <strong>
-                                <a href="test-guide">Testing Checklists</a>
+                            <a href="about-scrum">About Scrum</a>
                             </strong>
+                          </li>
+                           <li>
+                            <strong>
+                            <a href="video-agile">12 agile principles</a>
+                            </strong>
+                          </li>
+                          <li>
+                             <strong>
+                             <a href="https://www.testingexcellence.com/tag/agile-testing/">Agile Testing</a>
+                             </strong>
+                          </li>
 
-                        </li>
-                        <li>
-                            <strong>
-                                <a href="ui-elements">Elements of User Interface</a>
-                            </strong>
-
-                        </li>
-                        <li>
-                            <strong>
-                                <Link to={"introduction-erd"}>Introduction to Entity Relationship Diagram</Link>
-                            </strong>
-            
-                        </li>
-						<li>
-                            <strong>
-                                <Link to={"introduction-sql"}>Introduction to SQL</Link>
-                            </strong>
-            
-                        </li>
 
                     </ul>
                     <hr />
+
+                         <h2>Books recommended</h2>
+                            <ul>
+                                 <li>
+{/*GABY ACOMODAR LAS IMAGENES*/}
+                                 {/*<img src={books} class="img-books"></img>*/}
+                                 <strong>
+                                 <div onClick={ () => window.open(require('../assets/AGILE_TESTING_-_A_PRACTICAL_GUIDE_FOR_TESTERS_AND_AGILE_TEAMS.pdf'), '_none')}>
+                                 <p class="downloadable">Agile Testing: a practical guide for testers and agile teams<FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                 </div>
+                                 </strong>
+                                 </li>
+                                 <li>
+                                 {/*<img src={bookBob} class="img-books"></img>*/}
+                                 <strong>
+                                    <div onClick={ () => window.open(require('../assets/The 3 Pillars of Agile Quality and Testing (Bob Galen).pdf'), '_none')}>
+                                    <p class="downloadable">The 3 Pillars of Agile Quality and Testing (Bob Galen)<FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                    </div>
+                                 </strong>
+                                 </li>
+
+
+                     </ul>
+
                   
-                 
 
-                    <h2>Tools to track test cases</h2>
-
-                    <ul>
-                        <li>
-                        <strong>
-                                <div onClick={ () => window.open(require('../assets/RSD- Generic template to report  Bugs.docx'), '_none')}>
-                                    <p class="downloadable">Generic template to report Bugs <FontAwesomeIcon icon={['fa', 'download']} /></p>
-                                </div>   
-                            </strong>
-                        </li>
-                        <li>
-                        <strong>
-                                <div onClick={ () => window.open(require('../assets/RSD-Template-TestCases.xlsx'), '_none')}>
-                                    <p class="downloadable">Test cases - generic template <FontAwesomeIcon icon={['fa', 'download']} /></p>
-                                </div>   
-                            </strong>
-                        </li>
-
-                        <li>
-                            <strong>
-                                <a href="https://jira.endava.com/" target="_blank">Jira tracking </a>
-                            </strong>
-                        </li>
-                        </ul>
-                   
-
-            </main>
+                   </main>
 
         </div>
 
