@@ -8,6 +8,9 @@ import RadioButtonsBT from './components/RadioButtonsBT';
 import ToogleReactBT from './components/ToogleReactBT';
 import SearchBarBT from './components/SearchBarBT';
 import CarouselBT from './components/CarouselBT';
+import SlidersBT from './components/SlidersBT';
+import PaginationPageBT from './components/PaginationPageBT';
+
 
 
 import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem} from 'reactstrap';
@@ -224,35 +227,7 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem}
                 <div className="col-2">Pagination</div>
                 <div className="col-6">Pagination divides content up between pages, and allows users to skip between pages or go in order through the content.</div>
                 <div className="col-4">
-                <Pagination size="sm" aria-label="Page navigation example">
-      <PaginationItem>
-          <PaginationLink first href="#" />
-        </PaginationItem>
-        <PaginationItem>
-          <PaginationLink previous href="#" />
-        </PaginationItem>
-        <PaginationItem>
-          <PaginationLink href="#">
-            1
-          </PaginationLink>
-        </PaginationItem>
-        <PaginationItem>
-          <PaginationLink href="#">
-            2
-          </PaginationLink>
-        </PaginationItem>
-        <PaginationItem>
-          <PaginationLink href="#">
-            3
-          </PaginationLink>
-        </PaginationItem>
-        <PaginationItem>
-          <PaginationLink next href="#" />
-        </PaginationItem>
-        <PaginationItem>
-          <PaginationLink last href="#" />
-        </PaginationItem>
-      </Pagination>
+                <PaginationPageBT></PaginationPageBT>
                 </div>
             </div>
             
@@ -260,7 +235,7 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem}
                 <div className="col-2">Sliders</div>
                 <div className="col-6">A slider, also known as a track bar, allows users to set or adjust a value. When the user changes the value, it does not change the format of the interface or other info on the screen.</div>
                 <div className="col-4">
-
+                  <SlidersBT></SlidersBT>
                 </div>
             </div>
             
