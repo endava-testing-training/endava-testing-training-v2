@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import DropdownMenuBT from './components/DropdownMenuBT';
 import ToogleBT from './components/ToogleBT';
 import InputTextBT from './components/InputTextBT';
@@ -11,6 +12,9 @@ import CarouselBT from './components/CarouselBT';
 import SlidersBT from './components/SlidersBT';
 import PaginationPageBT from './components/PaginationPageBT';
 import NotificationBT from './components/NotificationBT';
+import ProgressBarBT from './components/ProgressBarBT';
+import ToolTipBT from './components/ToolTipBT';
+import MessageBoxBT from './components/MessageBoxBT';
 
 
 import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem} from 'reactstrap';
@@ -102,7 +106,7 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem}
 <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-2 pb-3 mb-1">
     <div className="col-2">Dropdown lists</div>
     <div className="col-6">Dropdown lists allow users to select one item at a time, similarly to radio buttons, but are more compact allowing you to save space. Consider adding text to the field, such as ‘Select one’ to help the user recognize the necessary action.</div>
-    <div className="col-4">
+    <div className="col-4 button-drop-example">
         <div className="dropdown">
             <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Dropdown list
@@ -146,7 +150,7 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem}
 <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-2 pb-3 mb-1">
     <div className="col-2">Dropdown Button</div>
     <div className="col-6">The dropdown button consists of a button that when clicked displays a drop-down list of mutually exclusive items.</div>
-    <div className="col-4">
+    <div className="col-4 button-drop-example">
       <DropdownMenuBT></DropdownMenuBT>
     </div>
 </div>
@@ -242,7 +246,12 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem}
             <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-2 pb-3 mb-1">
                 <div className="col-2">Icons</div>
                 <div className="col-6">An icon is a simplified image serving as an intuitive symbol that is used to help users to navigate the system. Typically, icons are hyperlinked.</div>
-                <div className="col-4">
+                <div className="col-4 icons-example">
+
+                  <a href="https://www.facebook.com/endava" rel="me" itemprop="sameAs" aria-label="visit us on " target="_blank" title="facebook"><FontAwesomeIcon icon={['fab', 'facebook']} /></a>
+                  <a href="https://twitter.com/endava" rel="me" itemprop="sameAs" aria-label="visit us on " target="_blank" title="twitter"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
+                  <a href="https://www.linkedin.com/company/endava" rel="me" itemprop="sameAs" aria-label="visit us on " target="_blank" title="linkedin"> <FontAwesomeIcon icon={['fab', 'linkedin']} /></a>
+                  <a href="https://www.instagram.com/endava/" rel="me" itemprop="sameAs" aria-label="visit us on " target="_blank" title="instagram"> <FontAwesomeIcon icon={['fab', 'instagram']} /></a>
 
                 </div>
             </div>
@@ -277,7 +286,7 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem}
                     <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-2 pb-3 mb-1">
                 <div className="col-2">Notifications</div>
                 <div className="col-6">A notification is an update message that announces something new for the user to see. Notifications are typically used to indicate items such as, the successful completion of a task, or an error or warning message.</div>
-                <div className="col-4">
+                <div className="col-4 notification-example">
                   <NotificationBT></NotificationBT>
 
                 </div>
@@ -287,7 +296,7 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem}
                 <div className="col-2">Progress Bars</div>
                 <div className="col-6">A progress bar indicates where a user is as they advance through a series of steps in a process. Typically, progress bars are not clickable.</div>
                 <div className="col-4">
-
+                  <ProgressBarBT></ProgressBarBT>
                 </div>
             </div>
 
@@ -295,7 +304,7 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem}
                 <div className="col-2">ToolTips</div>
                 <div className="col-6">A tooltip allows a user to see hints when they hover over an item indicating the name or purpose of the item</div>
                 <div className="col-4">
-
+                  <ToolTipBT></ToolTipBT>
                 </div>
             </div>
 
@@ -303,7 +312,7 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem}
                 <div className="col-2">Message Boxes</div>
                 <div className="col-6">A message box is a small window that provides information to users and requires them to take an action before they can move forward.</div>
                 <div className="col-4">
-
+                  <MessageBoxBT></MessageBoxBT>
                 </div>
             </div>
 

@@ -170,13 +170,22 @@ code {
 	text-decoration: none;	
 	text-transform: uppercase;	
 	font-size: .8em;	
-	font-weight: 600;	
+	font-weight: 600;
+	color: white;
 	letter-spacing: 1px;	
 	padding: 1.2rem 1.5rem;	
 }
 
 .dropdown-menu .dropdown-item:focus, .dropdown-menu .dropdown-item:hover {
 	background-color: rgba(0, 0, 0, 0.26);
+}
+
+.button-drop-example .dropdown-menu .dropdown-item {
+	color:#495057;
+}
+
+.button-drop-example .dropdown-menu .dropdown-item :hover {
+	color:#495057;
 }
 
 .svg-inline--fa  {
@@ -315,6 +324,34 @@ code {
 	float: left;
 	display: block;
 
+}
+
+.icons-example, .notification-example{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.notification-example{
+	place-content: space-between center;
+}
+
+.icons-example .svg-inline--fa{
+	font-size: 40px;
+	align-items: center;
+	margin: 0 12px;
+}
+
+.notification-example button {
+	align-items: center;
+	width: 100%;
+	
+}
+
+.container-notifications{
+	width: 100%;
 }
 
 

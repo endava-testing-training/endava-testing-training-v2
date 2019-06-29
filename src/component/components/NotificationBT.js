@@ -20,31 +20,40 @@ class NotificationBT extends React.Component {
             alert('callback');
           });
           break;
+        // no default
       }
     };
   };
  
   render() {
     return (
-      <div>
-        <button className='btn btn-info'
-          onClick={this.createNotification('info')}>Info
-        </button>
+      <div className="container-notifications">
+        <div>
+          <button className='btn btn-info'
+            onClick={this.createNotification('info')}>Info
+          </button>
+        </div>
         <hr/>
-        <button className='btn btn-success'
-          onClick={this.createNotification('success')}>Success
-        </button>
+        <div>
+          <button className='btn btn-success'
+            onClick={this.createNotification('success')}>Success
+          </button>
+        </div>
         <hr/>
-        <button className='btn btn-warning'
-          onClick={this.createNotification('warning')}>Warning
-        </button>
+        <div>
+          <button className='btn btn-warning'
+            onClick={this.createNotification('warning')}>Warning
+          </button>
+        </div>
         <hr/>
-        <button className='btn btn-danger'
-          onClick={this.createNotification('error')}>Error
-        </button>
- 
+        <div>
+          <button className='btn btn-danger'
+            onClick={this.createNotification('error')}>Error
+          </button>
+        </div>
         <NotificationContainer/>
       </div>
+      
     );
   }
 }
