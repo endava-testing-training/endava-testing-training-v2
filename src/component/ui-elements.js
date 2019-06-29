@@ -14,8 +14,11 @@ import PaginationPageBT from './components/PaginationPageBT';
 import NotificationBT from './components/NotificationBT';
 import ProgressBarBT from './components/ProgressBarBT';
 import ToolTipBT from './components/ToolTipBT';
-import MessageBoxBT from './components/MessageBoxBT';
+import ModalInteractBT from './components/ModalInteractBT';
 import ListBoxesBT from './components/ListBoxesBT';
+import TabsBT from './components/TabsBT';
+import AccordionBT from './components/AccordionBT';
+import MessageBoxBT from './components/MessageBoxBT';
 
 
 import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem } from 'reactstrap';
@@ -67,7 +70,6 @@ const UiElements = (props) => (
         <hr />
 
         <div className="accordion-option">
-
           <a href="javascript:void(0)" className="toggle-accordion active" accordion-id="#accordion"></a>
         </div>
         <div className="clearfix"></div>
@@ -311,6 +313,7 @@ const UiElements = (props) => (
                   <div className="col-2">Modal Window (pop-up)</div>
                   <div className="col-6">A modal window requires users to interact with it in some way before they can return to the system.</div>
                   <div className="col-4">
+                    <ModalInteractBT></ModalInteractBT>
                   </div>
                 </div>
               </div>
@@ -335,6 +338,7 @@ const UiElements = (props) => (
                   <div className="col-2">Accordion</div>
                   <div className="col-6">An accordion is a vertically stacked list of items that utilizes show/ hide functionality. When a label is clicked, it expands the section showing the content within. There can have one or more items showing at a time and may have default states that reveal one or more sections without the user clicking</div>
                   <div className="col-4">
+                    <AccordionBT></AccordionBT>
                   </div>
                 </div>
 
@@ -343,6 +347,14 @@ const UiElements = (props) => (
                   <div className="col-6">A toggle button allows the user to change a setting between two states. They are most effective when the on/off states are visually distinct.</div>
                   <div className="col-4">
                     <ToogleBT></ToogleBT>
+                  </div>
+                </div>
+
+                <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-2 pb-3 mb-1">
+                  <div className="col-2">Tabs</div>
+                  <div className="col-6">Description.</div>
+                  <div className="col-4">
+                    <TabsBT></TabsBT>
                   </div>
                 </div>
               </div>
