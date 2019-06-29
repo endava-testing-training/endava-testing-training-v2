@@ -10,7 +10,7 @@ import SearchBarBT from './components/SearchBarBT';
 import CarouselBT from './components/CarouselBT';
 import SlidersBT from './components/SlidersBT';
 import PaginationPageBT from './components/PaginationPageBT';
-
+import NotificationBT from './components/NotificationBT';
 
 
 import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem} from 'reactstrap';
@@ -278,6 +278,7 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem}
                 <div className="col-2">Notifications</div>
                 <div className="col-6">A notification is an update message that announces something new for the user to see. Notifications are typically used to indicate items such as, the successful completion of a task, or an error or warning message.</div>
                 <div className="col-4">
+                  <NotificationBT></NotificationBT>
 
                 </div>
             </div>
