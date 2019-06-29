@@ -12,8 +12,7 @@ const useStyles = makeStyles({
   root: {
     padding: '2px 4px',
     display: 'flex',
-    alignItems: 'center',
-    width: 300,
+    alignItems: 'center'
   },
   input: {
     marginLeft: 8,

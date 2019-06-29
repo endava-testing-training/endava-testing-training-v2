@@ -34,16 +34,6 @@ const PaginationPageBT = () => {
           </MDBPageItem>
           <MDBPageItem>
             <MDBPageNav className="page-link">
-              4
-            </MDBPageNav>
-          </MDBPageItem>
-          <MDBPageItem>
-            <MDBPageNav className="page-link">
-              5
-            </MDBPageNav>
-          </MDBPageItem>
-          <MDBPageItem>
-            <MDBPageNav className="page-link">
               &raquo;
             </MDBPageNav>
           </MDBPageItem>

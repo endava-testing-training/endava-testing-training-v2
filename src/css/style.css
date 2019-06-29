@@ -362,6 +362,10 @@ code {
 	width: 100%;
 }
 
+.makeStyles-root-1 {
+    width: 100%;
+}
+
 @media (min-width: 992px){
 	.navbar-expand-lg .navbar-nav .dropdown-menu {
 		background-color: #de411b;
