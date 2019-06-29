@@ -15,6 +15,7 @@ import NotificationBT from './components/NotificationBT';
 import ProgressBarBT from './components/ProgressBarBT';
 import ToolTipBT from './components/ToolTipBT';
 import MessageBoxBT from './components/MessageBoxBT';
+import ListBoxesBT from './components/ListBoxesBT';
 
 
 import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem} from 'reactstrap';
@@ -124,12 +125,7 @@ import { Pagination, PaginationItem, PaginationLink, Breadcrumb, BreadcrumbItem}
     <div className="col-2">List boxes</div>
     <div className="col-6">List boxes, like checkboxes, allow users to select a multiple items at a time,but are more compact and can support a longer list of options if needed.</div>
     <div className="col-4">
-    <input list="encodings" value="" className="col-sm-6 custom-select custom-select-sm" />
-    <datalist id="encodings">
-            <option value="ISO-8859-1">ISO-8859-1</option>
-            <option value="cp1252">ANSI</option>
-            <option value="utf8">UTF-8</option>
-    </datalist>
+      <ListBoxesBT></ListBoxesBT>
     </div>
 </div>
 

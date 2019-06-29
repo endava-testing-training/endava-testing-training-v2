@@ -350,10 +350,17 @@ code {
 	
 }
 
+.react-dual-listbox {
+	display: inline-block;
+}
+
 .container-notifications{
 	width: 100%;
 }
 
+.react-datepicker-wrapper, .react-datepicker__input-container, .react-datepicker__input-container input {
+	width: 100%;
+}
 
 @media (min-width: 992px){
 	.navbar-expand-lg .navbar-nav .dropdown-menu {
