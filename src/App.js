@@ -34,10 +34,10 @@ class App extends Component {
         <div className="App">
           <EndavaNavbar />
             <Route exact path="/"                   render={() => <Home title="Home" />} />
-            <Route exact path="/agile"              render={() => <Agile title="Agile" />} />
-            <Route exact path="/functional-testing" render={() => <FunctionalTesting title="Functional Testing" />} />
-            <Route exact path="/bake-a-tester"      render={() => <BakeTester title="Bake a Tester" />} />
-            <Route exact path="/practice"           render={() => <Practice title="Agile" />} />
+            <Route exact path="/agile"              render={() => <Agile title="Endava" />} />
+            <Route exact path="/functional-testing" render={() => <FunctionalTesting title="Endava" />} />
+            <Route exact path="/bake-a-tester"      render={() => <BakeTester title="Endava" />} />
+            <Route exact path="/practice"           render={() => <Practice title="Endava" />} />
             <Route exact path="/home"               render={() => <Home title="Home" />} />
             <Route exact path="/about-scrum"        render={() => <AboutScrum title="Usefull links" />} />
             <Route exact path="/video-agile"        render={() => <VideoAgile title="Usefull links" />} />
@@ -46,7 +46,7 @@ class App extends Component {
             <Route exact path="/test-guide"         render={() => <TestGuide title="Endava" />} />
             <Route exact path="/istqb"              render={() => <Istqb title="Recommended sites" />} />
             <Route exact path="/ui-elements"        render={() => <UiElements title="Endava" />} />
-            <Route exact path="/technical-skills"   render={() => <TechnicalSkills title="Technical Skills" />} />
+            <Route exact path="/technical-skills"   render={() => <TechnicalSkills title="Endava" />} />
              <Route exact path="/topics"            render={() => <Topics title="Topics about this training" />} /><Route exact path="/topics"           render={() => <Topics title="Topics about this training" />} />
             <Route exact path="/introduction-erd"   render={() => <IntroductionErd title="Endava" />} />
             <Route exact path="/introduction-sql"   render={() => <IntroductionSql title="Endava" />} />

@@ -12,7 +12,16 @@ const TechnicalSkills = (props) => (
                     <h2>{props.title}</h2>
     
                     <div className="animate title">
-            
+
+                        <span>t</span>
+                        <span>e</span>
+                        <span>c</span>
+                        <span>h</span>
+                        <span>n</span>
+                        <span>i</span>
+                        <span>c</span>
+                        <span>a</span>
+                        <span>l</span>&nbsp;
                         <span>s</span>
                         <span>k</span>
                         <span>i</span>
@@ -23,100 +32,103 @@ const TechnicalSkills = (props) => (
                     </div>
 
                 </div>
-               
-                <h2>Topics to cover</h2>
-          
+                <h2>Data base</h2>
+                <ul>
+                   <li>
+                       <strong>
+                          <Link to={"introduction-erd"}>Introduction to Entity Relationship Diagram</Link>
+                       </strong>
+                   </li>
+                   <li>
+                      <strong>
+                          <Link to={"introduction-sql"}>Introduction to SQL</Link>
+                      </strong>
+                   </li>
+                </ul>
                 <hr />
-                <h2>Material to download</h2>
+                <h2>Automation training </h2>
                 <ul>
                     <li>
                         <strong>
-                            <div onClick={ () => window.open(require('../assets/RSD- Endava initial testing Training.pptx'), '_none')}>
-                               <p class="downloadable">Main reading about initial testing <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                            <div onClick={ () => window.open(require('../assets/01-HTML for testing.pptx'), '_none')}>
+                               <p class="downloadable">01-HTML for testing <FontAwesomeIcon icon={['fa', 'download']} /></p>
                             </div>   
                         </strong>
                     </li>
 
                     <li>
                         <strong>
-                            <div onClick={ () => window.open(require('../assets/RSD-Endava test cases structure.pptx'), '_none')}>
-                                <p class="downloadable">Test cases structure <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                            <div onClick={ () => window.open(require('../assets/02-CSS IN AUTOMATION TESTING.pptx'), '_none')}>
+                                <p class="downloadable">02-CSS in automation testing <FontAwesomeIcon icon={['fa', 'download']} /></p>
                             </div>   
                         </strong>
 
                     </li>
                     <li>
                         <strong>
-                            <div onClick={ () => window.open(require('../assets/RSD- Endava - Web Accessibility Testing.pptx'), '_none')}>
-                                <p class="downloadable">Web Accessibility Testing <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                            <div onClick={ () => window.open(require('../assets/03- XPATH IN AUTOMATION TESTING.pptx'), '_none')}>
+                                <p class="downloadable">03-XPATH in automation testing <FontAwesomeIcon icon={['fa', 'download']} /></p>
                             </div>   
                         </strong>
                     </li>
                     <li>
                         <strong>
-                            <div onClick={ () => window.open(require('../assets/RSD-Scrum basics.pptx'), '_none')}>
-                                <p class="downloadable">Scrum basics <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                            <div onClick={ () => window.open(require('../assets/04- Introduction to Selenium.pptx'), '_none')}>
+                                <p class="downloadable">04-Introduction to Selenium <FontAwesomeIcon icon={['fa', 'download']} /></p>
                             </div>   
                         </strong>
                     </li>
+                    <li>
+                             <strong>
+                                 <div onClick={ () => window.open(require('../assets/05- Introduction to Object Oriented Programming .pptx'), '_none')}>
+                                     <p class="downloadable">05-Introduction to Object Oriented Programming <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                 </div>
+                             </strong>
+                      </li>
+                      <li>
+                              <strong>
+                                  <div onClick={ () => window.open(require('../assets/06- Ruby Training.pptx'), '_none')}>
+                                      <p class="downloadable">06-Ruby Training <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                  </div>
+                              </strong>
+                      </li>
+                      <li>
+                              <strong>
+                                  <div onClick={ () => window.open(require('../assets/07-POM & Page Factory Pattern Java.pptx'), '_none')}>
+                                             <p class="downloadable">07-POM & Page Factory Pattern Java <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                  </div>
+                              </strong>
+                      </li>
+                      <li>
+                              <strong>
+                                  <div onClick={ () => window.open(require('../assets/08 -POM & Page Factory Pattern C#.pptx'), '_none')}>
+                                             <p class="downloadable">08-POM & Page Factory Pattern C# <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                  </div>
+                               </strong>
+                      </li>
                 </ul>
                 <hr />
-                    <h2>Material to Read</h2>
-                    <ul>
-                        <li>
-                        <strong>
-                            <a href="test-guide">Testing Checklists</a>
-                        </strong>
-
-                    </li>
-                    <li>
-                        <strong>
-                            <a href="ui-elements">Elements of User Interface</a>
-                        </strong>
-
-                    </li>
-                    <li>
-                        <strong>
-                            <Link to={"introduction-erd"}>Introduction to Entity Relationship Diagram</Link>
-                        </strong>
-        
-                    </li>
-                    <li>
-                        <strong>
-                            <Link to={"introduction-sql"}>Introduction to SQL</Link>
-                        </strong>
-        
-                    </li>
-
-                </ul>
-                <hr />
-              
-
-                <h2>Tools to track test cases</h2>
-
+                <h2>Performance Testing </h2>
                 <ul>
                     <li>
-                    <strong>
-                            <div onClick={ () => window.open(require('../assets/RSD- Generic template to report  Bugs.docx'), '_none')}>
-                                <p class="downloadable">Generic template to report Bugs <FontAwesomeIcon icon={['fa', 'download']} /></p>
-                            </div>   
-                        </strong>
-                    </li>
-                    <li>
-                    <strong>
-                            <div onClick={ () => window.open(require('../assets/RSD-Template-TestCases.xlsx'), '_none')}>
-                                <p class="downloadable">Test cases - generic template <FontAwesomeIcon icon={['fa', 'download']} /></p>
-                            </div>   
+                        <strong>
+                            <div onClick={ () => window.open(require('../assets/01- JMeter- Building your First Script.pptx'), '_none')}>
+                               <p class="downloadable">01-JMeter- Building your First Script<FontAwesomeIcon icon={['fa', 'download']} /></p>
+                            </div>
                         </strong>
                     </li>
 
                     <li>
                         <strong>
-                            <a href="https://jira.endava.com/" target="_blank">Jira tracking </a>
+                            <div onClick={ () => window.open(require('../assets/02- Profilers and Client Side Performance Tools.pptx'), '_none')}>
+                                <p class="downloadable">02-Profilers and Client Side Performance Tools <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                            </div>
                         </strong>
+
                     </li>
-                    </ul>
-              
+                </ul>
+
+
 
         </main>
 

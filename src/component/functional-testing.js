@@ -13,6 +13,16 @@ const FunctionalTesting = (props) => (
         
                         <div className="animate title">
 				
+                            <span>f</span>
+                            <span>u</span>
+                            <span>n</span>
+                            <span>c</span>
+                            <span>t</span>
+                            <span>i</span>
+                            <span>o</span>
+                            <span>n</span>
+                            <span>a</span>
+                            <span>l</span>&nbsp;
                             <span>t</span>
                             <span>e</span>
                             <span>s</span>
@@ -24,33 +34,32 @@ const FunctionalTesting = (props) => (
                         </div>
 
                     </div>
-                    <h2>Main Reading</h2>
-                   
-                    <ul>
-                        <li>Our purpose of this training is share and impart knowledge.</li>
-                        <li>To familiarize the audience with the terminology used in the testing work.</li>
-                        <li>To arrive at a common understanding of the scope of testing activity.</li>
-                        <li>Execute a program with the intent of finding errors to:</li>
+
+                        <h2>Good to know</h2>
                         <ul>
-                            <li>Determine whether system meets specifications</li>
-                            <li>Determine whether system meets user’s needs</li>
-                        </ul>
-                        <ul>
-                        <li>Understand about techniques for planning tests.</li>
-                        <li>Apply techniques of software testing in projects.</li>
-                        <li>Select the appropriate testing techniques and objectives.</li>
-                        <li>Continuously improve the testing process.</li>
-                    </ul>
-                    <hr />
-                    <h2>Topics to cover</h2>
-                    <ul>
-                        <li>
+                            <li>
                             <strong>
-                                <Link to={"topics"}>View all topics</Link>
+                                <a href="test-guide">Testing Checklists</a>
                             </strong>
 
-                        </li>
-                    </ul>
+                            </li>
+                            <li>
+                            <strong>
+                                <a href="ui-elements">Elements of User Interface</a>
+                            </strong>
+                            </li>
+                        </ul>
+
+                     <hr />
+                     <h2>Certifications</h2>
+                        <ul>
+                            <li>
+                            <strong>
+                                <a href="istqb">ISTQB</a>
+                            </strong>
+                            </li>
+                        </ul>
+
                     <hr />
                     <h2>Material to download</h2>
                     <ul>
@@ -77,43 +86,10 @@ const FunctionalTesting = (props) => (
                                 </div>   
                             </strong>
                         </li>
-                        <li>
-                            <strong>
-                                <div onClick={ () => window.open(require('../assets/RSD-Scrum basics.pptx'), '_none')}>
-                                    <p class="downloadable">Scrum basics <FontAwesomeIcon icon={['fa', 'download']} /></p>
-                                </div>   
-                            </strong>
-                        </li>
-                    </ul>
-                    <hr />
-                        <h2>Material to Read</h2>
-                        <ul>
-                            <li>
-                            <strong>
-                                <a href="test-guide">Testing Checklists</a>
-                            </strong>
-
-                        </li>
-                        <li>
-                            <strong>
-                                <a href="ui-elements">Elements of User Interface</a>
-                            </strong>
-
-                        </li>
-                        <li>
-                            <strong>
-                                <Link to={"introduction-erd"}>Introduction to Entity Relationship Diagram</Link>
-                            </strong>
-            
-                        </li>
-						<li>
-                            <strong>
-                                <Link to={"introduction-sql"}>Introduction to SQL</Link>
-                            </strong>
-            
-                        </li>
 
                     </ul>
+
+
                     <hr />
                  
                     <h2>Tools to track test cases</h2>
@@ -140,7 +116,7 @@ const FunctionalTesting = (props) => (
                             </strong>
                         </li>
                         </ul>
-                    </ul>
+
 
             </main>
 

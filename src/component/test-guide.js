@@ -11,11 +11,7 @@ const TestGuide = (props) => (
 
           <div className="animate title">
 
-            <span>b</span>
-            <span>a</span>
-            <span>s</span>
-            <span>i</span>
-            <span>c</span>&nbsp;
+
             <span>t</span>
             <span>e</span>
             <span>s</span>
