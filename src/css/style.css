@@ -162,8 +162,30 @@ code {
   border: solid 2px #de411b;
 }
 
-.active {
+.nav-menu-link.active {
   background-color: #de411b;
+}
+
+.dropdown-menu .dropdown-item {	
+	text-decoration: none;	
+	text-transform: uppercase;	
+	font-size: .8em;	
+	font-weight: 600;
+	color: white;
+	letter-spacing: 1px;	
+	padding: 1.2rem 1.5rem;	
+}
+
+.dropdown-menu .dropdown-item:focus, .dropdown-menu .dropdown-item:hover {
+	background-color: rgba(0, 0, 0, 0.26);
+}
+
+.button-drop-example .dropdown-menu .dropdown-item {
+	color:#495057;
+}
+
+.button-drop-example .dropdown-menu .dropdown-item :hover {
+	color:#495057;
 }
 
 .svg-inline--fa  {
@@ -298,15 +320,68 @@ code {
 }	
 .img-books {
 
-       max-width: 50px;
-       float: left;
-       display: block;
+	max-width: 50px;
+	float: left;
+	display: block;
 
-            }
+}
+
+.icons-example, .notification-example{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.notification-example{
+	place-content: space-between center;
+}
+
+.icons-example .svg-inline--fa{
+	font-size: 40px;
+	align-items: center;
+	margin: 0 12px;
+}
+
+.notification-example button {
+	align-items: center;
+	width: 100%;
+	
+}
+
+.react-dual-listbox {
+	display: inline-block;
+}
+
+.container-notifications{
+	width: 100%;
+}
+
+.react-datepicker-wrapper, .react-datepicker__input-container, .react-datepicker__input-container input {
+	width: 100%;
+}
+
+.makeStyles-root-1 {
+    width: 100%;
+}
+
+@media (min-width: 960px) {
+	.MuiTab-root {
+		font-size: 0.8125rem;
+		min-width: 50px!important;
+	}
+}
 
 @media (min-width: 992px){
 	.navbar-expand-lg .navbar-nav .dropdown-menu {
 		background-color: #de411b;
+		color: white;
+		border: none;
+	}
+
+	.navbar-expand-lg .navbar-nav .dropdown-menu :hover{
+		background-color: rgba(0, 0, 0, 0.26);
 		color: white;
 		border: none;
 	}
