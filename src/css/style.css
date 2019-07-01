@@ -312,19 +312,59 @@ code {
 .action a:hover {
 	background-color: white;
 	color: #de411b;
-    
 }
 
 .navbar-nav .dropdown-menu {
 	background-color: #2B3036;
 }	
-.img-books {
 
+.img-books {
 	max-width: 50px;
 	float: left;
 	display: block;
-
 }
+
+.flex-grid {
+	display: flex;
+  }
+  .flex-grid .col {
+	flex: 1;
+  }
+  .flex-grid-thirds {
+	display: flex;
+	justify-content: space-between;
+  }
+  .flex-grid-thirds .col {
+	width: 32%;
+	margin: 2px;
+  }
+  
+  @media (max-width: 400px) {
+	.flex-grid,
+	.flex-grid-thirds {
+	  display: block;
+	  .col {
+		width: 100%;
+		margin: 0 0 10px 0;
+	  }
+	}
+  }
+  
+
+  .flex-grid { 
+	margin: 0 0 20px 0;
+  }
+  .col {
+	background: #E37A5F;
+	padding: 20px;
+	color: white;
+  }
+  .col h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'endava-font', sans-serif;
+  }
 
 .icons-example, .notification-example{
     display: flex;
@@ -364,6 +404,28 @@ code {
 
 .makeStyles-root-1 {
     width: 100%;
+}
+
+#practice .icons {
+	color: white;
+    max-width: 20%;
+    display: block;
+    text-align: center;
+	margin: 10px auto;
+	min-height: 140px;
+}
+
+#practice a {
+	color: white; 
+	font-weight: bold;
+}
+#practice a:hover {
+	text-decoration: underline;
+}
+
+
+#practice span {
+	
 }
 
 @media (min-width: 960px) {

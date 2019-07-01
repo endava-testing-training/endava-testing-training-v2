@@ -22,10 +22,10 @@ import VideoAgile         from './component/video-agile';
 
 import EndavaFooter from './component/footer';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faDownload  } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faInstagram,  faLinkedin, faTwitter   } from '@fortawesome/free-brands-svg-icons';
+import { faDownload, faAd, faThermometerHalf, faMapMarked,  faAddressBook   } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faInstagram,  faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
-library.add( faDownload, faFacebook, faInstagram,  faLinkedin, faTwitter )
+library.add( faDownload, faFacebook, faInstagram,  faLinkedin, faTwitter,faAd, faThermometerHalf, faMapMarked, faAddressBook  )
 
 class App extends Component {
   render() {
@@ -47,7 +47,8 @@ class App extends Component {
             <Route exact path="/istqb"              render={() => <Istqb title="Recommended sites" />} />
             <Route exact path="/ui-elements"        render={() => <UiElements title="Endava" />} />
             <Route exact path="/technical-skills"   render={() => <TechnicalSkills title="Endava" />} />
-             <Route exact path="/topics"            render={() => <Topics title="Topics about this training" />} /><Route exact path="/topics"           render={() => <Topics title="Topics about this training" />} />
+            <Route exact path="/topics"             render={() => <Topics title="Topics about this training" />} />
+            <Route exact path="/topics"             render={() => <Topics title="Topics about this training" />} />
             <Route exact path="/introduction-erd"   render={() => <IntroductionErd title="Endava" />} />
             <Route exact path="/introduction-sql"   render={() => <IntroductionSql title="Endava" />} />
           <EndavaFooter />
