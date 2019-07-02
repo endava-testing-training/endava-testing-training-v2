@@ -12,7 +12,9 @@ const EndavaNavbar = () => (
                 <NavLink className="nav-menu-link" exact to="/home">Home</NavLink>
                 <NavDropdown title="Recommended sites" id="recommended-sites-nav-dropdown">
                     <NavDropdown.Item href="https://www.ministryoftesting.com" target="_blank" >Ministry of Testing</NavDropdown.Item>
-                    <NavDropdown.Item href="istqb">ISTQB Certifications</NavDropdown.Item>
+                    <NavDropdown.Item href="https://istqb.org" target="_blank" >ISTQB oficial site</NavDropdown.Item>
+                    <NavDropdown.Item href="http://testingchallenges.thetestingmap.org/" target="_blank" >Fun Exercises</NavDropdown.Item>
+
                 </NavDropdown>
                 <NavDropdown title="Useful links" id="useful-links-nav-dropdown">
                     <NavDropdown.Item href="about-scrum">About Scrum</NavDropdown.Item>

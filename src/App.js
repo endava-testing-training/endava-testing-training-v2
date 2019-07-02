@@ -48,7 +48,6 @@ class App extends Component {
             <Route exact path="/ui-elements"        render={() => <UiElements title="Endava" />} />
             <Route exact path="/technical-skills"   render={() => <TechnicalSkills title="Endava" />} />
             <Route exact path="/topics"             render={() => <Topics title="Topics about this training" />} />
-            <Route exact path="/topics"             render={() => <Topics title="Topics about this training" />} />
             <Route exact path="/introduction-erd"   render={() => <IntroductionErd title="Endava" />} />
             <Route exact path="/introduction-sql"   render={() => <IntroductionSql title="Endava" />} />
           <EndavaFooter />
