@@ -81,10 +81,10 @@ const Agile = (props) => (
                     <hr />
 
                          <h2>Books recommended</h2>
-                            <ul>
+                            <ul class="books">
                                  <li>
-{/*GABY ACOMODAR LAS IMAGENES*/}
-                                 {/*<img src={books} class="img-books"></img>*/}
+
+                                 <img src={books}></img>
                                  <strong>
                                  <div onClick={ () => window.open(require('../assets/AGILE_TESTING_-_A_PRACTICAL_GUIDE_FOR_TESTERS_AND_AGILE_TEAMS.pdf'), '_none')}>
                                  <p class="downloadable">Agile Testing: a practical guide for testers and agile teams<FontAwesomeIcon icon={['fa', 'download']} /></p>
@@ -92,7 +92,7 @@ const Agile = (props) => (
                                  </strong>
                                  </li>
                                  <li>
-                                 {/*<img src={bookBob} class="img-books"></img>*/}
+                                <img src={bookBob}></img>
                                  <strong>
                                     <div onClick={ () => window.open(require('../assets/The 3 Pillars of Agile Quality and Testing (Bob Galen).pdf'), '_none')}>
                                     <p class="downloadable">The 3 Pillars of Agile Quality and Testing (Bob Galen)<FontAwesomeIcon icon={['fa', 'download']} /></p>

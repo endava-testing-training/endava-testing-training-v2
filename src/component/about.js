@@ -1,5 +1,17 @@
 import React from 'react';
-import man   from '../images/aboutUs/man.jpg'; 
+
+import gabriel   from '../images/aboutUs/Gabriel_Giri.jpg'; 
+import carla   from '../images/aboutUs/carla.jpg'; 
+import gisela   from '../images/aboutUs/Gisela_Vivas.jpg'; 
+import fernando   from '../images/aboutUs/Fernando_Uranga.jpg'; 
+import mauri   from '../images/aboutUs/mauri.jpg'; 
+import cintia   from '../images/aboutUs/cintia.jpg'; 
+import lucia   from '../images/aboutUs/Lucia_Giancrisostomo.jpg'; 
+import andrea   from '../images/aboutUs/Andrea_Sabella.jpg'; 
+import alejandra   from '../images/aboutUs/alejandra.jpg'; 
+import evelin   from '../images/aboutUs/Evelin_Mena.jpg'; 
+import martin   from '../images/aboutUs/Martin_Zapata.jpg'; 
+
 
 const AboutUs = (props) => (
 
@@ -33,6 +45,13 @@ const AboutUs = (props) => (
                             <span>?</span>
                         </div>
                     </div>
+
+
+
+            
+
+
+
                     <p>Welcome, and first of all let us thank you for taking the time and showing interest in getting to know us!</p>
                     <p>We are just a bunch of testers working in the Management Testing Community who enjoy learning in a fun and practical way. That's kind of what we aim to do here.</p>
                     <p>The original idea where this website came from was and still is, helping each other to improve our technical (and why not also social) skills. We just wanted to have a taste of that developer stuff we so often see but never lay hands on.</p>
@@ -45,26 +64,60 @@ const AboutUs = (props) => (
                     <p>It was a pleasure to have you around and we hope that if you're interested in sharing, learning or taking part by any means, please do. We like to think we are a quite warm and friendly team, and hopefully so will you.</p>
                     <p>Have a nice day! :)</p>
                     <p className="float-right">Management Testing Community</p>
-                    <p>Gabriel Giri Fernando Uranga Lucía G Evelin Mena Carla Passaro Cintia Hetzer Andrea Sabella Martín Zapata</p>
-                    
-                    <div class="faces">
-                        <img src={man} className="my-3 faces-rounded"></img>
-                        <h5 class="text-center text-uppercase">Nombre y Apellido</h5>
-                    </div>
-                    <div class="faces">
-                        <img src={man} className="my-3 faces-rounded"></img>
-                        <h5 class="text-center text-uppercase">Nombre y Apellido</h5>
-                    </div>
-                    <div class="faces">
-                        <img src={man} className="my-3 faces-rounded"></img>
-                        <h5 class="text-center text-uppercase">Nombre y Apellido</h5>
-                    </div>
-                    <div class="faces">
-                        <img src={man} className="my-3 faces-rounded"></img>
-                        <h5 class="text-center text-uppercase">Nombre y Apellido</h5>
-                    </div>
+          
                     
                 </div>
+
+                </div>
+
+                <div class="prof-images-container">
+                <div class="prof-tester">
+                    <img src={gabriel} class="prof-image" />
+                    <p>Gabriel Giri</p>
+                </div>
+                <div class="prof-tester">
+                    <img src={fernando} class="prof-image"/>
+                    <p>Fernando Uranga</p>
+                </div>
+                <div class="prof-tester">
+                    <img src={lucia} class="prof-image"/>
+                    <p>Lucía G</p>
+                </div>  
+                <div class="prof-tester">
+                    <img src={evelin} class="prof-image"/>
+                    <p>Evelin Mena</p>
+                </div>
+                <div class="prof-tester">
+                    <img src={carla} class="prof-image"/>
+                    <p>Carla Passaro</p>
+                </div>
+                <div class="prof-tester">
+                    <img src={cintia} class="prof-image"/>
+                    <p>Cintia Hetzer</p>
+                </div>
+                <div class="prof-tester">
+                    <img src={andrea} class="prof-image"/>
+                    <p>Andrea Sabella</p>
+                </div> 
+                <div class="prof-tester">
+                    <img src={martin} class="prof-image"/>
+                    <p>Martín Zapata</p>
+                </div>  
+                <div class="prof-tester">
+                    <img src={gisela} class="prof-image"/>
+                    <p>Gisela Vivas</p>
+                </div> 
+                <div class="prof-tester">
+                    <img src={mauri} class="prof-image"/>
+                    <p>Mauricio Gullotto</p>
+                </div>  
+               <div class="prof-tester">
+                    <img src={alejandra} class="prof-image"/>
+                    <p>María Alejandra Usart</p>
+                </div>  
+                                    
+           
+
             </div>
 
         </main>
