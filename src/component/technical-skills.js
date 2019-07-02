@@ -46,34 +46,46 @@ const TechnicalSkills = (props) => (
                    </li>
                 </ul>
                        <hr />
-                                <h2>Performance Testing </h2>
-                                <ul>
-                                    <li>
-                                        <strong>
-                                            <div onClick={ () => window.open(require('../assets/01- JMeter- Building your First Script.pptx'), '_none')}>
-                                               <p class="downloadable">01-JMeter- Building your First Script<FontAwesomeIcon icon={['fa', 'download']} /></p>
-                                            </div>
-                                        </strong>
-                                    </li>
+                       <h2>Performance Testing </h2>
+                       <ul>
+                           <li>
+                               <strong>
+                                 <div onClick={ () => window.open(require('../assets/01- JMeter- Building your First Script.pptx'), '_none')}>
+                                   <p class="downloadable">01-JMeter- Building your First Script<FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                 </div>
+                               </strong>
+                           </li>
 
-                                    <li>
-                                        <strong>
-                                            <div onClick={ () => window.open(require('../assets/02- Profilers and Client Side Performance Tools.pptx'), '_none')}>
-                                                <p class="downloadable">02-Profilers and Client Side Performance Tools <FontAwesomeIcon icon={['fa', 'download']} /></p>
-                                            </div>
-                                        </strong>
+                           <li>
+                               <strong>
+                                 <div onClick={ () => window.open(require('../assets/02- Profilers and Client Side Performance Tools.pptx'), '_none')}>
+                                 <p class="downloadable">02-Profilers and Client Side Performance Tools <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                 </div>
+                               </strong>
 
-                                    </li>
-                                </ul>
+                           </li>
+                          </ul>
 
                 <hr />
-                <h2>Automation training </h2>
+                <h2>Additional knowledge</h2>
                 <ul>
                     <li>
                         <strong>
                             <a href="http://cgosorio.es/DW/comedor-css/" target="_blank">Selectors practice </a>
                         </strong>
                     </li>
+                    <li>
+                        <strong>
+                          <div onClick={ () => window.open(require('../assets/Git Fundamentals.pptx'), '_none')}>
+                              <p class="downloadable">Git Fundamentals <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                          </div>
+                        </strong>
+                    </li>
+                   </ul>
+
+                <hr />
+                <h2>Automation local training </h2>
+                    <ul>
                     <li>
                         <strong>
                             <div onClick={ () => window.open(require('../assets/01-HTML for testing.pptx'), '_none')}>
