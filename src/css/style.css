@@ -202,7 +202,10 @@ code {
   color: #dc3545;
   font-size: 16px;
 }
-
+.svg-inline--fa.fa-downloadTemplate{
+  color: #dc3545;
+  font-size: 16px;
+}
 .svg-inline--fa.fa-twitter:hover{
 	color: #00acee;
 }
@@ -224,11 +227,16 @@ code {
 	cursor: pointer;
 	margin-bottom: 0;
 }
+
+
+.downloadTemplate {
+	cursor: pointer;
+	margin-bottom: 0;
+}
 .downloadable:hover {
 	color: #0056b3;
 
 }
-
 
 .intro div {
     border:  #de411b solid 1px;
@@ -466,7 +474,7 @@ code {
 }
 
 #practice a {
-	color: white; 
+	color: white;
 	font-weight: bold;
 }
 #practice a:hover {

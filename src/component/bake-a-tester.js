@@ -86,24 +86,13 @@ const BakeTester = (props) => (
                             <span>i</span>
                             <span>c</span>
                             <span>s</span>&nbsp;
-                            <span>a</span>
-                            <span>b</span>
+                            <span>t</span>
+                            <span>o</span>&nbsp;
+                            <span>c</span>
                             <span>o</span>
-                            <span>u</span>
-                            <span>t</span>&nbsp;
-                            <span>t</span>
-                            <span>h</span>
-                            <span>i</span>
-                            <span>s</span>&nbsp;
-                            <span>t</span>
+                            <span>v</span>
+                            <span>e</span>
                             <span>r</span>
-                            <span>a</span>
-                            <span>i</span>
-                            <span>n</span>
-                            <span>i</span>
-                            <span>n</span>
-                            <span>g</span>
-
                         </div>
 
                     </div>

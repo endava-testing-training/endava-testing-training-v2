@@ -58,7 +58,7 @@ const Agile = (props) => (
                         </li>
                     </ul>
                     <hr />
-                        <h2>Useful links </h2>
+                        <h2>Interesting Videos</h2>
                         <ul>
                           <li>
                             <strong>
@@ -71,13 +71,21 @@ const Agile = (props) => (
                             </strong>
                           </li>
                           <li>
+                           <strong>
+                           <a href="agile-testing">Agile Software Testing with James Bach</a>
+                           </strong>
+                          </li>
+                    <hr />
+                        </ul>
+                         <h2>Useful Links</h2>
+                         <ul>
+                          <li>
                              <strong>
                              <a href="https://www.testingexcellence.com/tag/agile-testing/">Agile Testing</a>
                              </strong>
                           </li>
+                        </ul>
 
-
-                    </ul>
                     <hr />
 
                          <h2>Books recommended</h2>

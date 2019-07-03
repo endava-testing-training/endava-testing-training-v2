@@ -5,6 +5,7 @@ import './css/style.css';
 import AboutScrum         from './component/about-scrum';
 import AboutUs            from './component/about';
 import Agile              from './component/agile';
+import AgileTesting       from './component/agile-testing';
 import BakeTester         from './component/bake-a-tester';
 import EndavaNavbar       from './component/navbar';
 import FunctionalTesting  from './component/functional-testing';
@@ -41,6 +42,7 @@ class App extends Component {
             <Route exact path="/home"               render={() => <Home title="Home" />} />
             <Route exact path="/about-scrum"        render={() => <AboutScrum title="Usefull links" />} />
             <Route exact path="/video-agile"        render={() => <VideoAgile title="Usefull links" />} />
+            <Route exact path="/agile-testing"      render={() => <AgileTesting title="Usefull links" />} />
             <Route exact path="/success"            render={() => <Success title="Endava" />} />
             <Route exact path="/about"              render={() => <AboutUs title="About us" />} />
             <Route exact path="/test-guide"         render={() => <TestGuide title="Endava" />} />

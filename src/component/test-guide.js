@@ -50,25 +50,25 @@ const TestGuide = (props) => (
     <div id="collapse-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
       <div class="panel-body">
       <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div className="col">Functionality</div>
-                <div className="col">Specifications</div>
+                <div className="col-3">Functionality</div>
+                <div className="col-9">Specifications</div>
               </div>
 
               <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div className="col">General</div>
+                <div className="col-12">General</div>
 
               </div>
 
 
               <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div className="col">For web applications, these scenarios should be tested on multiple browsers like IE, FF, Chrome, Safari, Brave,etc, with versions approved by the client.</div>
+                <div className="col-12">For web applications, these scenarios should be tested on multiple browsers like IE, FF, Chrome, Safari, Brave,etc, with versions approved by the client.</div>
 
               </div>
 
 
 
               <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div className="col">User Login / Permissions</div>
+                <div className="col-12">User Login / Permissions</div>
 
               </div>
 
@@ -116,7 +116,7 @@ const TestGuide = (props) => (
 
 
               <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div className="col">Screens</div>
+                <div className="col-12">Screens</div>
 
               </div>
 
@@ -153,7 +153,7 @@ const TestGuide = (props) => (
               </div>
 
               <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div className="col">Create</div>
+                <div className="col-12">Create</div>
               </div>
 
               <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
@@ -222,7 +222,7 @@ const TestGuide = (props) => (
               </div>
 
               <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div className="col">Modify</div>
+                <div className="col-12">Modify</div>
 
               </div>
 
@@ -291,12 +291,12 @@ const TestGuide = (props) => (
 
 
               <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div className="col">Delete</div>
+                <div className="col-12">Delete</div>
 
               </div>
 
               <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
-                <div className="col">Delete functionality’ for any record on a page should ask for a confirmation.</div>
+                <div className="col-12">Delete functionality’ for any record on a page should ask for a confirmation.</div>
 
               </div>
 
@@ -333,7 +333,7 @@ const TestGuide = (props) => (
 
 
               <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div className="col">ComboBoxes</div>
+                <div className="col-12">ComboBoxes</div>
               </div>
 
               <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
@@ -356,7 +356,7 @@ const TestGuide = (props) => (
               </div>
 
               <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div className="col">Scroll</div>
+                <div className="col-12">Scroll</div>
               </div>
 
               <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
@@ -371,7 +371,7 @@ const TestGuide = (props) => (
 
 
               <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div className="col">Calendar and Date Validations</div>
+                <div className="col-12">Calendar and Date Validations</div>
               </div>
 
               <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
@@ -406,7 +406,7 @@ const TestGuide = (props) => (
               </div>
 
               <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div className="col">Search</div>
+                <div className="col-12">Search</div>
               </div>
 
               <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
@@ -469,7 +469,7 @@ const TestGuide = (props) => (
               </div>
 
               <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div className="col">Pagination</div>
+                <div className="col-12">Pagination</div>
               </div>
 
               <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
@@ -485,7 +485,7 @@ const TestGuide = (props) => (
               </div>
 
               <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div className="col">Sort columns</div>
+                <div className="col-12">Sort columns</div>
               </div>
 
               <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
@@ -500,7 +500,7 @@ const TestGuide = (props) => (
               </div>
 
               <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div className="col">Print</div>
+                <div className="col-12">Print</div>
               </div>
 
               <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
@@ -514,7 +514,7 @@ const TestGuide = (props) => (
               </div>
 
               <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div className="col">Image upload</div>
+                <div className="col-12">Image upload</div>
               </div>
 
               <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
@@ -540,7 +540,7 @@ const TestGuide = (props) => (
               </div>
 
               <div className="row font-weight-bolder border-bottom border-secondary p-2 ml-3 mr-3 mt-3 mb-1">
-                <div className="col">Specific test cases</div>
+                <div className="col-12">Specific test cases</div>
               </div>
 
               <div className="row border-bottom border-secondary p-2 ml-3 mr-3 mt-1 mb-1">
