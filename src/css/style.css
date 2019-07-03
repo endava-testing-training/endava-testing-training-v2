@@ -326,9 +326,6 @@ code {
 	background-color: #2B3036;
 }
 
-.books ul{
-
-}
 .books li{
 	display: table;
 
@@ -401,23 +398,24 @@ code {
 	.flex-grid,
 	.flex-grid-thirds {
 	  display: block;
-	  .col {
+	}
+
+	.flex-grid-thirds .col{
 		width: 100%;
 		margin: 0 0 10px 0;
-	  }
 	}
   }
   
 
-  .flex-grid { 
+  .flex-grid-thirds { 
 	margin: 0 0 20px 0;
   }
-  .col {
+  .flex-grid-thirds .col {
 	background: #E37A5F;
 	padding: 20px;
 	color: white;
   }
-  .col h3{
+  .flex-grid-thirds .col h3{
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
@@ -479,11 +477,6 @@ code {
 }
 #practice a:hover {
 	text-decoration: underline;
-}
-
-
-#practice span {
-	
 }
 
 @media (min-width: 960px) {
