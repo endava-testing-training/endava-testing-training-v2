@@ -19,15 +19,18 @@ const EndavaNavbar = () => (
                 <NavDropdown title="Useful links" id="useful-links-nav-dropdown">
                     <NavDropdown.Item href="about-scrum">About Scrum</NavDropdown.Item>
                     <NavDropdown.Item href="video-agile">12 Agile Principles</NavDropdown.Item>
+                    <NavDropdown.Item href="https://goo.gl/NoCM4J" target="_blank">Confluence</NavDropdown.Item>
 
                 </NavDropdown>
+
                 <NavLink className="nav-menu-link" exact to="/success">Our success stories</NavLink>
+                <NavLink className="nav-menu-link" exact to="/Disciplines">Disciplines</NavLink>
+                <NavLink className="nav-menu-link" exact to="/Communities">Communities</NavLink>
                 <NavLink className="nav-menu-link" exact to="/about">About Us</NavLink>
-                <NavDropdown title="Contact" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="https://goo.gl/97oRXH" target="_blank" >MS Teams</NavDropdown.Item>
-                    <NavDropdown.Item href="https://goo.gl/NoCM4J" target="_blank">Confluence</NavDropdown.Item>
-                    <NavDropdown.Item href="https://dev.azure.com/GiselaVivas/Testing%20Management" target="_blank">Out Board</NavDropdown.Item>
-                </NavDropdown>
+                <NavLink className="nav-menu-link" exact to="/goo.gl/97oRXH">Contact us</NavLink>
+
+
+
             </Nav>
             <Navbar.Brand href="#home">
                     <img src={EndavaLogo} alt="Endava logo" />
