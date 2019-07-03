@@ -81,6 +81,13 @@ const FunctionalTesting = (props) => (
                         </li>
                         <li>
                             <strong>
+                                 <div onClick={ () => window.open(require('../assets/Mobile testing.pdf'), '_none')}>
+                                      <p class="downloadable">Mobile Testing<FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                 </div>
+                            </strong>
+                        </li>
+                        <li>
+                            <strong>
                                 <div onClick={ () => window.open(require('../assets/RSD- Endava - Web Accessibility Testing.pptx'), '_none')}>
                                     <p class="downloadable">Web Accessibility Testing <FontAwesomeIcon icon={['fa', 'download']} /></p>
                                 </div>   
