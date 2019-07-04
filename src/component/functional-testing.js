@@ -37,17 +37,18 @@ const FunctionalTesting = (props) => (
 
                         <h2>Good to know</h2>
                         <ul>
+                              <li>
+                              <strong>
+                                 <a href="ui-elements">Elements of User Interface</a>
+                              </strong>
+                            </li>
                             <li>
                             <strong>
                                 <a href="test-guide">Testing Checklists</a>
                             </strong>
 
                             </li>
-                            <li>
-                            <strong>
-                                <a href="ui-elements">Elements of User Interface</a>
-                            </strong>
-                            </li>
+
                         </ul>
 
                      <hr />
