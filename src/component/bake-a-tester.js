@@ -8,7 +8,7 @@ const BakeTester = (props) => (
 
         <main className="page-content" aria-label="Content">
                                           
-                    <div className="typewriter rounded">
+                    <div className="typewriter rounded mb-2">
                         <h2>{props.title}</h2>
         
                         <div className="animate title">
@@ -36,9 +36,13 @@ const BakeTester = (props) => (
             <p>You will find useful links, definitions and tips on how to become a better tester, certifications information, and so on. Furthermore, technical excercises are offered so you familiarize with testing terminology.</p>
             <p>As members of interdisciplinary teams it is within our strongest beliefs that all as a whole are responsible for ensuring the highest quality-standards of the products we deliver. Come on board. Be more!</p>
             <p>When you hear the bell you'll know your Tester is fully baked and ready to come out the oven!</p>
-            <p>We wish you a good baking! ;)</p>
+            <p className="mb-2"><strong>We wish you a good baking! ;)</strong></p>
             <hr />
                    </main>
+                            
+                   {/*
+                  
+                  
                             <div className="typewriter rounded">
 
                                     <div className="animate title">
@@ -72,9 +76,7 @@ const BakeTester = (props) => (
                         </ul>
                       <li>Learn together by continuosly improving this interdisciplinary platform</li>
                     </ul>
-
-
-                <div className="typewriter rounded">
+ <div className="typewriter rounded">
 
                         <div className="animate title">
 
@@ -94,6 +96,10 @@ const BakeTester = (props) => (
                         </div>
 
                     </div>
+
+
+*/}
+           <h2 class="mt-1 mb-3">Topics Cover</h2>     
 
         <div class="accordion-option">
 
