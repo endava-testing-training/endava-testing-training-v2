@@ -5,14 +5,12 @@ const Home = (props) => (
 
     <div className="container-fluid p-0 clearfix">
 
-      <main className="page-content intro" aria-label="Content">
-                                          
-        <div><Link to={"agile"}><p>1.AGILE</p></Link></div>
-        <div><Link to={"functional-testing"}><p>2.FUNCTIONAL TESTING</p></Link></div>
-        <div><Link to={"practice"}><p>3.PRACTICE</p></Link></div>
-        <div><Link to={"technical-skills"}><p>4.TECHNICAL SKILLS</p></Link></div>
-                  
-       </main>
+    <main className="page-content intro" aria-label="Content">
+        <div><Link to={"functional-testing"}><p>1.FUNCTIONAL TESTING</p></Link></div>                                 
+        <div><Link to={"practice"}><p>2.PRACTICE</p></Link></div>
+        <div><Link to={"technical-skills"}><p>3.TECHNICAL SKILLS</p></Link></div>
+        <div><Link to={"agile"}><p>4.AGILE</p></Link></div>
+    </main>
 
         <div class="action">
             <Link to={"bake-a-tester"}>About Bake a Tester 3.0</Link>
