@@ -420,10 +420,11 @@ code {
 }
 
 .prof-tester-success img {
-	width: 20%;
+	width: 12%;
 	border: solid #de411b 2px;
 	transition: all .1s ease-in;
 	display: list-item;
+	border-radius: 100%;
 }
 
 .prof-tester-success img:hover {
@@ -471,6 +472,10 @@ code {
 
 @media (max-width: 400px) {
 	
+}
+
+.success-text {
+	margin: 12px 0 0;
 }
 
 .flex-grid-thirds {

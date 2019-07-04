@@ -30,47 +30,55 @@ const Success = (props) => (
                         </div>
                     </div>
                     <br/>
-                    <div class="prof-images-container-success">
-                        <div class="prof-tester-success">
+                    <div>
+                        <div className="prof-tester-success">
                             <h4>Gisela Vivas</h4>
-                            <img src={gisela} class="prof-image" alt="gise"/>
-                            <p>Gise now knows how to start to develop an application from scratch. She also improves her acknowledges about teaching testing in general.</p>
+                            <img src={gisela} className="prof-tester-success" alt="gise"/>
+                        </div>
+                        <div className="success-text">
+                            Gise now knows how to start to develop an application from scratch. She also improves her acknowledges about teaching testing in general.
                         </div>
                     </div>
                     <hr />
-                    <div class="prof-images-container-success">
-                        <div class="prof-tester-success">
+                    <div>
+                        <div className="prof-tester-success">
                             <h4>Ernesto Bordenave</h4>
-                            <img src={ernesto} class="prof-image" alt="tito"/>
+                            <img src={ernesto} className="prof-tester-success" alt="tito"/>
+                        </div>
+                        <div className="success-text">
                             <p>Ernest knows to play with components with react and works in quality because now I know that the whole team is responsible for testing.</p>
                         </div>
                     </div>
                     
                     <hr />
-                    <div class="prof-images-container-success">
-                        <div class="prof-tester-success">
+                    <div>
+                        <div className="prof-tester-success">
                             <h4>Gabriel Giri</h4>
-                            <img src={giri} class="prof-image" alt="tito"/>
-                            <p>Gaby now knows how to become a TESTER and he also improves his skills on React component.</p>
+                            <img src={giri} className="prof-tester-success" alt="gabriel"/>
+                        </div>
+                        <div className="success-text">
+                            Gaby now knows how to become a TESTER and he also improves his skills on React component.
                         </div>
                     </div>
-                    
 
                     <hr />
-                    <div class="prof-images-container-success">
-                        <div class="prof-tester-success">
+                    <div>
+                        <div className="prof-tester-success">
                             <h4>Fernando Uranga</h4>
-                            <img src={fernando} class="prof-image" alt="tito"/>
-                            <p>Fer now feels more comfortable working on web-based applications and has begun to understand react involving technologies.</p>
+                            <img src={fernando} className="prof-tester-success" alt="fernando"/>
+                        </div>
+                        <div className="success-text">
+                            Fer now feels more comfortable working on web-based applications and has begun to understand react involving technologies.
                         </div>
                     </div>
                     
-                    
                     <hr />
-                    <div class="prof-images-container-success">
-                        <div class="prof-tester-success">
+                    <div>
+                        <div className="prof-tester-success">
                             <h4>Ezequiel Gomez</h4>
-                            <img src={ezequiel} class="prof-image" alt="tito"/>
+                            <img src={ezequiel} className="prof-tester-success" alt="ezequiel"/>
+                        </div>
+                        <div className="success-text">
                             <p>Eze now knows how works in a platform developed in React component and also he learns a lot of testing in agile.</p>
                         </div>
                     </div>                 
