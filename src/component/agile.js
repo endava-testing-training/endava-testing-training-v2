@@ -40,25 +40,7 @@ const Agile = (props) => (
 
                     </div>
 
-                    <h2>Material to download</h2>
-                    <ul>
-                        <li>
-                            <strong>
-                                <div onClick={ () => window.open(require('../assets/RSD-Scrum basics.pptx'), '_none')}>
-                                    <p class="downloadable">Scrum basics <FontAwesomeIcon icon={['fa', 'download']} /></p>
-                                </div>   
-                            </strong>
-                        </li>
-                        <li>
-                            <strong>
-                                 <div onClick={ () => window.open(require('../assets/RSD- Agile Estimations.pptx'), '_none')}>
-                                        <p class="downloadable">Agile Estimations <FontAwesomeIcon icon={['fa', 'download']} /></p>
-                                  </div>
-                            </strong>
-                        </li>
-                    </ul>
-                    <hr />
-                        <h2>Interesting Videos</h2>
+                    <h2>Interesting Videos</h2>
                         <ul>
                           <li>
                             <strong>
@@ -77,14 +59,33 @@ const Agile = (props) => (
                           </li>
                     <hr />
                         </ul>
-                         <h2>Useful Links</h2>
-                         <ul>
-                          <li>
-                             <strong>
-                             <a href="https://www.testingexcellence.com/tag/agile-testing/">Agile Testing</a>
-                             </strong>
-                          </li>
-                        </ul>
+                          <h2>Useful Links</h2>
+                          <ul>
+                              <li>
+                                  <strong>
+                                      <a href="https://www.testingexcellence.com/tag/agile-testing/">Agile Testing</a>
+                                   </strong>
+                               </li>
+                          </ul>
+                    <hr />
+                    <h2>Material to download</h2>
+                    <ul>
+                        <li>
+                            <strong>
+                                <div onClick={ () => window.open(require('../assets/RSD-Scrum basics.pptx'), '_none')}>
+                                    <p class="downloadable">Scrum basics <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                </div>   
+                            </strong>
+                        </li>
+                        <li>
+                            <strong>
+                                 <div onClick={ () => window.open(require('../assets/RSD- Agile Estimations.pptx'), '_none')}>
+                                        <p class="downloadable">Agile Estimations <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                  </div>
+                            </strong>
+                        </li>
+                    </ul>
+
 
                     <hr />
 
