@@ -84,6 +84,13 @@ const Agile = (props) => (
                                   </div>
                             </strong>
                         </li>
+                        <li>
+                            <strong>
+                                 <div onClick={ () => window.open(require('../assets/Jira Training.pptx'), '_none')}>
+                                      <p class="downloadable">Jira Training <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                 </div>
+                            </strong>
+                        </li>
                     </ul>
 
 
