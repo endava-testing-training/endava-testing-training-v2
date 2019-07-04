@@ -32,6 +32,7 @@ const TestGuide = (props) => (
           </div>
 
         </div>
+<h4 className="mb-3 font-italic">List of all the essential tips that a Tester must know to ensure the best quality of the software.</h4>
 
         <div class="accordion-option">
   
