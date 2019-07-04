@@ -290,7 +290,7 @@ code {
 	font-weight: 900;
 	font-size: 40px;
 	text-transform: uppercase;
-	bottom: 20px;
+	bottom: 30px;
 	position: absolute;
 	display: block;
 	left: 30px;
@@ -331,6 +331,10 @@ code {
 	background-color: #2B3036;
 }
 
+#basic-navbar-nav {
+	height: auto !important;
+}
+
 .books li {
 	display: table;
 }
@@ -351,15 +355,7 @@ code {
 	flex: 1;
 }
 
-.flex-grid-thirds {
-	display: flex;
-	justify-content: space-between;
-}
 
-.flex-grid-thirds .col {
-	width: 32%;
-	margin: 2px;
-}
 
 .prof-images-container {
 	column-count: 1;
@@ -435,13 +431,7 @@ code {
 }
 
 @media (max-width: 400px) {
-	.flex-grid, .flex-grid-thirds {
-		display: block;
-	}
-	.flex-grid-thirds .col {
-		width: 100%;
-		margin: 0 0 10px 0;
-	}
+	
 }
 
 .flex-grid-thirds {
@@ -449,13 +439,19 @@ code {
 }
 
 .flex-grid-thirds .col {
-	background: #E37A5F;
-	padding: 20px;
-	color: white;
+
+
+
+    border-top: 6px #E37A5F solid;
+    padding: 20px;
+    color: #333;
+    background-color: rgb(239, 239, 240);
+
 }
 
 .flex-grid-thirds .col h3 {
 	text-transform: uppercase;
+	font-size: 1.8rem;
 	font-weight: bold;
 	text-align: center;
 	font-family: 'endava-font', sans-serif;
@@ -501,7 +497,7 @@ code {
 }
 
 #practice .icons {
-	color: white;
+	color: #333;
 	max-width: 20%;
 	display: block;
 	text-align: center;
@@ -510,7 +506,7 @@ code {
 }
 
 #practice a {
-	color: white;
+	color: #E37A5F;
 	font-weight: bold;
 }
 
@@ -817,10 +813,31 @@ a.repeat:hover {
 	.panel-body {
 		padding: 30px;
 	}
+
+
 }
 
 @media (min-width: 992px) {
 	.animate{
 		font-size: 4em;
 	}
+	.flex-grid, .flex-grid-thirds {
+		display: block;
+	}
+	.flex-grid-thirds .col {
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+	
+	.flex-grid-thirds {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.flex-grid-thirds .col {
+		width: 32%;
+		margin: 2px;
+	}
+
+
 }	
