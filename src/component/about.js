@@ -1,17 +1,16 @@
 import React from 'react';
 
 import gabriel   from '../images/aboutUs/Gabriel_Giri.jpg'; 
-import carla   from '../images/aboutUs/carla.jpg'; 
-import gisela   from '../images/aboutUs/Gisela_Vivas.jpg'; 
-import fernando   from '../images/aboutUs/Fernando_Uranga.jpg'; 
-import mauri   from '../images/aboutUs/mauri.jpg'; 
-import cintia   from '../images/aboutUs/cintia.jpg'; 
-import lucia   from '../images/aboutUs/Lucia_Giancrisostomo.jpg'; 
-import andrea   from '../images/aboutUs/Andrea_Sabella.jpg'; 
-import alejandra   from '../images/aboutUs/alejandra.jpg'; 
-import evelin   from '../images/aboutUs/Evelin_Mena.jpg'; 
-import martin   from '../images/aboutUs/Martin_Zapata.jpg'; 
-
+import carla     from '../images/aboutUs/Liana.Carla_Passaro.jpg'; 
+import gisela    from '../images/aboutUs/Gisela_Vivas.jpg'; 
+import fernando  from '../images/aboutUs/Fernando_Uranga.jpg'; 
+import mauri     from '../images/aboutUs/Mauricio_Gullotto.jpg'; 
+import cintia    from '../images/aboutUs/Cintia_Hetzer.jpg'; 
+import lucia     from '../images/aboutUs/Lucia_Giancrisostomo.jpg'; 
+import andrea    from '../images/aboutUs/Andrea_Sabella.jpg'; 
+import alejandra from '../images/aboutUs/Maria.Alejandra_Usart.jpg'; 
+import evelin    from '../images/aboutUs/Evelin_Mena.jpg'; 
+import martin    from '../images/aboutUs/Martin_Zapata.jpg'; 
 
 const AboutUs = (props) => (
 
@@ -46,12 +45,6 @@ const AboutUs = (props) => (
                         </div>
                     </div>
 
-
-
-            
-
-
-
                     <p>Welcome, and first of all let us thank you for taking the time and showing interest in getting to know us!</p>
                     <p>We are just a bunch of testers working in the Management Testing Community who enjoy learning in a fun and practical way. That's kind of what we aim to do here.</p>
                     <p>The original idea where this website came from was and still is, helping each other to improve our technical (and why not also social) skills. We just wanted to have a taste of that developer stuff we so often see but never lay hands on.</p>
@@ -62,10 +55,8 @@ const AboutUs = (props) => (
                     <p>You're right, developers!</p>
                     <p>So this is just a sneak peak of what will be a much larger project we will all benefit from.</p>
                     <p>It was a pleasure to have you around and we hope that if you're interested in sharing, learning or taking part by any means, please do. We like to think we are a quite warm and friendly team, and hopefully so will you.</p>
-                    <p>Have a nice day! :)</p>
-                    <p className="float-right">Management Testing Community</p>
-          
-                    
+                    <p><strong>Have a nice day! :)</strong></p>
+                   
                 </div>
 
                 </div>
