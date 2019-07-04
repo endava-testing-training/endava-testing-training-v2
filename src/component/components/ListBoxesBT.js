@@ -2,29 +2,22 @@ import React from 'react';
 import DualListBox from 'react-dual-listbox';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-dual-listbox/lib/react-dual-listbox.css';
-import { fachevron } from "@fortawesome/free-solid-svg-icons";
-
+import { faChevronRight, faChevronLeft, faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 const options = [
-    { value: 'luna', label: 'Moon' },
-    { value: 'phobos', label: 'Phobos' },
-    { value: 'deimos', label: 'Deimos' },
-    { value: 'io', label: 'Io' },
-    { value: 'europa', label: 'Europa' },
-    { value: 'ganymede', label: 'Ganymede' },
-    { value: 'callisto', label: 'Callisto' },
-    { value: 'mimas', label: 'Mimas' },
-    { value: 'enceladus', label: 'Enceladus' },
-    { value: 'tethys', label: 'Tethys' },
-    { value: 'rhea', label: 'Rhea' },
-    { value: 'titan', label: 'Titan' },
-    { value: 'iapetus', label: 'Iapetus' },
+    { value: 'tierra', label: 'Earth' },
+    { value: 'picture', label: 'Picture' },
+    { value: 'sun', label: 'Sun' },
+    { value: 'ray', label: 'Ray' },
+    { value: 'Step', label: 'Step' },
+    { value: 'place', label: 'Place' },
+    { value: 'car', label: 'Car' },
+    { value: 'argentina', label: 'Argentina' },
+    { value: 'game', label: 'Game' },
 ];
 
-
-
 export default class ListBoxesBT extends React.Component {
-    state = { selected: ['phobos', 'titan'] };
+    state = { selected: ['tierra', 'picture'] };
 
     constructor(props) {
         super(props);
@@ -45,19 +38,19 @@ export default class ListBoxesBT extends React.Component {
                 selected={selected}
                 onChange={this.onChange}
                 icons={{
-                  moveLeft: <span className="fa fa-chevron-left" />,
-                  moveAllLeft: [
-                      <span key={0} className="fa fa-chevron-left" />,
-                      <span key={1} className="fa fa-chevron-left" />,
-                  ],
-                  moveRight: <span className="fa fa-chevron-right" />,
-                  moveAllRight: [
-                      <span key={0} className="fas fa-chevron-right" />,
-                      <span key={1} className="fas fa-chevron-right" />,
-                  ],
-                  moveDown: <span className="fa fa-chevron-down" />,
-                  moveUp: <span className="fa fa-chevron-up" />,
-              }}
+                    moveLeft: <FontAwesomeIcon icon={faChevronLeft} />,
+                    moveAllLeft: [
+                        <FontAwesomeIcon key={0} icon={faChevronLeft} />,
+                        <FontAwesomeIcon key={1} icon={faChevronLeft} />
+                    ],
+                    moveRight: <FontAwesomeIcon icon={faChevronRight} />,
+                    moveAllRight: [
+                        <FontAwesomeIcon key={0} icon={faChevronRight} />,
+                        <FontAwesomeIcon key={1} icon={faChevronRight} />
+                    ],
+                    moveDown: <FontAwesomeIcon key={0} icon={faChevronDown} />,
+                    moveUp:   <FontAwesomeIcon key={1} icon={faChevronUp} />,
+                }}
             />
         );
     }
