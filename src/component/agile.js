@@ -86,7 +86,7 @@ const Agile = (props) => (
                         </li>
                         <li>
                             <strong>
-                                 <div onClick={ () => window.open(require('../assets/RSD- Agile Estimations.pptx'), '_none')}>
+                                 <div onClick={ () => window.open(require('../assets/Jira Training.pptx'), '_none')}>
                                       <p class="downloadable">Jira Training <FontAwesomeIcon icon={['fa', 'download']} /></p>
                                  </div>
                             </strong>
@@ -96,7 +96,7 @@ const Agile = (props) => (
 
                     <hr />
 
-                         <h2>Books every tester should be read</h2>
+                         <h2>Books that every agile tester should read</h2>
                             <ul class="books">
                                  <li>
 

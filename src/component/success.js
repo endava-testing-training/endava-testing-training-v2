@@ -26,27 +26,28 @@ const Success = (props) => (
                             <span>i</span>
                             <span>e</span>
                             <span>s</span>&nbsp;
-                            <span>g</span>
-                            <span>o</span>&nbsp;
-                            <span>h</span>
-                            <span>e</span>
-                            <span>r</span>
-                            <span>e</span>
+
                         </div>
                     </div>
-                    <h2>Our success stories</h2>
+                    <h3>Gisela Vivas </h3>
+                    <p>
+Gise now knows how to start to develop an application from scratch. She also improves her acknowledges about teaching testing in general.</p>
 
                     <hr />
-                    <h2>Our success stories</h2>
+                    <h3>Ernesto Bordenave </h3>
+                    <p>Ernest knows to play with components with react and works in quality because now I know that the whole team is responsible for testing.</p>
 
                     <hr />
-                    <h2>Our success stories</h2>
+                    <h3>Gabriel Giri </h3>
+                    <p>Gaby now knows how to become a TESTER and he also improves his skills on React component.</p>
 
                     <hr />
-                    <h2>Our success stories</h2>
-
+                    <h3>Fernando Uranga Vivas </h3>
+                    <p>Fer now feels more comfortable working on web-based applications and has begun to understand react involving technologies.</p>
                     <hr />
-                    <h2>More success stories</h2>
+                    <h3>Ezequiel Gomez </h3>
+                    <p>Eze now knows how works in a platform developed in React component and also he learns a lot of testing in agile.</p>
+
 
                 </div>
             </div>
