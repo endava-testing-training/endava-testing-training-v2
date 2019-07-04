@@ -89,7 +89,7 @@ const Agile = (props) => (
 
                     <hr />
 
-                         <h2>Books recommended</h2>
+                         <h2>Books every tester should be read</h2>
                             <ul class="books">
                                  <li>
 
