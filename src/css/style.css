@@ -21,6 +21,11 @@ dl, ol, ul {
 	text-transform: uppercase;
 }
 
+h3 {
+	margin: 10px auto;
+	font-size: 1.15rem;
+}
+
 h4 {
 	color: #de411b;
 	margin: 0 0 6px 0;
@@ -765,4 +770,8 @@ a.repeat:hover {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+
+.communityleads {
+	color:red;
 }
