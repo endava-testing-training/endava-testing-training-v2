@@ -21,6 +21,11 @@ dl, ol, ul {
 	text-transform: uppercase;
 }
 
+h3 {
+	margin: 10px auto;
+	font-size: 1.15rem;
+}
+
 h4 {
 	color: #de411b;
 	margin: 0 0 6px 0;
@@ -765,6 +770,10 @@ a.repeat:hover {
 	user-select: none;
 }
 
+.communityleads {
+	color:red;
+}
+
 @media (min-width: 576px){
 	.animate{
 		font-size: 2.6em;
@@ -786,4 +795,4 @@ a.repeat:hover {
 	.animate{
 		font-size: 4em;
 	}
-}
+
