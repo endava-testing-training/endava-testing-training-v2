@@ -30,6 +30,10 @@ a, .downloadable {
 	color: #698aad;
 }
 
+.downloadable :hover, .downloadable :focus, .downloadable :focus-within {
+	color: #0056b3;
+}
+
 h4 {
 	color: #de411b;
 	margin: 0 0 6px 0;
@@ -48,6 +52,10 @@ code {
 	padding: 5px;
 	border: none;
 	margin-bottom: 5px;
+}
+
+.fullwidth {
+	width: 100%;
 }
 
 .typewriter h2 {
