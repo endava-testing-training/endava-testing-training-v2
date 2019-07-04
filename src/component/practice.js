@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ToolTipPractice from './components/ToolTipPractice';
 import AccordionBT from './components/AccordionBT';
+import { Link } from 'react-router-dom';
 
 
 const Practice = (props) => (
@@ -128,10 +129,9 @@ const Practice = (props) => (
             </div>
             <div id="collapse-2" className="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
               <div className="panel-body">
-               
-              
-              <ul>
-              <li>Learn about filters and sorting </li>
+                      
+                <ul>
+                    <li>Learn about filters and sorting </li>
                     <li>Enforce knowledge about Structure test cases</li>
                     <li>Execute test cases </li>
                     <li>Write Test Cases</li>
@@ -152,6 +152,7 @@ const Practice = (props) => (
                             <li><a href="https://endava-testing-training.github.io/ProvinceSearcher/province_searcher_2.html">Version 2</a></li>
                             <li><a href="https://endava-testing-training.github.io/ProvinceSearcher/province_searcher_3.html">Version 3</a></li>
                             <li><a href="https://endava-testing-training.github.io/ProvinceSearcher/province_searcher_4.html">Version 4</a></li>
+                            <li class="invisible"><a href="#" ></a></li>
 
                             </ul>
                             <hr />
@@ -178,7 +179,12 @@ const Practice = (props) => (
   <FontAwesomeIcon icon={['fa', 'address-book']} class="icons"/>
 
   <h5 className="text-center font-weight-bold">Contacts</h5>
-
+  
+                 
+                      
+                  
+                  
+                
   <div className="accordion-option">
           <a href="javascript:void(0)" className="toggle-accordion active" accordion-id="#accordion3"></a>
         </div>
@@ -194,11 +200,15 @@ const Practice = (props) => (
             <div id="collapse-3" className="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
               <div className="panel-body">
                
-              
+             
               <ul>
-              <li>Learning about CRUD – To enforce see Testing Checklists guide recommended into Functional testing page</li>
+              <li>Learning about CRUD –  To enforce see  <strong>
+                          <Link to={"test-guide"}>Testing Checklists guide</Link>
+                       </strong></li>
                 <li>Learning about persistence</li>
-                <li>Learning about data base- To enforce see Data base section into Technical skills page.</li>
+                <li>Learning about data base- To enforce see <strong>
+                          <Link to={"introduction-erd"}>Data base section</Link>
+                       </strong></li>
                 <li>Show non- functional requirements</li>
                 <li>Show blockers bugs</li>
                 <li>Continue enforcing write test cases</li>
