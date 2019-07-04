@@ -372,7 +372,7 @@ code {
 .prof-images-container-communities {
     -webkit-column-count: 1;
     -moz-column-count: 1;
-    column-count: 5;
+    column-count: 4;
     margin-bottom: 3%;
     margin-top: 3%;
 }
@@ -421,7 +421,6 @@ code {
 
 .prof-tester-small p {
 	font-size: 1.5rem;
-	text-align: center;
 	margin-top: 4%;
 	width: 100%;
 	display: inherit;
@@ -429,6 +428,10 @@ code {
 
 .prof-tester-small img:hover {
 	border: 8px red double;
+}
+
+.margin-left-cities {
+	margin: 23px 0 0 74px;
 }
 
 @media (max-width: 400px) {
