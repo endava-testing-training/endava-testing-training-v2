@@ -26,6 +26,14 @@ h3 {
 	font-size: 1.15rem;
 }
 
+a, .downloadable {
+	color: #698aad;
+}
+
+.downloadable :hover, .downloadable :focus, .downloadable :focus-within {
+	color: #0056b3;
+}
+
 h4 {
 	color: #de411b;
 	margin: 0 0 6px 0;
@@ -44,6 +52,10 @@ code {
 	padding: 5px;
 	border: none;
 	margin-bottom: 5px;
+}
+
+.fullwidth {
+	width: 100%;
 }
 
 .typewriter h2 {
@@ -76,9 +88,6 @@ code {
 
 .svg-inline--fa.fa-w-10 {
     width: 0.325em;
-}
-.svg-inline--fa {
-     margin: 0!important;
 }
 
 .navbar {
@@ -233,13 +242,8 @@ code {
 }
 
 .downloadable {
-	color: #007bff;
 	cursor: pointer;
 	margin-bottom: 0;
-}
-
-.downloadable:hover {
-	color: #0056b3;
 }
 
 .downloadablepractice {
@@ -385,6 +389,14 @@ code {
     margin-top: 3%;
 }
 
+.prof-images-container-success {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 2;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
 .prof-tester {
 	margin-bottom: 15%;
 	display: inline-block;
@@ -406,6 +418,21 @@ code {
 	display: list-item;
     margin: 0 auto;
 }
+
+.prof-tester-success img {
+	width: 20%;
+	border: solid #de411b 2px;
+	transition: all .1s ease-in;
+	display: list-item;
+}
+
+.prof-tester-success img:hover {
+	border: 8px red double;
+}
+
+.prof-tester-success p {
+	width: 100%;
+} 
 
 .prof-tester img:hover {
 	border: solid #de411b 10px;
