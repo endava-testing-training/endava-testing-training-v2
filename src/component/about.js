@@ -13,13 +13,10 @@ import evelin    from '../images/aboutUs/Evelin_Mena.jpg';
 import martin    from '../images/aboutUs/Martin_Zapata.jpg'; 
 
 const AboutUs = (props) => (
-
     <div className="container mt-5">
-
         <main className="page-content" aria-label="Content">
             <div className="wrapper">
                 <div className="home">
-
                     <div className="typewriter rounded">
                         <h2>{props.title}</h2>
                         <div className="animate title">
@@ -63,47 +60,47 @@ const AboutUs = (props) => (
 
                 <div class="prof-images-container">
                 <div class="prof-tester">
-                    <img src={gabriel} class="prof-image" />
+                    <img src={gabriel} class="prof-image" alt="person" />
                     <p>Gabriel Giri</p>
                 </div>
                 <div class="prof-tester">
-                    <img src={fernando} class="prof-image"/>
+                    <img src={fernando} class="prof-image" alt="person"/>
                     <p>Fernando Uranga</p>
                 </div>
                 <div class="prof-tester">
-                    <img src={lucia} class="prof-image"/>
+                    <img src={lucia} class="prof-image" alt="person"/>
                     <p>Lucía G</p>
                 </div>  
                 <div class="prof-tester">
-                    <img src={evelin} class="prof-image"/>
+                    <img src={evelin} class="prof-image" alt="person"/>
                     <p>Evelin Mena</p>
                 </div>
                 <div class="prof-tester">
-                    <img src={carla} class="prof-image"/>
+                    <img src={carla} class="prof-image" alt="person"/>
                     <p>Carla Passaro</p>
                 </div>
                 <div class="prof-tester">
-                    <img src={cintia} class="prof-image"/>
+                    <img src={cintia} class="prof-image" alt="person"/>
                     <p>Cintia Hetzer</p>
                 </div>
                 <div class="prof-tester">
-                    <img src={andrea} class="prof-image"/>
+                    <img src={andrea} class="prof-image" alt="person"/>
                     <p>Andrea Sabella</p>
                 </div> 
                 <div class="prof-tester">
-                    <img src={martin} class="prof-image"/>
+                    <img src={martin} class="prof-image" alt="person"/>
                     <p>Martín Zapata</p>
                 </div>  
                 <div class="prof-tester">
-                    <img src={gisela} class="prof-image"/>
+                    <img src={gisela} class="prof-image" alt="person"/>
                     <p>Gisela Vivas</p>
                 </div> 
                 <div class="prof-tester">
-                    <img src={mauri} class="prof-image"/>
+                    <img src={mauri} class="prof-image" alt="person"/>
                     <p>Mauricio Gullotto</p>
                 </div>  
                <div class="prof-tester">
-                    <img src={alejandra} class="prof-image"/>
+                    <img src={alejandra} class="prof-image" alt="person"/>
                     <p>Alejandra Usart</p>
                 </div>  
                                     

@@ -24,9 +24,7 @@ const BakeTester = (props) => (
                             <span>t</span>
                             <span>e</span>
                             <span>r</span>
-                    
                         </div>
-
                     </div>
 
             <p>Bake A Tester 3.0 is a website developed by a team both of testers and developers from Rosario Endava Delivery Unit. The main idea behind this project is to provide a place from where newcomers and people outside the testing environment can learn how to become testers.</p>
