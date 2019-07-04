@@ -21,8 +21,7 @@ const EndavaNavbar = () => (
                     <NavDropdown.Item href="https://goo.gl/NoCM4J" target="_blank">Confluence</NavDropdown.Item>
                 </NavDropdown>
                 <NavLink className="nav-menu-link text-nowrap" exact to="/success">Our success stories</NavLink>
-                <NavLink className="nav-menu-link" exact to="/Disciplines">Disciplines</NavLink>
-                <NavLink className="nav-menu-link" exact to="/Communities">Communities</NavLink>
+                <NavLink className="nav-menu-link" exact to="/communities">Communities</NavLink>
                 <NavLink className="nav-menu-link text-nowrap" exact to="/about">About Us</NavLink>
                 <a className="nav-menu-link text-nowrap" href="https://goo.gl/97oRXH" target="_blank">Contact us</a>
             </Nav>
