@@ -238,14 +238,26 @@ code {
 	margin-bottom: 0;
 }
 
+.downloadable:hover {
+	color: #0056b3;
+}
+
+.downloadablepractice {
+	color: #333;
+	cursor: pointer;
+	margin-bottom: 0;
+}
+
+.downloadablepractice:hover {
+	color: #FD1D1D;
+}
+
 .downloadTemplate {
 	cursor: pointer;
 	margin-bottom: 0;
 }
 
-.downloadable:hover {
-	color: #0056b3;
-}
+
 
 .intro div {
 	border: #de411b solid 1px;
@@ -820,6 +832,11 @@ a.repeat:hover {
 @media (min-width: 992px) {
 	.animate{
 		font-size: 4em;
+	}
+	.prof-images-container {
+		-webkit-column-count: 5;
+		-moz-column-count: 5;
+		column-count: 5;
 	}
 	.flex-grid, .flex-grid-thirds {
 		display: block;

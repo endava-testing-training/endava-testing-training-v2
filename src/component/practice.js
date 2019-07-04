@@ -58,14 +58,14 @@ const Practice = (props) => (
                         <li>
                             <strong>
                                  <div onClick={ () => window.open(require('../assets/RSD-Template-TestCases.xlsx'), '_none')}>
-                                      <p class="downloadable">Test cases template <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                      <p class="downloadablepractice">Test cases template <FontAwesomeIcon icon={['fa', 'download']} /></p>
                                  </div>
                             </strong>
                         </li>
                         <li>
                             <strong>
                                 <div onClick={ () => window.open(require('../assets/RSD- Generic template to report  Bugs.docx'), '_none')}>
-                                    <p class="downloadable">Template to report Bugs <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                    <p class="downloadablepractice">Template to report Bugs <FontAwesomeIcon icon={['fa', 'download']} /></p>
                                 </div>   
                             </strong>
                         </li>
@@ -96,14 +96,14 @@ const Practice = (props) => (
              <li>
                  <strong>
                     <div onClick={ () => window.open(require('../assets/RSD-Template-TestCases.xlsx'), '_none')}>
-                      <p class="downloadable">Test cases template <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                      <p class="downloadablepractice">Test cases template <FontAwesomeIcon icon={['fa', 'download']} /></p>
                     </div>
                  </strong>
              </li>
              <li>
                  <strong>
                     <div onClick={ () => window.open(require('../assets/RSD- Generic template to report  Bugs.docx'), '_none')}>
-                      <p class="downloadable">Template to report Bugs <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                      <p class="downloadablepractice">Template to report Bugs <FontAwesomeIcon icon={['fa', 'download']} /></p>
                     </div>
                  </strong>
              </li>
