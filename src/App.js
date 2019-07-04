@@ -10,6 +10,7 @@ import BakeTester         from './component/bake-a-tester';
 import EndavaNavbar       from './component/navbar';
 import FunctionalTesting  from './component/functional-testing';
 import Home               from './component/home';
+import Communities        from './component/communities';
 import IntroductionErd    from './component/introduction-erd';
 import IntroductionSql    from './component/introduction-sql';
 import Istqb              from './component/istqb';
@@ -44,6 +45,7 @@ class App extends Component {
             <Route exact path="/video-agile"        render={() => <VideoAgile title="Usefull links" />} />
             <Route exact path="/agile-testing"      render={() => <AgileTesting title="Usefull links" />} />
             <Route exact path="/success"            render={() => <Success title="Endava" />} />
+            <Route exact path="/communities"        render={() => <Communities title="Endava" />} />
             <Route exact path="/about"              render={() => <AboutUs title="About us" />} />
             <Route exact path="/test-guide"         render={() => <TestGuide title="Endava" />} />
             <Route exact path="/istqb"              render={() => <Istqb title="Recommended sites" />} />
