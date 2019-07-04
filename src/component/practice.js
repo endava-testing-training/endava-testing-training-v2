@@ -36,7 +36,7 @@ const Practice = (props) => (
 
       <FontAwesomeIcon icon={['fa', 'thermometer-half']} class="icons"/>
 <h5>Celsius to Fahrenheit converter</h5>
-<a href="https://endava-testing-training.github.io/Celfar/specifications.html">General Epic</a>
+<a href="https://endava-testing-training.github.io/Celfar/specifications.html">Acceptance Criteria</a>
 <p class="mt-2">Versions</p>
 <ul>
     <li><a href="https://endava-testing-training.github.io/Celfar/?v=1">Version 1</a></li>
@@ -71,7 +71,7 @@ const Practice = (props) => (
 
   <h5>Data searcher about Provinces</h5>
 
-                            <a href="https://endava-testing-training.github.io/ProvinceSearcher/specifications.html">General Epic</a>
+                            <a href="https://endava-testing-training.github.io/ProvinceSearcher/specifications.html">Acceptance Criteria</a>
 
                             <p class="mt-2">Versions</p>
                             <ul>
@@ -105,7 +105,7 @@ const Practice = (props) => (
 
 
   <h5>Contacts</h5>
-                            <a href="https://endava-testing-training.github.io/Contacts/specifications.html">General Epic</a>
+                            <a href="https://endava-testing-training.github.io/Contacts/specifications.html">Acceptance Criteria</a>
 
                             <p class="mt-2">Versions</p>
                             <ul>
