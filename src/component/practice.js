@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ToolTipPractice from './components/ToolTipPractice';
+import AccordionBT from './components/AccordionBT';
 
 
 const Practice = (props) => (
@@ -29,16 +30,48 @@ const Practice = (props) => (
                  
         
                     <h2>Exercises</h2>
-                   
+                 
 
-<div class="flex-grid-thirds">
+<div class="flex-grid-thirds mb-3">
   <div class="col"><h3>Temperature Converter</h3>
-
 
 
 
       <FontAwesomeIcon icon={['fa', 'thermometer-half']} class="icons"/>
       <h5 className="text-center font-weight-bold">Celsius to Fahrenheit converter</h5>
+
+      <div className="accordion-option">
+          <a href="javascript:void(0)" className="toggle-accordion active" accordion-id="#accordion"></a>
+        </div>
+        <div className="clearfix"></div>
+        <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div className="panel panel-default">
+            <div className="panel-heading" role="tab" id="headingOne">
+              <h4 className="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="false" aria-controls="collapseOne">
+                What will I learn with this practice?</a>
+              </h4>
+            </div>
+            <div id="collapse-1" className="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div className="panel-body">
+               
+              
+              <ul>
+                    <li>Know about limit values</li>
+                    <li>Structure test cases</li>
+                    <li>Structure Bug report </li>
+                    <li>Learn the main concepts to detect and report bugs </li>
+                    <li>Execute test cases</li>
+                    <li>Write Test Cases</li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
 <hr />
 <a href="https://endava-testing-training.github.io/Celfar/specifications.html">Acceptance Criteria <FontAwesomeIcon icon={['fa', 'downloadTemplate']} /></a>
 <hr />
@@ -79,6 +112,37 @@ const Practice = (props) => (
 
 
   <h5 className="text-center font-weight-bold">Data searcher about Provinces</h5>
+
+
+  <div className="accordion-option">
+          <a href="javascript:void(0)" className="toggle-accordion active" accordion-id="#accordion"></a>
+        </div>
+        <div className="clearfix"></div>
+        <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div className="panel panel-default">
+            <div className="panel-heading" role="tab" id="headingOne">
+              <h4 className="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="false" aria-controls="collapseTwo">
+                What will I learn with this practice?</a>
+              </h4>
+            </div>
+            <div id="collapse-2" className="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div className="panel-body">
+               
+              
+              <ul>
+              <li>Learn about filters and sorting </li>
+                    <li>Enforce knowledge about Structure test cases</li>
+                    <li>Execute test cases </li>
+                    <li>Write Test Cases</li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
   <hr />
                             <a href="https://endava-testing-training.github.io/ProvinceSearcher/specifications.html">Acceptance Criteria</a>
                             <hr />
@@ -114,6 +178,39 @@ const Practice = (props) => (
   <FontAwesomeIcon icon={['fa', 'address-book']} class="icons"/>
 
   <h5 className="text-center font-weight-bold">Contacts</h5>
+
+  <div className="accordion-option">
+          <a href="javascript:void(0)" className="toggle-accordion active" accordion-id="#accordion3"></a>
+        </div>
+        <div className="clearfix"></div>
+        <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div className="panel panel-default">
+            <div className="panel-heading" role="tab" id="headingOne">
+              <h4 className="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="false" aria-controls="collapseThree">
+                What will I learn with this practice?</a>
+              </h4>
+            </div>
+            <div id="collapse-3" className="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div className="panel-body">
+               
+              
+              <ul>
+              <li>Learning about CRUD – To enforce see Testing Checklists guide recommended into Functional testing page</li>
+                <li>Learning about persistence</li>
+                <li>Learning about data base- To enforce see Data base section into Technical skills page.</li>
+                <li>Show non- functional requirements</li>
+                <li>Show blockers bugs</li>
+                <li>Continue enforcing write test cases</li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
   <hr />
                             <a href="https://endava-testing-training.github.io/Contacts/specifications.html">Acceptance Criteria</a>
                             <hr />
