@@ -760,7 +760,6 @@ a.repeat:hover {
 	color: #333;
 	background-color: #fff;
 	border-color: #e4e5e7;
-	padding: 30px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 4px;
 	margin-bottom: 4px;
@@ -788,6 +787,9 @@ a.repeat:hover {
 		height: 100%;
 		display: unset;
 		margin: unset;
+	}
+	.panel-body {
+		padding: 30px;
 	}
 }
 

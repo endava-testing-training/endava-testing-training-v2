@@ -104,11 +104,9 @@ const AboutUs = (props) => (
                 </div>  
                <div class="prof-tester">
                     <img src={alejandra} class="prof-image"/>
-                    <p>María Alejandra Usart</p>
+                    <p>Alejandra Usart</p>
                 </div>  
                                     
-           
-
             </div>
 
         </main>
