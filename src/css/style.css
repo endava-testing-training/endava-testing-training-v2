@@ -254,46 +254,38 @@ code {
 	height: 50%;
 	position: relative;
 	height: 50vh;
+}
+
+.intro div a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
 	background-size: cover;
 	transition: all .3s ease-in;
 }
 
-.intro div img:hover {
+.intro div a:hover {
 	webkit-filter: blur(4px);
-	/* Chrome, Safari, Opera */
 	filter: blur(4px);
 }
 
-.intro div:nth-child(1n):hover {
-	webkit-filter: blur(4px);
-	/* Chrome, Safari, Opera */
-	filter: blur(4px);
-	-webkit-filter: contrast(200%) brightness(150%);
-	/* Safari */
-	filter: contrast(200%) brightness(150%);
+.intro div:nth-child(1) a {
+	background-image: url("../../src/images/intro/1.jpg");
 }
 
-.intro div:nth-child(1) {
-	background: url("../../src/images/intro/1.jpg");
-	background-size: cover;
+.intro div:nth-child(2) a {
+	background-image: url("../../src/images/intro/2.jpg");
 }
 
-.intro div:nth-child(2) {
-	background: url("../../src/images/intro/2.jpg");
-	background-size: cover;
+.intro div:nth-child(3) a {
+	background-image: url("../../src/images/intro/3.jpg");
 }
 
-.intro div:nth-child(3) {
-	background: url("../../src/images/intro/3.jpg");
-	background-size: cover;
+.intro div:nth-child(4) a {
+	background-image: url("../../src/images/intro/4.jpg");
 }
 
-.intro div:nth-child(4) {
-	background: url("../../src/images/intro/4.jpg");
-	background-size: cover;
-}
-
-.intro div p {
+.intro div span {
 	font-family: 'endava-font', sans-serif;
 	font-weight: 900;
 	font-size: 40px;
@@ -304,6 +296,7 @@ code {
 	left: 30px;
 	text-shadow: 2px 2px 2px #000;
 	color: white;
+	pointer-events: none;
 }
 
 .action {
@@ -691,7 +684,7 @@ a.repeat:hover {
 	}
 }
 
-/* Accordion */
+/ Accordion /
 
 .panel-default>.panel-heading {
 	color: #333;
@@ -798,4 +791,3 @@ a.repeat:hover {
 		font-size: 4em;
 	}
 }	
-
