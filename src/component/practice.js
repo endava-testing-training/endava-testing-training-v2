@@ -29,14 +29,19 @@ const Practice = (props) => (
                  
         
                     <h2>Exercises</h2>
-
+                   
 
 <div class="flex-grid-thirds">
   <div class="col"><h3>Temperature Converter</h3>
 
+
+
+
       <FontAwesomeIcon icon={['fa', 'thermometer-half']} class="icons"/>
-<h5>Celsius to Fahrenheit converter</h5>
-<a href="https://endava-testing-training.github.io/Celfar/specifications.html">Acceptance Criteria</a>
+      <h5 className="text-center font-weight-bold">Celsius to Fahrenheit converter</h5>
+<hr />
+<a href="https://endava-testing-training.github.io/Celfar/specifications.html">Acceptance Criteria <FontAwesomeIcon icon={['fa', 'downloadTemplate']} /></a>
+<hr />
 <p class="mt-2">Versions</p>
 <ul>
     <li><a href="https://endava-testing-training.github.io/Celfar/?v=1">Version 1</a></li>
@@ -45,23 +50,27 @@ const Practice = (props) => (
     <li><a href="https://endava-testing-training.github.io/Celfar/?v=4">Version 4</a></li>
     <li><a href="https://endava-testing-training.github.io/Celfar">Version Final</a></li>
 </ul>
+<hr />
 <p class="mt-2">Templates useful</p>
+
             <ul>
-            <li>
-                <strong>
-                   <div onClick={ () => window.open(require('../assets/RSD-Template-TestCases.xlsx'), '_none')}>
-                     <p class="downloadTemplate">Test cases template <FontAwesomeIcon icon={['fa', 'downloadTemplate']} /></p>
-                   </div>
-                </strong>
-            </li>
-            <li>
-                <strong>
-                   <div onClick={ () => window.open(require('../assets/RSD- Generic template to report  Bugs.docx'), '_none')}>
-                     <p class="downloadTemplate">Template to report Bugs <FontAwesomeIcon icon={['fa', 'downloadTemplate']} /></p>
-                   </div>
-                </strong>
-            </li>
-            </ul>
+                       
+                        <li>
+                            <strong>
+                                 <div onClick={ () => window.open(require('../assets/RSD-Template-TestCases.xlsx'), '_none')}>
+                                      <p class="downloadable">Test cases template <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                 </div>
+                            </strong>
+                        </li>
+                        <li>
+                            <strong>
+                                <div onClick={ () => window.open(require('../assets/RSD- Generic template to report  Bugs.docx'), '_none')}>
+                                    <p class="downloadable">Template to report Bugs <FontAwesomeIcon icon={['fa', 'download']} /></p>
+                                </div>   
+                            </strong>
+                        </li>
+
+                    </ul>
 </div>
   <div class="col"><h3>Argentina Provinces</h3>
 
@@ -69,10 +78,10 @@ const Practice = (props) => (
 
 
 
-  <h5>Data searcher about Provinces</h5>
-
+  <h5 className="text-center font-weight-bold">Data searcher about Provinces</h5>
+  <hr />
                             <a href="https://endava-testing-training.github.io/ProvinceSearcher/specifications.html">Acceptance Criteria</a>
-
+                            <hr />
                             <p class="mt-2">Versions</p>
                             <ul>
                             <li><a href="https://endava-testing-training.github.io/ProvinceSearcher/province_searcher_1.html">Version 1</a></li>
@@ -81,32 +90,33 @@ const Practice = (props) => (
                             <li><a href="https://endava-testing-training.github.io/ProvinceSearcher/province_searcher_4.html">Version 4</a></li>
 
                             </ul>
+                            <hr />
  <p class="mt-2">Templates useful</p>
              <ul>
              <li>
                  <strong>
                     <div onClick={ () => window.open(require('../assets/RSD-Template-TestCases.xlsx'), '_none')}>
-                      <p class="downloadTemplate">Test cases template <FontAwesomeIcon icon={['fa', 'downloadTemplate']} /></p>
+                      <p class="downloadable">Test cases template <FontAwesomeIcon icon={['fa', 'download']} /></p>
                     </div>
                  </strong>
              </li>
              <li>
                  <strong>
                     <div onClick={ () => window.open(require('../assets/RSD- Generic template to report  Bugs.docx'), '_none')}>
-                      <p class="downloadTemplate">Template to report Bugs <FontAwesomeIcon icon={['fa', 'downloadTemplate']} /></p>
+                      <p class="downloadable">Template to report Bugs <FontAwesomeIcon icon={['fa', 'download']} /></p>
                     </div>
                  </strong>
              </li>
+
              </ul>
   </div>
   <div class="col"><h3>Contacts In Agile </h3>
   <FontAwesomeIcon icon={['fa', 'address-book']} class="icons"/>
 
-
-
-  <h5>Contacts</h5>
+  <h5 className="text-center font-weight-bold">Contacts</h5>
+  <hr />
                             <a href="https://endava-testing-training.github.io/Contacts/specifications.html">Acceptance Criteria</a>
-
+                            <hr />
                             <p class="mt-2">Versions</p>
                             <ul>
                             <li><a href="https://endava-testing-training.github.io/Contacts/contacts.html?v=1">Version 1</a></li>
@@ -115,6 +125,7 @@ const Practice = (props) => (
                             <li><a href="https://endava-testing-training.github.io/Contacts/contacts.html">Version final</a></li>
                             <li><a href="https://endava-testing-training.github.io/Contacts/contacts_improvements.html">Version improvements</a></li> 
                             </ul>
+<hr />
 <p class="mt-2">Jira Board</p>
  <li>
  <strong>
