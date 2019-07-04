@@ -69,6 +69,13 @@ code {
 	animation: typing .5s steps(200, end), blink-caret .75s step-end infinite;
 }
 
+.svg-inline--fa.fa-w-10 {
+    width: 0.325em;
+}
+.svg-inline--fa {
+     margin: 0!important;
+}
+
 .navbar {
 	border-bottom: #de411b 4px solid;
 	padding: 0;
