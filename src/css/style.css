@@ -552,6 +552,7 @@ code {
 #practice a {
 	color: #E37A5F;
 	font-weight: bold;
+	background: none;
 }
 
 #practice a:hover {
