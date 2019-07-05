@@ -3,7 +3,13 @@
 	src: url("../external/fonts/robotocondensed-bold-webfont.woff") format('woff');
 }
 
+a, .downloadable {
+	color: #698aad;
+}
+
+
 a:hover {
+	color: #36485a;
 	text-decoration: none;
 }
 
@@ -24,14 +30,6 @@ dl, ol, ul {
 h3 {
 	margin: 10px auto;
 	font-size: 1.15rem;
-}
-
-a, .downloadable {
-	color: #698aad;
-}
-
-.downloadable :hover, .downloadable :focus, .downloadable :focus-within {
-	color: #0056b3;
 }
 
 h4 {
@@ -838,6 +836,10 @@ a.repeat:hover {
 
 .communityleads {
 	color:red;
+}
+
+.downloadable:hover, .downloadable:focus, .downloadable:focus-within {
+	color: #36485a;
 }
 
 @media (min-width: 576px){
