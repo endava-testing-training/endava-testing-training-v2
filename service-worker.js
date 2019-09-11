@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/endava-testing-training.github.io/bakeatester/precache-manifest.d88742da48ae40691ca9b4b80429303f.js"
+  "/bakeatester/precache-manifest.121b546752201da8ec613950c1ed0f44.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/endava-testing-training.github.io/bakeatester/index.html", {
+workbox.routing.registerNavigationRoute("/bakeatester/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
